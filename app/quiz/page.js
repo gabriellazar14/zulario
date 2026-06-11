@@ -1,6 +1,5 @@
 "use client";
-
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { matchDestination } from "@/lib/matchDestination";
 import { FaWhatsapp, FaTelegramPlane, FaEnvelope, FaCopy } from "react-icons/fa";
@@ -395,7 +394,7 @@ function ResultCard({ match, onSeeDetails }) {
   );
 }
 
-export default function QuizPage() {
+function QuizContent() {
   const searchParams = useSearchParams();
   const groupId = searchParams.get("groupId");
 
@@ -736,7 +735,7 @@ if (loading) {
   </button>
 </div>
 
-<p className="mt-4 text-center text-sm text-white/45">
+<p className="mt- text-center text-sm text-white/45">
   By saving your results, you consent to storing your email and travel matches.
   View our{" "}
   <Link
@@ -1231,6 +1230,20 @@ text-[#9eb8ff]
     background: #8b7cff;
   }
 `}</style>
+
     </main>
+      );
+   }
+   export default function QuizPage() {
+  return (
+    <Suspense
+      fallback={
+        <main className="min-h-screen bg-[#070b16] text-white flex items-center justify-center">
+          Loading quiz...
+        </main>
+      }
+    >
+      <QuizContent />
+    </Suspense>
   );
 }
