@@ -1,0 +1,273 @@
+{
+  "id": "corfu_gr",
+  "city": "Corfu",
+  "country": "Greece",
+
+  "destination_types": [
+    "island",
+    "beach",
+    "nature",
+    "relaxation",
+    "historical"
+  ],
+
+  "experience_styles": [
+    "coastal relaxation",
+    "island wandering",
+    "nature immersion",
+    "slow travel",
+    "sun-soaked exploration"
+  ],
+
+  "core_identity": {
+    "essence": "A lush Ionian island where Venetian history, green landscapes, and turquoise waters create a soft, emotional Mediterranean rhythm.",
+
+    "city_feeling": "Corfu feels gentle, green, and emotionally soothing — a place where nature and sea dominate daily life and time slows naturally.",
+
+    "emotional_tone": [
+      "calm",
+      "lush",
+      "romantic",
+      "natural",
+      "soft",
+      "peaceful"
+    ]
+  },
+
+  "tags": [
+    "island",
+    "beach",
+    "nature",
+    "green",
+    "relaxation",
+    "mediterranean",
+    "romantic",
+    "slow travel"
+  ],
+
+  "archetypes": [
+    "nature seeker",
+    "slow traveler",
+    "romantic wanderer",
+    "coastal explorer",
+    "peace-driven traveler"
+  ],
+
+  "emotional_signature": {
+    "energy": 5,
+    "romanticism": 9,
+    "social_openness": 6,
+    "spontaneity": 6,
+    "emotional_warmth": 9,
+    "sensory_intensity": 7,
+    "mystery": 6,
+    "freedom": 9,
+    "reflectiveness": 8,
+    "cultural_depth": 7,
+    "nature_connection": 10,
+    "comfort_zone_expansion": 6
+  },
+
+  "contextual_attributes": {
+    "walkability": 7,
+    "nightlife": 6,
+    "public_transport": 5,
+    "digital_nomad_friendly": 7,
+    "nature_access": 10,
+    "luxury_feeling": 8
+  },
+
+  "sensory_profile": {
+    "soundscape": "Soft waves, cicadas, wind through olive trees, distant village life, and quiet coastal evenings.",
+
+    "visual_feeling": "Emerald green hills, turquoise bays, Venetian architecture, olive groves, and soft golden light.",
+
+    "pace": "slow",
+
+    "dominant_mood": "Peaceful, lush, and emotionally restorative."
+  },
+
+  "match_narratives": {
+    "high_match": "Corfu may deeply resonate with you if you are drawn to natural beauty, emotional calm, and environments where greenery and sea create a soothing rhythm. You likely enjoy slow travel, peaceful landscapes, and places that help you disconnect from noise and reconnect with yourself.",
+
+    "medium_match": "You may connect with Corfu during periods where you seek relaxation, emotional balance, or gentle romantic travel. It works especially well for travelers who enjoy combining beach time, nature walks, and quiet exploration.",
+
+    "low_match_warning": "If you strongly prefer fast-paced cities, nightlife intensity, cultural density, or constant stimulation, Corfu may feel too quiet, slow, or limited in activity.",
+
+    "emotional_hook": "A green island that slows your thoughts without asking.",
+
+    "ideal_for": [
+      "romantic escapes",
+      "nature retreats",
+      "beach holidays",
+      "slow travel",
+      "emotional reset trips"
+    ]
+  },
+
+  "possible_downsides": [
+    "Limited public transport and mobility without a car",
+    "Quiet nightlife compared to other Greek islands",
+    "Seasonal tourism peaks in summer",
+    "Less urban or cultural density",
+    "Can feel too slow for active travelers"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+
+    "avoid_if_seeking": {
+      "winter": [
+        "warm beach conditions",
+        "active tourism life"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 0.6,
+    "spring": 1.3,
+    "summer": 1.5,
+    "autumn": 1.2
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "reflectiveness": 3,
+        "energy": -3,
+        "social_openness": -1
+      },
+
+      "description": "Winter is very quiet in Corfu, with a local, introspective atmosphere and minimal tourism activity.",
+
+      "ideal_for": [
+        "deep rest",
+        "slow living",
+        "local immersion"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "nature_connection": 3,
+        "freedom": 2,
+        "emotional_warmth": 1
+      },
+
+      "description": "Spring transforms Corfu into a lush green paradise with blooming nature and peaceful coastal energy.",
+
+      "ideal_for": [
+        "nature exploration",
+        "romantic trips",
+        "slow island wandering"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 2,
+        "social_openness": 2,
+        "nightlife": 1
+      },
+
+      "description": "Summer brings warm beaches, tourism, and lively but still relaxed island energy.",
+
+      "ideal_for": [
+        "beach holidays",
+        "friends trips",
+        "swimming and relaxation"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "freedom": 2
+      },
+
+      "description": "Autumn softens the island into a peaceful, warm, and less crowded retreat.",
+
+      "ideal_for": [
+        "romantic escapes",
+        "emotional reset",
+        "slow travel"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 8,
+      "description": "Great for solo travelers seeking peace, nature connection, and emotional reset."
+    },
+
+    "couple_trip": {
+      "score": 10,
+      "description": "One of the strongest romantic island destinations in Europe."
+    },
+
+    "friends_trip": {
+      "score": 8,
+      "description": "Perfect for relaxed group beach holidays and shared nature experiences."
+    },
+
+    "creative_escape": {
+      "score": 8,
+      "description": "Nature, light, and silence create strong creative and reflective conditions."
+    },
+
+    "emotional_reset": {
+      "score": 10,
+      "description": "Exceptional destination for emotional recovery and nervous system calming."
+    },
+
+    "digital_nomad_stay": {
+      "score": 7,
+      "description": "Good for slow remote work lifestyle, though less structured than cities."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 8,
+    "couples": 10,
+    "friends": 8,
+    "creative_groups": 8,
+    "digital_nomads": 7
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "nature lovers",
+      "romantic personalities",
+      "slow travelers",
+      "emotional reset seekers",
+      "sun and sea seekers"
+    ],
+
+    "less_suited_for": [
+      "urban nightlife seekers",
+      "fast-paced travelers",
+      "culture-heavy city explorers",
+      "high stimulation personalities"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "slow",
+
+    "emotional_style": "natural and restorative",
+
+    "social_style": "relaxed and seasonal",
+
+    "beauty_type": "lush island nature",
+
+    "primary_energy": "calm and emotional healing",
+
+    "travel_feeling": "Corfu feels like being held by nature."
+  }
+}

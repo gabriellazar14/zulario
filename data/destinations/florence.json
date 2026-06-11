@@ -1,0 +1,274 @@
+{
+  "id": "florence_it",
+  "city": "Florence",
+  "country": "Italy",
+
+  "destination_types": [
+    "city",
+    "cultural",
+    "romantic",
+    "historical"
+  ],
+
+  "experience_styles": [
+    "art immersion",
+    "slow discovery",
+    "romantic wandering",
+    "cultural reflection",
+    "aesthetic travel"
+  ],
+
+  "core_identity": {
+    "essence": "A timeless Renaissance city where art, beauty, history, and emotion blend into an intensely aesthetic and human experience.",
+
+    "city_feeling": "Florence feels elegant, intimate, artistic, and emotionally warm, rewarding travelers who slow down and absorb atmosphere through beauty and detail.",
+
+    "emotional_tone": [
+      "romantic",
+      "elegant",
+      "artistic",
+      "warm",
+      "reflective",
+      "timeless"
+    ]
+  },
+
+  "tags": [
+    "renaissance",
+    "artistic",
+    "romantic",
+    "walkable",
+    "historical",
+    "aesthetic",
+    "cultural",
+    "timeless"
+  ],
+
+  "archetypes": [
+    "art lover",
+    "romantic traveler",
+    "creative soul",
+    "slow explorer",
+    "beauty seeker"
+  ],
+
+  "emotional_signature": {
+    "energy": 6,
+    "romanticism": 10,
+    "social_openness": 6,
+    "spontaneity": 5,
+    "emotional_warmth": 8,
+    "sensory_intensity": 8,
+    "mystery": 5,
+    "freedom": 6,
+    "reflectiveness": 8,
+    "cultural_depth": 10,
+    "nature_connection": 5,
+    "comfort_zone_expansion": 5
+  },
+
+  "contextual_attributes": {
+    "walkability": 10,
+    "nightlife": 5,
+    "public_transport": 6,
+    "digital_nomad_friendly": 6,
+    "nature_access": 5,
+    "luxury_feeling": 8
+  },
+
+  "sensory_profile": {
+    "soundscape": "Church bells, quiet piazzas, soft conversations, street musicians, and the subtle rhythm of everyday Italian life.",
+
+    "visual_feeling": "Golden Renaissance architecture, terracotta rooftops, marble facades, art-filled streets, and warm sunset tones.",
+
+    "pace": "slow-moderate",
+
+    "dominant_mood": "Elegant, artistic, and emotionally warm."
+  },
+
+  "match_narratives": {
+    "high_match": "Florence may deeply resonate with you if you are emotionally moved by beauty, art, intimacy, and timeless atmosphere. You likely enjoy destinations that encourage slow wandering, meaningful moments, aesthetic appreciation, and emotional presence rather than constant stimulation. The city especially suits travelers who connect with places through architecture, creativity, food, history, and human warmth.",
+
+    "medium_match": "You may connect strongly with Florence during periods where you seek calm inspiration, romantic energy, and emotionally rich cultural experiences. The city works especially well for travelers who enjoy slowing down and absorbing atmosphere through details rather than activity.",
+
+    "low_match_warning": "If you strongly prefer highly energetic environments, extreme spontaneity, modern urban intensity, or adventure-focused travel, Florence may eventually feel too calm, tourist-oriented, or aesthetically focused.",
+
+    "emotional_hook": "A city where beauty becomes part of everyday life.",
+
+    "ideal_for": [
+      "romantic escapes",
+      "art and culture travel",
+      "slow exploration",
+      "creative inspiration",
+      "emotional reconnection"
+    ]
+  },
+
+  "possible_downsides": [
+    "Tourist crowds can reduce authenticity in peak seasons",
+    "Less dynamic nightlife compared to larger Italian cities",
+    "Can feel overly curated or polished for travelers seeking raw energy",
+    "Summer heat and crowds may reduce emotional intimacy",
+    "Limited sense of unpredictability compared to more chaotic destinations"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "spring",
+      "autumn"
+    ],
+
+    "avoid_if_seeking": {
+      "summer": [
+        "quietness",
+        "slow local atmosphere"
+      ],
+
+      "winter": [
+        "high social energy",
+        "vibrant nightlife"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 0.8,
+    "spring": 1.3,
+    "summer": 1.4,
+    "autumn": 1.2
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "calmness": 2
+      },
+
+      "description": "Winter gives Florence a quieter and more intimate atmosphere, making museums, cafés, and slow walks feel more personal and emotionally immersive.",
+
+      "ideal_for": [
+        "slow cultural travel",
+        "solo reflection",
+        "museum-focused trips"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "emotional_warmth": 2,
+        "romanticism": 1,
+        "walkability": 1
+      },
+
+      "description": "Spring reveals Florence at its most balanced and beautiful, with soft weather, lively piazzas, blooming gardens, and ideal conditions for slow exploration.",
+
+      "ideal_for": [
+        "romantic trips",
+        "cultural discovery",
+        "art-focused travel"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 2,
+        "social_openness": 1
+      },
+
+      "description": "Summer makes Florence more vibrant and social, but also more crowded and intense, especially in the historic center.",
+
+      "ideal_for": [
+        "social travel",
+        "first-time visitors",
+        "festival experiences"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "cultural_depth": 1
+      },
+
+      "description": "Autumn adds emotional richness and softness to Florence, creating a deeper and more contemplative atmosphere.",
+
+      "ideal_for": [
+        "creative retreats",
+        "couple trips",
+        "slow emotional resets"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 8,
+      "description": "Excellent for travelers who enjoy slow wandering, reflection, art, and emotionally immersive cultural experiences."
+    },
+
+    "couple_trip": {
+      "score": 10,
+      "description": "Florence is one of Europe's strongest destinations for romance, intimacy, beauty, and shared emotional experiences."
+    },
+
+    "friends_trip": {
+      "score": 6,
+      "description": "Works best for culturally curious groups rather than nightlife-focused travel."
+    },
+
+    "creative_escape": {
+      "score": 10,
+      "description": "The city's artistic atmosphere strongly stimulates creativity, imagination, photography, writing, and emotional inspiration."
+    },
+
+    "emotional_reset": {
+      "score": 8,
+      "description": "Florence encourages slowing down, reconnecting emotionally, and rediscovering beauty through simplicity and atmosphere."
+    },
+
+    "digital_nomad_stay": {
+      "score": 6,
+      "description": "Emotionally inspiring for medium stays, though less productivity-focused than highly modern nomad hubs."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 8,
+    "couples": 10,
+    "friends": 6,
+    "creative_groups": 9,
+    "digital_nomads": 6
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "romantic personalities",
+      "creative travelers",
+      "beauty seekers",
+      "slow travelers",
+      "people emotionally moved by art and atmosphere"
+    ],
+
+    "less_suited_for": [
+      "adrenaline seekers",
+      "travelers needing constant stimulation",
+      "party-focused groups",
+      "people seeking highly modern urban energy"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "slow-moderate",
+
+    "emotional_style": "warm and aesthetic",
+
+    "social_style": "intimate and cultured",
+
+    "beauty_type": "timeless and artistic",
+
+    "primary_energy": "human beauty and cultural emotion",
+
+    "travel_feeling": "Florence feels like living inside a Renaissance painting."
+  }
+}

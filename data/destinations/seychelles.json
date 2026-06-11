@@ -1,0 +1,275 @@
+{
+  "id": "seychelles_sc",
+  "city": "Seychelles",
+  "country": "Seychelles",
+
+  "destination_types": [
+    "island",
+    "beach",
+    "luxury",
+    "nature",
+    "tropical"
+  ],
+
+  "experience_styles": [
+    "tropical isolation",
+    "luxury beach escape",
+    "nature immersion",
+    "slow ocean living",
+    "romantic seclusion"
+  ],
+
+  "core_identity": {
+    "essence": "A remote Indian Ocean archipelago where pristine beaches, granite landscapes, and untouched nature create one of the purest forms of emotional escape.",
+
+    "city_feeling": "Seychelles feels distant, pure, and almost unreal — a place where silence, ocean, and nature define the emotional experience more than human activity.",
+
+    "emotional_tone": [
+      "pristine",
+      "isolated",
+      "luxurious",
+      "peaceful",
+      "natural",
+      "intimate"
+    ]
+  },
+
+  "tags": [
+    "island",
+    "beach",
+    "luxury",
+    "tropical",
+    "nature",
+    "romantic",
+    "secluded",
+    "ocean"
+  ],
+
+  "archetypes": [
+    "isolation seeker",
+    "luxury dreamer",
+    "romantic wanderer",
+    "nature purifier",
+    "emotional reset traveler"
+  ],
+
+  "emotional_signature": {
+    "energy": 4,
+    "romanticism": 10,
+    "social_openness": 4,
+    "spontaneity": 5,
+    "emotional_warmth": 10,
+    "sensory_intensity": 8,
+    "mystery": 7,
+    "freedom": 10,
+    "reflectiveness": 9,
+    "cultural_depth": 5,
+    "nature_connection": 10,
+    "comfort_zone_expansion": 6
+  },
+
+  "contextual_attributes": {
+    "walkability": 5,
+    "nightlife": 3,
+    "public_transport": 4,
+    "digital_nomad_friendly": 6,
+    "nature_access": 10,
+    "luxury_feeling": 10
+  },
+
+  "sensory_profile": {
+    "soundscape": "Ocean waves, wind through palm trees, distant birds, and complete natural silence.",
+
+    "visual_feeling": "White sand beaches, turquoise water, granite boulders, dense tropical greenery, and untouched coves.",
+
+    "pace": "very slow",
+
+    "dominant_mood": "Pure, isolated, and deeply restorative."
+  },
+
+  "match_narratives": {
+    "high_match": "Seychelles may deeply resonate with you if you are seeking complete emotional escape, isolation, and natural purity. You likely value silence, ocean immersion, and environments that feel untouched and almost surreal in their beauty. This destination rewards emotional reset, intimacy, and disconnection from the world.",
+
+    "medium_match": "You may connect with Seychelles during phases where you seek luxury relaxation, romantic seclusion, or a deep break from overstimulation. It is especially powerful for slow travel focused on rest and emotional clarity.",
+
+    "low_match_warning": "If you strongly prefer cultural density, nightlife, urban exploration, or social stimulation, Seychelles may feel too isolated, quiet, or limited in activity.",
+
+    "emotional_hook": "A place where the world disappears and only nature remains.",
+
+    "ideal_for": [
+      "luxury beach holidays",
+      "romantic escapes",
+      "emotional reset trips",
+      "digital detox",
+      "honeymoon travel"
+    ]
+  },
+
+  "possible_downsides": [
+    "Very high travel costs",
+    "Limited cultural and urban activities",
+    "Requires long-haul travel",
+    "Small-scale infrastructure outside resorts",
+    "Can feel isolating for social travelers"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "april",
+      "may",
+      "october",
+      "november"
+    ],
+
+    "avoid_if_seeking": {
+      "january": [
+        "stable weather conditions"
+      ],
+
+      "february": [
+        "calm seas for all activities"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 0.8,
+    "spring": 1.3,
+    "summer": 1.2,
+    "autumn": 1.4
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "reflectiveness": 3,
+        "energy": -2
+      },
+
+      "description": "Winter is quiet and humid, with a deeply introspective and secluded atmosphere.",
+
+      "ideal_for": [
+        "isolation",
+        "digital detox",
+        "slow luxury travel"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "nature_connection": 3,
+        "emotional_warmth": 2
+      },
+
+      "description": "Spring is one of the best periods, with balanced weather, calm seas, and vibrant tropical nature.",
+
+      "ideal_for": [
+        "beach relaxation",
+        "romantic trips",
+        "nature immersion"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 1,
+        "humidity": 2
+      },
+
+      "description": "Summer is warm and humid, with lush landscapes and a slower rhythm.",
+
+      "ideal_for": [
+        "luxury resort stays",
+        "quiet retreats",
+        "ocean relaxation"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "freedom": 2,
+        "emotional_warmth": 2
+      },
+
+      "description": "Autumn brings calm seas, soft weather, and ideal conditions for emotional reset and romance.",
+
+      "ideal_for": [
+        "honeymoons",
+        "romantic escapes",
+        "slow travel luxury"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 7,
+      "description": "Good for introspective solo travel and emotional reset, but can feel isolated."
+    },
+
+    "couple_trip": {
+      "score": 10,
+      "description": "One of the strongest romantic and honeymoon destinations in the world."
+    },
+
+    "friends_trip": {
+      "score": 7,
+      "description": "Works for luxury group trips, though not ideal for active nightlife-focused travel."
+    },
+
+    "creative_escape": {
+      "score": 9,
+      "description": "Extreme natural beauty supports reflection, creativity, and emotional clarity."
+    },
+
+    "emotional_reset": {
+      "score": 10,
+      "description": "One of the most powerful destinations globally for emotional detox and reset."
+    },
+
+    "digital_nomad_stay": {
+      "score": 6,
+      "description": "Possible but limited infrastructure for long-term structured remote work."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 7,
+    "couples": 10,
+    "friends": 7,
+    "creative_groups": 8,
+    "digital_nomads": 6
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "romantic personalities",
+      "isolation seekers",
+      "luxury travelers",
+      "emotional reset seekers",
+      "nature lovers"
+    ],
+
+    "less_suited_for": [
+      "urban explorers",
+      "nightlife seekers",
+      "social stimulation seekers",
+      "budget travelers",
+      "culture-heavy travelers"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "very slow",
+
+    "emotional_style": "pure and restorative",
+
+    "social_style": "minimal and private",
+
+    "beauty_type": "untouched tropical nature",
+
+    "primary_energy": "isolation and emotional reset",
+
+    "travel_feeling": "Seychelles feels like stepping outside of reality."
+  }
+}

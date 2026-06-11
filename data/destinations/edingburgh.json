@@ -1,0 +1,103 @@
+{
+  "id": "edinburgh_uk",
+  "city": "Edinburgh",
+  "country": "United Kingdom",
+
+  "destination_types": [
+    "city",
+    "history",
+    "literary",
+    "atmospheric",
+    "culture"
+  ],
+
+  "experience_styles": [
+    "castle exploration",
+    "literary travel",
+    "historic wandering",
+    "festival experiences",
+    "moody city discovery"
+  ],
+
+  "core_identity": {
+    "essence": "A historic Scottish capital where medieval streets, gothic architecture, literature, and misty landscapes create emotional depth.",
+
+    "city_feeling": "Edinburgh feels cinematic, reflective, mysterious, and intellectually alive.",
+
+    "emotional_tone": [
+      "mysterious",
+      "historic",
+      "moody",
+      "reflective",
+      "intellectual",
+      "cinematic"
+    ]
+  },
+
+  "tags": [
+    "castle",
+    "history",
+    "literature",
+    "scotland",
+    "fog",
+    "gothic",
+    "culture",
+    "festivals"
+  ],
+
+  "archetypes": [
+    "literary traveler",
+    "history lover",
+    "reflective explorer",
+    "culture seeker",
+    "cinematic wanderer"
+  ],
+
+  "emotional_signature": {
+    "energy": 6,
+    "romanticism": 8,
+    "social_openness": 6,
+    "spontaneity": 5,
+    "emotional_warmth": 6,
+    "sensory_intensity": 8,
+    "mystery": 10,
+    "freedom": 7,
+    "reflectiveness": 9,
+    "cultural_depth": 9,
+    "nature_connection": 7,
+    "comfort_zone_expansion": 6
+  },
+
+  "contextual_attributes": {
+    "walkability": 9,
+    "nightlife": 6,
+    "public_transport": 7,
+    "digital_nomad_friendly": 7,
+    "nature_access": 7,
+    "luxury_feeling": 7
+  },
+
+  "sensory_profile": {
+    "soundscape": "Bagpipes, rain, old pubs, distant conversations, and wind through stone streets.",
+
+    "visual_feeling": "Dark stone buildings, medieval alleys, castle silhouettes, fog, and dramatic hills.",
+
+    "pace": "moderate",
+
+    "dominant_mood": "Mystery, nostalgia, and intellectual depth."
+  },
+
+  "destination_dna": {
+    "pace": "moderate",
+
+    "emotional_style": "mysterious and reflective",
+
+    "social_style": "reserved but intellectual",
+
+    "beauty_type": "gothic historic atmosphere",
+
+    "primary_energy": "history and imagination",
+
+    "travel_feeling": "Edinburgh feels like a novel hidden inside a city."
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "id": "hurghada_eg",
+  "city": "Hurghada",
+  "country": "Egypt",
+
+  "destination_types": [
+    "beach",
+    "resort",
+    "desert",
+    "sea",
+    "relaxation"
+  ],
+
+  "experience_styles": [
+    "red sea relaxation",
+    "all-inclusive resort stay",
+    "diving and snorkeling",
+    "desert excursions",
+    "sun-focused escape"
+  ],
+
+  "core_identity": {
+    "essence": "A Red Sea resort destination where desert meets turquoise water, creating a high-contrast environment of relaxation, diving, and resort living.",
+
+    "city_feeling": "Hurghada feels warm, direct, and resort-oriented — a place built around sun, sea activities, and structured relaxation.",
+
+    "emotional_tone": [
+      "sunny",
+      "touristic",
+      "relaxed",
+      "resort-driven",
+      "warm",
+      "simple"
+    ]
+  },
+
+  "tags": [
+    "beach",
+    "diving",
+    "resort",
+    "red sea",
+    "desert",
+    "sun",
+    "tourism",
+    "relaxation"
+  ],
+
+  "archetypes": [
+    "resort traveler",
+    "sun seeker",
+    "diver explorer",
+    "relaxation seeker",
+    "all-inclusive traveler"
+  ],
+
+  "emotional_signature": {
+    "energy": 6,
+    "romanticism": 7,
+    "social_openness": 6,
+    "spontaneity": 6,
+    "emotional_warmth": 9,
+    "sensory_intensity": 8,
+    "mystery": 5,
+    "freedom": 7,
+    "reflectiveness": 5,
+    "cultural_depth": 6,
+    "nature_connection": 8,
+    "comfort_zone_expansion": 6
+  },
+
+  "contextual_attributes": {
+    "walkability": 5,
+    "nightlife": 6,
+    "public_transport": 4,
+    "digital_nomad_friendly": 6,
+    "nature_access": 9,
+    "luxury_feeling": 8
+  },
+
+  "sensory_profile": {
+    "soundscape": "Resort music, ocean waves, diving boats, wind over desert, and calm hotel environments.",
+
+    "visual_feeling": "Turquoise Red Sea, coral reefs, desert mountains, sandy resorts, and bright sunlight.",
+
+    "pace": "moderate",
+
+    "dominant_mood": "Hot, bright, and structured relaxation."
+  },
+
+  "match_narratives": {
+    "high_match": "Hurghada may strongly resonate with you if you are seeking sun-focused relaxation, diving experiences, and easy resort comfort. You likely enjoy warm climates, structured holidays, and ocean-based activities with minimal complexity.",
+
+    "medium_match": "You may connect with Hurghada during periods where you want affordable sun holidays, snorkeling, or simple relaxation away from busy cities.",
+
+    "low_match_warning": "If you strongly prefer cultural depth, urban exploration, or quiet natural authenticity, Hurghada may feel too resort-driven, artificial, or limited in variety.",
+
+    "emotional_hook": "A place where the sea is the main event.",
+
+    "ideal_for": [
+      "beach holidays",
+      "diving trips",
+      "resort vacations",
+      "sun escapes",
+      "all-inclusive travel"
+    ]
+  },
+
+  "possible_downsides": [
+    "Highly resort-dependent experience",
+    "Limited cultural exploration compared to historic cities",
+    "Can feel tourist-heavy in peak season",
+    "Less walkable urban structure",
+    "Outside resort areas can feel repetitive"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "october",
+      "november",
+      "march",
+      "april"
+    ],
+
+    "avoid_if_seeking": {
+      "july": [
+        "mild temperatures",
+        "low heat exposure"
+      ],
+
+      "august": [
+        "cool conditions"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 1.3,
+    "spring": 1.4,
+    "summer": 1.6,
+    "autumn": 1.5
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "energy": 1,
+        "emotional_warmth": 2
+      },
+
+      "description": "Winter is one of the best times, offering perfect sun, warm sea, and ideal diving conditions.",
+
+      "ideal_for": [
+        "beach holidays",
+        "diving",
+        "resort stays"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "nature_connection": 2,
+        "freedom": 1
+      },
+
+      "description": "Spring is warm, stable, and perfect for balanced sun and sea activities.",
+
+      "ideal_for": [
+        "snorkeling",
+        "relaxation",
+        "sun travel"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 2,
+        "spontaneity": 1
+      },
+
+      "description": "Summer is extremely hot but active, with full resort energy and strong sun exposure.",
+
+      "ideal_for": [
+        "pool resorts",
+        "diving trips",
+        "structured holidays"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 1,
+        "freedom": 1
+      },
+
+      "description": "Autumn is warm, stable, and ideal for calm sea experiences and fewer crowds.",
+
+      "ideal_for": [
+        "relaxation",
+        "diving",
+        "sun escapes"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 7,
+      "description": "Good for solo relaxation and diving-focused travel."
+    },
+
+    "couple_trip": {
+      "score": 9,
+      "description": "Strong destination for romantic resort stays and beach relaxation."
+    },
+
+    "friends_trip": {
+      "score": 8,
+      "description": "Great for group resort holidays and diving adventures."
+    },
+
+    "creative_escape": {
+      "score": 6,
+      "description": "Good sensory reset but limited cultural stimulation."
+    },
+
+    "emotional_reset": {
+      "score": 8,
+      "description": "Effective for physical relaxation, but not deep emotional introspection."
+    },
+
+    "digital_nomad_stay": {
+      "score": 6,
+      "description": "Possible but limited infrastructure compared to urban hubs."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 7,
+    "couples": 9,
+    "friends": 8,
+    "creative_groups": 6,
+    "digital_nomads": 6
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "sun seekers",
+      "resort travelers",
+      "diving enthusiasts",
+      "relaxation-focused travelers"
+    ],
+
+    "less_suited_for": [
+      "culture seekers",
+      "urban explorers",
+      "slow authenticity travelers",
+      "nightlife-heavy travelers"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "moderate",
+
+    "emotional_style": "sun-driven relaxation",
+
+    "social_style": "touristic and structured",
+
+    "beauty_type": "sea and desert contrast",
+
+    "primary_energy": "sun and resort comfort",
+
+    "travel_feeling": "Hurghada feels like a warm pause button."
+  }
+}

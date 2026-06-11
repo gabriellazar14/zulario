@@ -1,0 +1,279 @@
+{
+  "id": "dolomites_it",
+  "city": "Dolomites",
+  "country": "Italy",
+
+  "destination_types": [
+    "mountains",
+    "nature",
+    "hiking",
+    "ski",
+    "landscape photography"
+  ],
+
+  "experience_styles": [
+    "alpine hiking",
+    "dramatic landscape exploration",
+    "ski and snow travel",
+    "mountain lakes discovery",
+    "slow scenic road trips"
+  ],
+
+  "core_identity": {
+    "essence": "A dramatic mountain range in northern Italy where sharp limestone peaks rise above green valleys, creating one of the most visually striking landscapes in Europe.",
+
+    "city_feeling": "The Dolomites feel visually overwhelming yet emotionally quiet — a place where beauty is immediate, pure, and almost unreal.",
+
+    "emotional_tone": [
+      "dramatic",
+      "pure",
+      "calm",
+      "awe-inspiring",
+      "crisp",
+      "balanced"
+    ]
+  },
+
+  "tags": [
+    "mountains",
+    "alps",
+    "hiking",
+    "ski",
+    "nature",
+    "lakes",
+    "landscape",
+    "photography"
+  ],
+
+  "archetypes": [
+    "nature explorer",
+    "hiker",
+    "photography traveler",
+    "slow adventure seeker",
+    "ski enthusiast"
+  ],
+
+  "emotional_signature": {
+    "energy": 7,
+    "romanticism": 8,
+    "social_openness": 6,
+    "spontaneity": 6,
+    "emotional_warmth": 7,
+    "sensory_intensity": 9,
+    "mystery": 8,
+    "freedom": 10,
+    "reflectiveness": 9,
+    "cultural_depth": 7,
+    "nature_connection": 10,
+    "comfort_zone_expansion": 8
+  },
+
+  "contextual_attributes": {
+    "walkability": 5,
+    "nightlife": 3,
+    "public_transport": 6,
+    "digital_nomad_friendly": 6,
+    "nature_access": 10,
+    "luxury_feeling": 8
+  },
+
+  "sensory_profile": {
+    "soundscape": "Wind through sharp peaks, distant waterfalls, crunching snow, and complete alpine silence.",
+
+    "visual_feeling": "Towering jagged peaks, turquoise lakes, green meadows, wooden huts, and glowing sunset alpenglow.",
+
+    "pace": "slow to moderate",
+
+    "dominant_mood": "Crisp beauty and visual intensity with emotional calm."
+  },
+
+  "match_narratives": {
+    "high_match": "The Dolomites may strongly resonate with you if you are drawn to visually powerful nature, hiking, and landscapes that feel almost unreal in their beauty. You likely enjoy slow travel with strong aesthetic impact.",
+
+    "medium_match": "You may connect with the Dolomites if you enjoy seasonal outdoor activities like hiking, skiing, or scenic road trips.",
+
+    "low_match_warning": "If you prefer cities, nightlife, beach relaxation, or cultural immersion, the Dolomites may feel too quiet, remote, or activity-dependent.",
+
+    "emotional_hook": "A place where silence looks beautiful.",
+
+    "ideal_for": [
+      "hiking trips",
+      "ski holidays",
+      "photography travel",
+      "nature escapes",
+      "slow scenic journeys"
+    ]
+  },
+
+  "possible_downsides": [
+    "Weather dependent access to trails",
+    "Limited nightlife and urban culture",
+    "Requires physical activity for full experience",
+    "Seasonal tourist peaks",
+    "Transport needed between valleys"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "june",
+      "july",
+      "september",
+      "october",
+      "december",
+      "january",
+      "february"
+    ],
+
+    "avoid_if_seeking": {
+      "april": [
+        "stable hiking conditions"
+      ],
+
+      "november": [
+        "snow or hiking accessibility"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 1.4,
+    "spring": 1.1,
+    "summer": 1.5,
+    "autumn": 1.2
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "energy": 2,
+        "mystery": 2,
+        "reflectiveness": 2
+      },
+
+      "description": "Winter transforms the Dolomites into a ski paradise with dramatic snowy peaks and cozy alpine villages.",
+
+      "ideal_for": [
+        "ski trips",
+        "winter landscapes",
+        "cozy mountain stays"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "nature_connection": 3,
+        "freedom": 2
+      },
+
+      "description": "Spring brings melting snow, green valleys, and quieter trails.",
+
+      "ideal_for": [
+        "light hiking",
+        "photography",
+        "nature exploration"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 2,
+        "freedom": 2
+      },
+
+      "description": "Summer is peak hiking season with crystal-clear views and accessible trails.",
+
+      "ideal_for": [
+        "hiking",
+        "via ferrata",
+        "lake exploration"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 3,
+        "mystery": 2
+      },
+
+      "description": "Autumn is peaceful and cinematic with golden light and fewer crowds.",
+
+      "ideal_for": [
+        "photography",
+        "slow travel",
+        "emotional reset"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 9,
+      "description": "Excellent for solo hiking, reflection, and nature immersion."
+    },
+
+    "couple_trip": {
+      "score": 10,
+      "description": "One of the most romantic mountain destinations in Europe."
+    },
+
+    "friends_trip": {
+      "score": 9,
+      "description": "Perfect for hiking groups and shared adventure experiences."
+    },
+
+    "creative_escape": {
+      "score": 10,
+      "description": "Extremely strong inspiration environment for creativity and clarity."
+    },
+
+    "emotional_reset": {
+      "score": 10,
+      "description": "Powerful destination for mental reset and grounding."
+    },
+
+    "digital_nomad_stay": {
+      "score": 6,
+      "description": "Possible in select towns but not primary use case."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 9,
+    "couples": 10,
+    "friends": 9,
+    "creative_groups": 10,
+    "digital_nomads": 6
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "nature lovers",
+      "hikers",
+      "photography travelers",
+      "slow adventure seekers",
+      "visual aesthetes"
+    ],
+
+    "less_suited_for": [
+      "nightlife seekers",
+      "city explorers",
+      "beach holiday travelers",
+      "low-movement vacation style"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "slow to moderate",
+
+    "emotional_style": "visually intense but calming",
+
+    "social_style": "quiet nature-based",
+
+    "beauty_type": "dramatic alpine scenery",
+
+    "primary_energy": "visual awe and clarity",
+
+    "travel_feeling": "The Dolomites feel like nature showing off."
+  }
+}
+```

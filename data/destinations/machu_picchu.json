@@ -1,0 +1,275 @@
+{
+  "id": "machu_picchu_pe",
+  "city": "Machu Picchu",
+  "country": "Peru",
+
+  "destination_types": [
+    "historical site",
+    "mountain",
+    "nature",
+    "archaeological site",
+    "adventure"
+  ],
+
+  "experience_styles": [
+    "ancient ruins exploration",
+    "mountain trekking",
+    "cultural immersion",
+    "mystical nature experience",
+    "Andean journey"
+  ],
+
+  "core_identity": {
+    "essence": "A lost Incan citadel high in the Andes, surrounded by mountains and clouds, blending ancient civilization with extreme natural beauty.",
+
+    "city_feeling": "Machu Picchu feels sacred, mystical, and timeless — a place where history, nature, and silence merge into one emotional experience.",
+
+    "emotional_tone": [
+      "mystical",
+      "ancient",
+      "awe-inspiring",
+      "silent",
+      "powerful",
+      "spiritual"
+    ]
+  },
+
+  "tags": [
+    "ancient ruins",
+    "inca",
+    "mountains",
+    "spiritual",
+    "trekking",
+    "history",
+    "mystery",
+    "world wonder"
+  ],
+
+  "archetypes": [
+    "spiritual explorer",
+    "history seeker",
+    "adventure traveler",
+    "meaning-driven traveler",
+    "nature pilgrim"
+  ],
+
+  "emotional_signature": {
+    "energy": 7,
+    "romanticism": 8,
+    "social_openness": 6,
+    "spontaneity": 6,
+    "emotional_warmth": 7,
+    "sensory_intensity": 9,
+    "mystery": 10,
+    "freedom": 8,
+    "reflectiveness": 10,
+    "cultural_depth": 10,
+    "nature_connection": 10,
+    "comfort_zone_expansion": 9
+  },
+
+  "contextual_attributes": {
+    "walkability": 6,
+    "nightlife": 2,
+    "public_transport": 5,
+    "digital_nomad_friendly": 5,
+    "nature_access": 10,
+    "luxury_feeling": 6
+  },
+
+  "sensory_profile": {
+    "soundscape": "Wind through mountains, distant water streams, silence of ruins, and occasional footsteps on stone paths.",
+
+    "visual_feeling": "Ancient stone terraces, green mountains, clouds moving through ruins, and dramatic Andean landscapes.",
+
+    "pace": "slow and immersive",
+
+    "dominant_mood": "Mystical silence and historical awe."
+  },
+
+  "match_narratives": {
+    "high_match": "Machu Picchu may deeply resonate with you if you are drawn to mystical places where history and nature merge. You likely enjoy meaningful travel experiences that feel symbolic, emotional, and unforgettable.",
+
+    "medium_match": "You may connect with Machu Picchu if you enjoy occasional adventure mixed with cultural discovery and scenic landscapes.",
+
+    "low_match_warning": "If you prefer modern cities, nightlife, comfort-based vacations, or easy accessibility, Machu Picchu may feel physically demanding and logistically complex.",
+
+    "emotional_hook": "A place where the world feels ancient and alive at the same time.",
+
+    "ideal_for": [
+      "bucket list travel",
+      "spiritual journeys",
+      "adventure trekking",
+      "cultural exploration",
+      "meaningful experiences"
+    ]
+  },
+
+  "possible_downsides": [
+    "High altitude challenges",
+    "Crowds in peak season",
+    "Requires physical effort to reach",
+    "Weather variability",
+    "Limited comfort infrastructure at site"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "may",
+      "june",
+      "july",
+      "august",
+      "september"
+    ],
+
+    "avoid_if_seeking": {
+      "january": [
+        "dry trekking conditions"
+      ],
+
+      "february": [
+        "site accessibility (maintenance closures)"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 1.0,
+    "spring": 1.3,
+    "summer": 1.4,
+    "autumn": 1.2
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "reflectiveness": 3,
+        "mystery": 2
+      },
+
+      "description": "Winter season is quieter with misty conditions that enhance the mystical feeling of the ruins.",
+
+      "ideal_for": [
+        "photography",
+        "spiritual reflection",
+        "low-crowd visits"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "nature_connection": 3,
+        "freedom": 2
+      },
+
+      "description": "Spring brings lush greenery and ideal trekking conditions.",
+
+      "ideal_for": [
+        "Inca Trail trekking",
+        "nature exploration",
+        "adventure travel"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 2,
+        "clarity": 2
+      },
+
+      "description": "Summer offers the clearest skies and best visibility of the ruins.",
+
+      "ideal_for": [
+        "summit viewpoints",
+        "guided tours",
+        "bucket list travel"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 3,
+        "mystery": 2
+      },
+
+      "description": "Autumn enhances the mystical and quiet atmosphere of the site.",
+
+      "ideal_for": [
+        "slow exploration",
+        "spiritual travel",
+        "photography"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 9,
+      "description": "Powerful solo journey of reflection and discovery."
+    },
+
+    "couple_trip": {
+      "score": 9,
+      "description": "Highly emotional and meaningful romantic experience."
+    },
+
+    "friends_trip": {
+      "score": 9,
+      "description": "Shared adventure and trekking experience."
+    },
+
+    "creative_escape": {
+      "score": 10,
+      "description": "Extremely inspiring for creativity and storytelling."
+    },
+
+    "emotional_reset": {
+      "score": 10,
+      "description": "Strong transformational and grounding experience."
+    },
+
+    "digital_nomad_stay": {
+      "score": 5,
+      "description": "Possible in nearby regions, but not site itself."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 9,
+    "couples": 9,
+    "friends": 9,
+    "creative_groups": 10,
+    "digital_nomads": 5
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "meaning seekers",
+      "spiritual travelers",
+      "adventure explorers",
+      "history lovers",
+      "transformational travelers"
+    ],
+
+    "less_suited_for": [
+      "luxury resort travelers",
+      "nightlife seekers",
+      "low-effort vacation style",
+      "urban-only travelers"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "slow and immersive",
+
+    "emotional_style": "mystical and reflective",
+
+    "social_style": "quiet and guided",
+
+    "beauty_type": "ancient nature fusion",
+
+    "primary_energy": "history and transformation",
+
+    "travel_feeling": "Machu Picchu feels like walking inside a memory the earth kept."
+  }
+}

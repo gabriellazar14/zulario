@@ -1,0 +1,275 @@
+{
+  "id": "bali_id",
+  "city": "Bali",
+  "country": "Indonesia",
+
+  "destination_types": [
+    "island",
+    "beach",
+    "nature",
+    "spiritual",
+    "wellness"
+  ],
+
+  "experience_styles": [
+    "spiritual retreat",
+    "jungle and beach balance",
+    "slow living",
+    "wellness travel",
+    "nature immersion"
+  ],
+
+  "core_identity": {
+    "essence": "A spiritual tropical island where nature, rituals, wellness culture, and slow living create a deeply emotional and reflective travel experience.",
+
+    "city_feeling": "Bali feels spiritual, organic, and emotionally grounding — a place where people come to slow down, heal, and reconnect with themselves.",
+
+    "emotional_tone": [
+      "spiritual",
+      "calming",
+      "natural",
+      "reflective",
+      "warm",
+      "harmonious"
+    ]
+  },
+
+  "tags": [
+    "island",
+    "beach",
+    "spiritual",
+    "wellness",
+    "nature",
+    "yoga",
+    "slow travel",
+    "healing"
+  ],
+
+  "archetypes": [
+    "spiritual seeker",
+    "wellness traveler",
+    "slow traveler",
+    "creative wanderer",
+    "emotional healer"
+  ],
+
+  "emotional_signature": {
+    "energy": 6,
+    "romanticism": 8,
+    "social_openness": 7,
+    "spontaneity": 6,
+    "emotional_warmth": 10,
+    "sensory_intensity": 8,
+    "mystery": 7,
+    "freedom": 10,
+    "reflectiveness": 10,
+    "cultural_depth": 8,
+    "nature_connection": 10,
+    "comfort_zone_expansion": 7
+  },
+
+  "contextual_attributes": {
+    "walkability": 6,
+    "nightlife": 6,
+    "public_transport": 5,
+    "digital_nomad_friendly": 9,
+    "nature_access": 10,
+    "luxury_feeling": 8
+  },
+
+  "sensory_profile": {
+    "soundscape": "Ocean waves, jungle insects, temple bells, soft music from cafés, and calm nature ambiance.",
+
+    "visual_feeling": "Green rice terraces, volcanic landscapes, tropical beaches, temples, sunsets, and lush jungle.",
+
+    "pace": "slow",
+
+    "dominant_mood": "Spiritual calm and emotional grounding."
+  },
+
+  "match_narratives": {
+    "high_match": "Bali may deeply resonate with you if you are seeking emotional healing, nature immersion, and a slower rhythm of life. You likely enjoy spiritual environments, wellness culture, yoga, and places that help you reconnect with yourself and reduce mental noise.",
+
+    "medium_match": "You may connect with Bali during phases where you seek balance between relaxation and exploration. It is especially powerful for longer stays involving wellness, creativity, or emotional reset.",
+
+    "low_match_warning": "If you strongly prefer fast-paced cities, nightlife intensity, structured environments, or cultural density, Bali may feel too slow, scattered, or overly spiritual.",
+
+    "emotional_hook": "A place where time dissolves and you come back to yourself.",
+
+    "ideal_for": [
+      "wellness retreats",
+      "spiritual travel",
+      "emotional reset trips",
+      "slow travel",
+      "digital nomad stays"
+    ]
+  },
+
+  "possible_downsides": [
+    "Tourist congestion in popular areas",
+    "Traffic in central hubs",
+    "Over-commercialization in some zones",
+    "Can feel repetitive for fast explorers",
+    "Humidity and weather variability"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "april",
+      "may",
+      "june",
+      "september"
+    ],
+
+    "avoid_if_seeking": {
+      "january": [
+        "dry weather",
+        "sunny beach days"
+      ],
+
+      "february": [
+        "low humidity conditions"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 1.1,
+    "spring": 1.4,
+    "summer": 1.3,
+    "autumn": 1.5
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "energy": -1
+      },
+
+      "description": "Winter is quieter, more introspective, and ideal for spiritual and wellness-focused stays.",
+
+      "ideal_for": [
+        "retreats",
+        "yoga travel",
+        "slow healing"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "nature_connection": 3,
+        "emotional_warmth": 2
+      },
+
+      "description": "Spring is lush, balanced, and one of the best times for nature, beaches, and wellness.",
+
+      "ideal_for": [
+        "nature immersion",
+        "wellness travel",
+        "slow exploration"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 2,
+        "social_openness": 1
+      },
+
+      "description": "Summer is warm and active with a balance of tourism and retreat life.",
+
+      "ideal_for": [
+        "long stays",
+        "digital nomads",
+        "beach + café lifestyle"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "freedom": 2,
+        "reflectiveness": 2
+      },
+
+      "description": "Autumn enhances Bali’s calm energy and makes it ideal for deep emotional reset.",
+
+      "ideal_for": [
+        "healing trips",
+        "spiritual retreats",
+        "long reflective stays"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 9,
+      "description": "Excellent for solo travelers seeking healing, reflection, and self-discovery."
+    },
+
+    "couple_trip": {
+      "score": 10,
+      "description": "One of the strongest romantic and spiritual couple destinations globally."
+    },
+
+    "friends_trip": {
+      "score": 8,
+      "description": "Good for mixed group travel combining relaxation, beaches, and light adventure."
+    },
+
+    "creative_escape": {
+      "score": 10,
+      "description": "Highly inspiring environment for creativity, writing, and emotional clarity."
+    },
+
+    "emotional_reset": {
+      "score": 10,
+      "description": "Top-tier destination for emotional healing and nervous system reset."
+    },
+
+    "digital_nomad_stay": {
+      "score": 10,
+      "description": "One of the world’s strongest hubs for long-term remote work and lifestyle balance."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 9,
+    "couples": 10,
+    "friends": 8,
+    "creative_groups": 10,
+    "digital_nomads": 10
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "spiritual seekers",
+      "creative travelers",
+      "slow lifestyle lovers",
+      "wellness-focused personalities",
+      "emotional reset seekers"
+    ],
+
+    "less_suited_for": [
+      "fast city explorers",
+      "nightlife-only travelers",
+      "high structure business travelers",
+      "urban culture seekers"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "slow",
+
+    "emotional_style": "spiritual and restorative",
+
+    "social_style": "soft and community-based",
+
+    "beauty_type": "natural tropical harmony",
+
+    "primary_energy": "healing and self-connection",
+
+    "travel_feeling": "Bali feels like remembering who you are."
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "bilbao_es",
+    "city": "Bilbao",
+    "country": "Spain",
+    "image": "bilbao.jpg"
+  },
+  {
+    "id": "verona_it",
+    "city": "Verona",
+    "country": "Italy",
+    "image": "verona.jpg"
+  },
+  {
+    "id": "margaret_river_au",
+    "city": "Margaret River",
+    "country": "Australia",
+    "image": "margaret_river.jpg"
+  },
+  {
+    "id": "dominican_republic_do",
+    "city": "Dominican Republic",
+    "country": "Dominican Republic",
+    "image": "dominican_republic.jpg"
+  },
+  {
+    "id": "bahia_solano_co",
+    "city": "Bahía Solano",
+    "country": "Colombia",
+    "image": "bahia_solano.jpg"
+  },
+  {
+    "id": "roatan_hn",
+    "city": "Roatán",
+    "country": "Honduras",
+    "image": "roatan.jpg"
+  },
+  {
+    "id": "central_highlands_new_guinea_pg",
+    "city": "Central Highlands (New Guinea)",
+    "country": "Papua New Guinea",
+    "image": "central_highlands_new_guinea.jpg"
+  }
+]

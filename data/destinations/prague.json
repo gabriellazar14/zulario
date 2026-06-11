@@ -1,0 +1,279 @@
+{
+  "id": "prague_cz",
+  "city": "Prague",
+  "country": "Czech Republic",
+
+  "destination_types": [
+    "city",
+    "cultural",
+    "historical",
+    "romantic"
+  ],
+
+  "experience_styles": [
+    "cinematic wandering",
+    "historical immersion",
+    "romantic exploration",
+    "slow discovery",
+    "night atmosphere travel"
+  ],
+
+  "core_identity": {
+    "essence": "A timeless European city where gothic beauty, history, mystery, and emotional atmosphere blend into a deeply cinematic experience.",
+
+    "city_feeling": "Prague feels dreamlike, nostalgic, and emotionally immersive, offering beauty and atmosphere at almost every corner.",
+
+    "emotional_tone": [
+      "romantic",
+      "mysterious",
+      "historic",
+      "cinematic",
+      "introspective",
+      "timeless"
+    ]
+  },
+
+  "tags": [
+    "gothic",
+    "romantic",
+    "historical",
+    "walkable",
+    "cinematic",
+    "architectural",
+    "moody",
+    "cultural"
+  ],
+
+  "archetypes": [
+    "romantic traveler",
+    "historical explorer",
+    "creative dreamer",
+    "slow wanderer",
+    "nighttime observer"
+  ],
+
+  "emotional_signature": {
+    "energy": 6,
+    "romanticism": 10,
+    "social_openness": 6,
+    "spontaneity": 6,
+    "emotional_warmth": 7,
+    "sensory_intensity": 8,
+    "mystery": 10,
+    "freedom": 7,
+    "reflectiveness": 9,
+    "cultural_depth": 9,
+    "nature_connection": 4,
+    "comfort_zone_expansion": 6
+  },
+
+  "contextual_attributes": {
+    "walkability": 10,
+    "nightlife": 7,
+    "public_transport": 8,
+    "digital_nomad_friendly": 7,
+    "nature_access": 4,
+    "luxury_feeling": 8
+  },
+
+  "sensory_profile": {
+    "soundscape": "Church bells, tram sounds, jazz bars, quiet cobblestone streets, and nighttime conversations echoing through old alleys.",
+
+    "visual_feeling": "Gothic towers, bridges, lantern-lit streets, historic façades, and layered medieval beauty.",
+
+    "pace": "moderate",
+
+    "dominant_mood": "Romantic, mysterious, and emotionally immersive."
+  },
+
+  "match_narratives": {
+    "high_match": "Prague may deeply resonate with you if you are drawn to places that feel emotionally atmospheric, visually cinematic, and rich with history. You likely enjoy wandering slowly, absorbing mood and beauty through architecture, nighttime walks, hidden cafés, and timeless streets. The city especially suits travelers seeking reflection, romance, creativity, or emotional immersion rather than constant stimulation.",
+
+    "medium_match": "You may connect strongly with Prague during periods where you seek emotional depth, beautiful surroundings, and slower travel experiences. The city works especially well for travelers who enjoy discovering atmosphere through walking, observation, and quiet moments rather than structured activity.",
+
+    "low_match_warning": "If you strongly prefer fast-paced environments, extreme spontaneity, tropical energy, or highly modern atmospheres, Prague may eventually feel too nostalgic, tourist-heavy, or emotionally dense.",
+
+    "emotional_hook": "A city that feels suspended between history, mystery, and memory.",
+
+    "ideal_for": [
+      "romantic escapes",
+      "slow city wandering",
+      "creative inspiration",
+      "historical discovery",
+      "cinematic travel experiences"
+    ]
+  },
+
+  "possible_downsides": [
+    "Tourist crowds can reduce authenticity in central areas",
+    "Can feel emotionally heavy during grey winter periods",
+    "Less energetic than highly dynamic global cities",
+    "Some travelers may find the atmosphere too nostalgic or melancholic",
+    "Nightlife exists but is less socially spontaneous than cities like Berlin or Barcelona"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+
+    "avoid_if_seeking": {
+      "summer": [
+        "quiet exploration",
+        "low tourist density"
+      ],
+
+      "winter": [
+        "warm weather",
+        "nature-focused experiences"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 1.3,
+    "spring": 1.0,
+    "summer": 1.2,
+    "autumn": 1.4
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "mystery": 3,
+        "reflectiveness": 2,
+        "romanticism": 2
+      },
+
+      "description": "Winter transforms Prague into one of Europe's most cinematic destinations, with foggy mornings, Christmas lights, quiet alleys, and deeply atmospheric nights.",
+
+      "ideal_for": [
+        "romantic trips",
+        "solo reflection",
+        "winter city breaks",
+        "creative inspiration"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "emotional_warmth": 1,
+        "walkability": 1,
+        "social_openness": 1
+      },
+
+      "description": "Spring softens Prague's gothic intensity and brings balance between beauty, atmosphere, and relaxed exploration.",
+
+      "ideal_for": [
+        "couple trips",
+        "slow exploration",
+        "cultural weekends"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 2,
+        "social_openness": 1,
+        "nightlife": 1
+      },
+
+      "description": "Summer makes Prague livelier and more social, with outdoor cafés, river activity, festivals, and long atmospheric evenings.",
+
+      "ideal_for": [
+        "friend groups",
+        "social travel",
+        "night exploration"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "mystery": 2,
+        "reflectiveness": 3
+      },
+
+      "description": "Autumn amplifies Prague's emotional depth, making the city feel introspective, cinematic, and intensely atmospheric.",
+
+      "ideal_for": [
+        "writers",
+        "creative travelers",
+        "reflective solo trips"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 9,
+      "description": "Excellent for travelers who enjoy wandering slowly, observing atmosphere, and emotionally connecting with places through reflection and beauty."
+    },
+
+    "couple_trip": {
+      "score": 10,
+      "description": "One of Europe's strongest destinations for romance, intimacy, and shared cinematic experiences."
+    },
+
+    "friends_trip": {
+      "score": 7,
+      "description": "Works well for social exploration and nightlife, though the city's greatest strength remains atmosphere and beauty."
+    },
+
+    "creative_escape": {
+      "score": 10,
+      "description": "Prague strongly stimulates imagination, reflection, photography, writing, and emotional creativity."
+    },
+
+    "emotional_reset": {
+      "score": 8,
+      "description": "The city's slower rhythm, beauty, and introspective atmosphere can help travelers mentally disconnect and emotionally recharge."
+    },
+
+    "digital_nomad_stay": {
+      "score": 7,
+      "description": "Prague offers strong café culture, walkability, and inspiration, though it feels more emotionally immersive than highly productivity-focused."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 9,
+    "couples": 10,
+    "friends": 7,
+    "creative_groups": 9,
+    "digital_nomads": 7
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "romantic personalities",
+      "creative thinkers",
+      "slow travelers",
+      "people drawn to atmosphere and beauty",
+      "travelers seeking emotional depth"
+    ],
+
+    "less_suited_for": [
+      "travelers needing constant excitement",
+      "high-energy nightlife seekers",
+      "people preferring ultra-modern destinations",
+      "travelers focused mainly on nature experiences"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "slow-moderate",
+
+    "emotional_style": "cinematic and reflective",
+
+    "social_style": "calm and atmospheric",
+
+    "beauty_type": "timeless and immersive",
+
+    "primary_energy": "historical emotion",
+
+    "travel_feeling": "Prague feels like walking through a living memory."
+  }
+}
+

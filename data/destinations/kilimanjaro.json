@@ -1,0 +1,274 @@
+{
+  "id": "kilimanjaro_tz",
+  "city": "Kilimanjaro",
+  "country": "Tanzania",
+
+  "destination_types": [
+    "mountain",
+    "adventure",
+    "nature",
+    "expedition",
+    "extreme travel"
+  ],
+
+  "experience_styles": [
+    "summit expedition",
+    "high-altitude adventure",
+    "physical challenge journey",
+    "nature immersion",
+    "life-changing ascent"
+  ],
+
+  "core_identity": {
+    "essence": "A monumental free-standing mountain rising from the African plains, representing one of the most symbolic journeys of physical and emotional ascent.",
+
+    "city_feeling": "Kilimanjaro feels raw, powerful, and transformational — a place where effort, nature, and personal limits collide.",
+
+    "emotional_tone": [
+      "raw",
+      "powerful",
+      "challenging",
+      "transformational",
+      "silent",
+      "majestic"
+    ]
+  },
+
+  "tags": [
+    "mountain",
+    "expedition",
+    "trekking",
+    "adventure",
+    "africa",
+    "summit",
+    "nature",
+    "challenge"
+  ],
+
+  "archetypes": [
+    "adventure seeker",
+    "summit chaser",
+    "endurance traveler",
+    "nature purist",
+    "transformation seeker"
+  ],
+
+  "emotional_signature": {
+    "energy": 9,
+    "romanticism": 6,
+    "social_openness": 5,
+    "spontaneity": 7,
+    "emotional_warmth": 6,
+    "sensory_intensity": 9,
+    "mystery": 10,
+    "freedom": 10,
+    "reflectiveness": 10,
+    "cultural_depth": 7,
+    "nature_connection": 10,
+    "comfort_zone_expansion": 10
+  },
+
+  "contextual_attributes": {
+    "walkability": 2,
+    "nightlife": 2,
+    "public_transport": 3,
+    "digital_nomad_friendly": 4,
+    "nature_access": 10,
+    "luxury_feeling": 3
+  },
+
+  "sensory_profile": {
+    "soundscape": "Wind across volcanic slopes, silence at high altitude, distant wildlife, and heavy breathing during ascent.",
+
+    "visual_feeling": "Snow-capped summit, volcanic rock, savannah below, dramatic clouds, and extreme altitude landscapes.",
+
+    "pace": "slow and physically demanding",
+
+    "dominant_mood": "Extreme challenge, silence, and transformation."
+  },
+
+  "match_narratives": {
+    "high_match": "Kilimanjaro may strongly resonate with you if you are seeking a transformational challenge that pushes physical and mental limits. You likely value experiences that change perspective through effort, endurance, and immersion in raw nature.",
+
+    "medium_match": "You may connect with Kilimanjaro if you are in a phase of personal growth or seeking a symbolic journey of achievement and reset through nature.",
+
+    "low_match_warning": "If you prefer comfort, relaxation, nightlife, or cultural exploration, Kilimanjaro may feel too demanding, isolated, and physically intense.",
+
+    "emotional_hook": "A journey where every step changes you.",
+
+    "ideal_for": [
+      "expedition travel",
+      "adventure challenges",
+      "personal transformation journeys",
+      "nature immersion",
+      "bucket-list experiences"
+    ]
+  },
+
+  "possible_downsides": [
+    "Very physically demanding",
+    "Requires preparation and fitness",
+    "Altitude sickness risk",
+    "Expensive guided expedition",
+    "No comfort or leisure focus"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "january",
+      "february",
+      "july",
+      "august",
+      "september",
+      "october"
+    ],
+
+    "avoid_if_seeking": {
+      "april": [
+        "dry trekking conditions"
+      ],
+
+      "november": [
+        "stable summit weather"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 1.2,
+    "spring": 1.0,
+    "summer": 1.3,
+    "autumn": 1.4
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "reflectiveness": 3,
+        "energy": 2
+      },
+
+      "description": "Winter brings clearer skies and strong trekking conditions for summit attempts.",
+
+      "ideal_for": [
+        "summit expeditions",
+        "high-altitude trekking"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "nature_connection": 2,
+        "challenge": 2
+      },
+
+      "description": "Spring offers stable conditions with balanced weather for ascent preparation.",
+
+      "ideal_for": [
+        "trekking",
+        "expeditions",
+        "training climbs"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 2,
+        "freedom": 2
+      },
+
+      "description": "Summer is one of the best climbing windows with strong visibility and stable routes.",
+
+      "ideal_for": [
+        "summit attempts",
+        "adventure travel"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 3,
+        "mystery": 2
+      },
+
+      "description": "Autumn is quiet, reflective, and ideal for focused summit journeys.",
+
+      "ideal_for": [
+        "serious trekkers",
+        "transformational travel"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 9,
+      "description": "Extremely powerful solo transformation experience for experienced trekkers."
+    },
+
+    "couple_trip": {
+      "score": 8,
+      "description": "Deep bonding experience for couples seeking challenge and meaning."
+    },
+
+    "friends_trip": {
+      "score": 10,
+      "description": "Perfect group expedition experience with shared challenge and achievement."
+    },
+
+    "creative_escape": {
+      "score": 9,
+      "description": "High-altitude clarity strongly enhances reflection and creativity."
+    },
+
+    "emotional_reset": {
+      "score": 10,
+      "description": "One of the most transformative emotional reset journeys in the world."
+    },
+
+    "digital_nomad_stay": {
+      "score": 3,
+      "description": "Not suitable for remote work or long-term stays."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 9,
+    "couples": 8,
+    "friends": 10,
+    "creative_groups": 9,
+    "digital_nomads": 3
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "adventure seekers",
+      "challenge-driven personalities",
+      "transformation seekers",
+      "endurance travelers",
+      "nature purists"
+    ],
+
+    "less_suited_for": [
+      "comfort travelers",
+      "luxury seekers",
+      "nightlife travelers",
+      "casual tourists",
+      "low-effort vacation seekers"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "very slow but intense",
+
+    "emotional_style": "transformational and raw",
+
+    "social_style": "minimal and expedition-based",
+
+    "beauty_type": "extreme natural scale",
+
+    "primary_energy": "challenge and transformation",
+
+    "travel_feeling": "Kilimanjaro feels like climbing into a new version of yourself."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "crete_gr",
+  "city": "Crete",
+  "country": "Greece",
+
+  "destination_types": [
+    "island",
+    "beach",
+    "nature",
+    "culture",
+    "mediterranean"
+  ],
+
+  "experience_styles": [
+    "beach exploration",
+    "village discovery",
+    "mountain-sea road trips",
+    "traditional food experiences",
+    "slow island travel"
+  ],
+
+  "core_identity": {
+    "essence": "A large Greek island where beaches, mountains, villages, and ancient history blend into a deeply authentic Mediterranean experience.",
+
+    "city_feeling": "Crete feels warm, grounded, welcoming, and naturally balanced.",
+
+    "emotional_tone": [
+      "authentic",
+      "warm",
+      "sunny",
+      "earthy",
+      "welcoming",
+      "balanced"
+    ]
+  },
+
+  "tags": [
+    "greece",
+    "island",
+    "beaches",
+    "villages",
+    "mediterranean",
+    "food",
+    "nature",
+    "summer"
+  ],
+
+  "archetypes": [
+    "slow traveler",
+    "mediterranean explorer",
+    "nature lover",
+    "authenticity seeker",
+    "sun traveler"
+  ],
+
+  "emotional_signature": {
+    "energy": 7,
+    "romanticism": 8,
+    "social_openness": 8,
+    "spontaneity": 6,
+    "emotional_warmth": 9,
+    "sensory_intensity": 7,
+    "mystery": 5,
+    "freedom": 8,
+    "reflectiveness": 7,
+    "cultural_depth": 8,
+    "nature_connection": 9,
+    "comfort_zone_expansion": 5
+  },
+
+  "contextual_attributes": {
+    "walkability": 6,
+    "nightlife": 6,
+    "public_transport": 5,
+    "digital_nomad_friendly": 7,
+    "nature_access": 9,
+    "luxury_feeling": 7
+  },
+
+  "sensory_profile": {
+    "soundscape": "Sea breeze, cicadas, tavern conversations, mountain wind, and harbor life.",
+
+    "visual_feeling": "Blue sea, olive trees, white villages, dramatic mountains, and warm sunset colors.",
+
+    "pace": "moderate-slow",
+
+    "dominant_mood": "Authentic Mediterranean calm and warmth."
+  },
+
+  "destination_dna": {
+    "pace": "moderate-slow",
+
+    "emotional_style": "warm and grounding",
+
+    "social_style": "welcoming and relaxed",
+
+    "beauty_type": "mountain and sea harmony",
+
+    "primary_energy": "authentic Mediterranean life",
+
+    "travel_feeling": "Crete feels like warmth becoming a landscape."
+  }
+}

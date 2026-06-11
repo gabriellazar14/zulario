@@ -1,0 +1,157 @@
+{
+  "id": "algarve_pt",
+  "city": "Algarve",
+  "country": "Portugal",
+
+  "destination_types": [
+    "coast",
+    "beach",
+    "nature",
+    "relaxation",
+    "sun destination"
+  ],
+
+  "experience_styles": [
+    "cliff coastline exploration",
+    "beach relaxation",
+    "slow coastal living",
+    "sunset travel",
+    "nature ocean balance"
+  ],
+
+  "core_identity": {
+    "essence": "A sun-drenched Atlantic coastline shaped by golden cliffs, hidden beaches, and a calm, spacious rhythm of life.",
+    "city_feeling": "Algarve feels open, bright, and naturally calming — a place where the ocean defines time and cliffs shape perspective.",
+    "emotional_tone": [
+      "sunny",
+      "open",
+      "peaceful",
+      "natural",
+      "light",
+      "free"
+    ]
+  },
+
+  "tags": [
+    "beach",
+    "cliffs",
+    "nature",
+    "sun",
+    "relaxation",
+    "coast",
+    "slow travel",
+    "ocean"
+  ],
+
+  "archetypes": [
+    "sun seeker",
+    "slow traveler",
+    "nature explorer",
+    "coastal wanderer",
+    "freedom seeker"
+  ],
+
+  "emotional_signature": {
+    "energy": 6,
+    "romanticism": 8,
+    "social_openness": 7,
+    "spontaneity": 7,
+    "emotional_warmth": 9,
+    "sensory_intensity": 8,
+    "mystery": 6,
+    "freedom": 10,
+    "reflectiveness": 8,
+    "cultural_depth": 6,
+    "nature_connection": 10,
+    "comfort_zone_expansion": 7
+  },
+
+  "contextual_attributes": {
+    "walkability": 7,
+    "nightlife": 6,
+    "public_transport": 6,
+    "digital_nomad_friendly": 9,
+    "nature_access": 10,
+    "luxury_feeling": 8
+  },
+
+  "sensory_profile": {
+    "soundscape": "Ocean waves crashing against cliffs, wind over beaches, seagulls, and quiet coastal towns.",
+    "visual_feeling": "Golden cliffs, turquoise Atlantic waters, caves, sandy beaches, whitewashed towns, and endless horizon lines.",
+    "pace": "slow",
+    "dominant_mood": "Bright, spacious, and emotionally freeing."
+  },
+
+  "match_narratives": {
+    "high_match": "Algarve may strongly resonate with you if you are drawn to sun, ocean views, and open natural landscapes...",
+    "medium_match": "You may connect with Algarve during phases where you seek balance between relaxation and gentle exploration...",
+    "low_match_warning": "If you strongly prefer dense cultural cities, nightlife intensity, or fast-paced urban environments...",
+    "emotional_hook": "A coastline that clears your mind with every wave.",
+    "ideal_for": [
+      "beach holidays",
+      "road trips",
+      "romantic escapes",
+      "slow travel",
+      "emotional reset trips"
+    ]
+  },
+
+  "possible_downsides": [
+    "Requires a car for full exploration",
+    "Can feel quiet in off-season",
+    "Limited urban culture compared to cities",
+    "Tourist density in peak summer",
+    "Spread-out geography"
+  ],
+
+  "seasonality": {
+    "best_seasons": ["april", "may", "september", "october"],
+    "avoid_if_seeking": {
+      "january": [
+        "warm beach weather",
+        "long sunny days"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 0.9,
+    "spring": 1.4,
+    "summer": 1.5,
+    "autumn": 1.3
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": { "reflectiveness": 3, "energy": -1 },
+      "description": "Winter is mild and quiet, offering reflective coastal walks and empty beaches.",
+      "ideal_for": ["slow travel", "digital detox", "peaceful retreat"]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": { "score": 8, "description": "Great for solo travelers seeking calm, nature, and reflection." }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 8,
+    "couples": 10,
+    "friends": 8,
+    "creative_groups": 8,
+    "digital_nomads": 9
+  },
+
+  "personality_alignment": {
+    "best_for": ["sun seekers", "slow travelers", "romantic personalities", "nature lovers", "freedom-driven travelers"],
+    "less_suited_for": ["urban nightlife seekers", "fast city explorers", "culture-heavy travelers", "high stimulation personalities"]
+  },
+
+  "destination_dna": {
+    "pace": "slow",
+    "emotional_style": "bright and calming",
+    "social_style": "relaxed coastal",
+    "beauty_type": "cliffs and ocean horizon",
+    "primary_energy": "freedom and lightness",
+    "travel_feeling": "Algarve feels like breathing cleaner air."
+  }
+}

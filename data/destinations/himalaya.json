@@ -1,0 +1,103 @@
+{
+  "id": "himalayas_np",
+  "city": "Himalayas",
+  "country": "Nepal",
+
+  "destination_types": [
+    "mountains",
+    "spiritual",
+    "nature",
+    "trekking",
+    "adventure"
+  ],
+
+  "experience_styles": [
+    "high-altitude trekking",
+    "spiritual retreats",
+    "mountain expeditions",
+    "village immersion",
+    "meditation journeys"
+  ],
+
+  "core_identity": {
+    "essence": "The highest mountain range on Earth where spirituality, scale, silence, and endurance merge into transformative experiences.",
+
+    "city_feeling": "The Himalayas feel spiritually vast, humbling, and deeply reflective.",
+
+    "emotional_tone": [
+      "spiritual",
+      "vast",
+      "humbling",
+      "reflective",
+      "sacred",
+      "transformative"
+    ]
+  },
+
+  "tags": [
+    "mountains",
+    "trekking",
+    "spirituality",
+    "nepal",
+    "meditation",
+    "nature",
+    "villages",
+    "reflection"
+  ],
+
+  "archetypes": [
+    "spiritual traveler",
+    "trekking adventurer",
+    "reflection seeker",
+    "minimalist explorer",
+    "transformational traveler"
+  ],
+
+  "emotional_signature": {
+    "energy": 7,
+    "romanticism": 6,
+    "social_openness": 4,
+    "spontaneity": 6,
+    "emotional_warmth": 6,
+    "sensory_intensity": 10,
+    "mystery": 10,
+    "freedom": 9,
+    "reflectiveness": 10,
+    "cultural_depth": 9,
+    "nature_connection": 10,
+    "comfort_zone_expansion": 10
+  },
+
+  "contextual_attributes": {
+    "walkability": 3,
+    "nightlife": 1,
+    "public_transport": 2,
+    "digital_nomad_friendly": 3,
+    "nature_access": 10,
+    "luxury_feeling": 3
+  },
+
+  "sensory_profile": {
+    "soundscape": "Prayer flags in the wind, monastery bells, rivers, silence, and mountain wind.",
+
+    "visual_feeling": "Massive snow peaks, remote villages, clouds, monasteries, and endless valleys.",
+
+    "pace": "slow",
+
+    "dominant_mood": "Reflection, humility, and spiritual depth."
+  },
+
+  "destination_dna": {
+    "pace": "slow",
+
+    "emotional_style": "spiritual and transformative",
+
+    "social_style": "minimal and introspective",
+
+    "beauty_type": "sacred mountain scale",
+
+    "primary_energy": "reflection and transcendence",
+
+    "travel_feeling": "The Himalayas feel larger than human life itself."
+  }
+}

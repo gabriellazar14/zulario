@@ -1,0 +1,89 @@
+{
+  "id": "patagonia",
+  "city": "Patagonia",
+  "country": "Argentina/Chile",
+
+  "tags": ["wild", "remote", "nature"],
+
+  "destination_types": [
+    "nature",
+    "mountains",
+    "adventure",
+    "wilderness",
+    "road trip"
+  ],
+
+  "experience_styles": [
+    "remote hiking",
+    "glacier exploration",
+    "road trip adventures",
+    "extreme nature immersion",
+    "wild camping"
+  ],
+
+  "core_identity": {
+    "essence": "A vast untamed region at the edge of South America where mountains, glaciers, lakes, and isolation create one of the wildest landscapes on Earth.",
+
+    "city_feeling": "Patagonia feels liberating, humbling, and emotionally expansive.",
+
+    "emotional_tone": [
+      "wild",
+      "freeing",
+      "remote",
+      "vast",
+      "powerful",
+      "untamed"
+    ]
+  },
+
+  "archetypes": [
+    "adventure traveler",
+    "nature explorer",
+    "freedom seeker",
+    "solo adventurer",
+    "wild landscape lover"
+  ],
+
+  "emotional_signature": {
+    "energy": 8,
+    "romanticism": 7,
+    "social_openness": 3,
+    "spontaneity": 8,
+    "emotional_warmth": 5,
+    "sensory_intensity": 10,
+    "mystery": 9,
+    "freedom": 10,
+    "reflectiveness": 10,
+    "cultural_depth": 6,
+    "nature_connection": 10,
+    "comfort_zone_expansion": 10
+  },
+
+  "contextual_attributes": {
+    "walkability": 4,
+    "nightlife": 1,
+    "public_transport": 3,
+    "digital_nomad_friendly": 3,
+    "nature_access": 10,
+    "luxury_feeling": 4
+  },
+
+  "sensory_profile": {
+    "soundscape": "Strong winds, glacier cracks, silence, rivers, and distant wildlife.",
+
+    "visual_feeling": "Massive mountains, turquoise lakes, glaciers, endless valleys, and dramatic skies.",
+
+    "pace": "slow",
+
+    "dominant_mood": "Freedom, insignificance, and emotional vastness."
+  },
+
+  "destination_dna": {
+    "pace": "slow",
+    "emotional_style": "wild and liberating",
+    "social_style": "isolated and independent",
+    "beauty_type": "untamed wilderness",
+    "primary_energy": "freedom and raw nature",
+    "travel_feeling": "Patagonia feels like the edge of the world."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "banff_ca",
+  "city": "Banff National Park",
+  "country": "Canada",
+
+  "destination_types": [
+    "mountains",
+    "nature",
+    "lakes",
+    "adventure",
+    "national park"
+  ],
+
+  "experience_styles": [
+    "mountain hiking",
+    "lake exploration",
+    "wildlife discovery",
+    "road trips",
+    "winter sports"
+  ],
+
+  "core_identity": {
+    "essence": "A pristine Canadian mountain park where turquoise lakes, forests, and alpine peaks create overwhelming natural harmony.",
+
+    "city_feeling": "Banff feels fresh, peaceful, cinematic, and deeply restorative.",
+
+    "emotional_tone": [
+      "fresh",
+      "peaceful",
+      "majestic",
+      "pure",
+      "cinematic",
+      "balanced"
+    ]
+  },
+
+  "tags": [
+    "canada",
+    "mountains",
+    "lakes",
+    "nature",
+    "wildlife",
+    "hiking",
+    "road trips",
+    "forests"
+  ],
+
+  "archetypes": [
+    "nature lover",
+    "mountain explorer",
+    "photography traveler",
+    "peace seeker",
+    "outdoor adventurer"
+  ],
+
+  "emotional_signature": {
+    "energy": 7,
+    "romanticism": 8,
+    "social_openness": 5,
+    "spontaneity": 6,
+    "emotional_warmth": 7,
+    "sensory_intensity": 9,
+    "mystery": 7,
+    "freedom": 9,
+    "reflectiveness": 9,
+    "cultural_depth": 5,
+    "nature_connection": 10,
+    "comfort_zone_expansion": 7
+  },
+
+  "contextual_attributes": {
+    "walkability": 5,
+    "nightlife": 3,
+    "public_transport": 4,
+    "digital_nomad_friendly": 5,
+    "nature_access": 10,
+    "luxury_feeling": 7
+  },
+
+  "sensory_profile": {
+    "soundscape": "Forest wind, lake water, wildlife sounds, silence, and mountain air.",
+
+    "visual_feeling": "Turquoise lakes, pine forests, snow peaks, wildlife, and dramatic alpine views.",
+
+    "pace": "slow",
+
+    "dominant_mood": "Freshness, wonder, and emotional clarity."
+  },
+
+  "destination_dna": {
+    "pace": "slow",
+
+    "emotional_style": "fresh and grounding",
+
+    "social_style": "quiet and nature-oriented",
+
+    "beauty_type": "lake-and-mountain harmony",
+
+    "primary_energy": "natural balance",
+
+    "travel_feeling": "Banff feels like breathing deeper for the first time."
+  }
+}

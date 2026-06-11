@@ -1,0 +1,273 @@
+{
+  "id": "mallorca_es",
+  "city": "Mallorca",
+  "country": "Spain",
+
+  "destination_types": [
+    "island",
+    "beach",
+    "nature",
+    "relaxation",
+    "lifestyle"
+  ],
+
+  "experience_styles": [
+    "beach relaxation",
+    "coastal exploration",
+    "slow living",
+    "sunset wandering",
+    "nature-meets-sea experience"
+  ],
+
+  "core_identity": {
+    "essence": "A Mediterranean island where turquoise waters, mountains, and slow coastal life blend into a relaxed emotional rhythm.",
+
+    "city_feeling": "Mallorca feels warm, open, and naturally calming — a place where time slows down and life is shaped by sun, sea, and simplicity.",
+
+    "emotional_tone": [
+      "relaxed",
+      "sunny",
+      "natural",
+      "peaceful",
+      "freedom-driven",
+      "organic"
+    ]
+  },
+
+  "tags": [
+    "beach",
+    "island",
+    "nature",
+    "relaxation",
+    "sun",
+    "sea",
+    "mountains",
+    "slow travel"
+  ],
+
+  "archetypes": [
+    "sun seeker",
+    "slow traveler",
+    "nature lover",
+    "romantic wanderer",
+    "freedom explorer"
+  ],
+
+  "emotional_signature": {
+    "energy": 6,
+    "romanticism": 8,
+    "social_openness": 7,
+    "spontaneity": 7,
+    "emotional_warmth": 9,
+    "sensory_intensity": 8,
+    "mystery": 6,
+    "freedom": 9,
+    "reflectiveness": 7,
+    "cultural_depth": 6,
+    "nature_connection": 10,
+    "comfort_zone_expansion": 6
+  },
+
+  "contextual_attributes": {
+    "walkability": 7,
+    "nightlife": 7,
+    "public_transport": 6,
+    "digital_nomad_friendly": 8,
+    "nature_access": 10,
+    "luxury_feeling": 8
+  },
+
+  "sensory_profile": {
+    "soundscape": "Ocean waves, wind through palm trees, distant beach music, cicadas in summer heat, and quiet village life.",
+
+    "visual_feeling": "Turquoise water, rocky cliffs, sandy beaches, olive trees, Mediterranean villages, and golden sunsets.",
+
+    "pace": "slow",
+
+    "dominant_mood": "Relaxed, sun-drenched, and emotionally freeing."
+  },
+
+  "match_narratives": {
+    "high_match": "Mallorca may strongly resonate with you if you are drawn to natural beauty, sun, sea, and a slower emotional rhythm. You likely enjoy places where life feels simple, warm, and connected to nature. The island rewards relaxation, emotional decompression, and freedom from urban intensity.",
+
+    "medium_match": "You may connect with Mallorca during phases where you seek rest, emotional balance, or a break from fast-paced city life. It works especially well for travelers who enjoy combining beach time, nature exploration, and slow living.",
+
+    "low_match_warning": "If you strongly prefer fast-paced cities, cultural intensity, nightlife-driven travel, or constant stimulation, Mallorca may feel too quiet, repetitive, or low in urban energy.",
+
+    "emotional_hook": "A place where your nervous system finally slows down.",
+
+    "ideal_for": [
+      "beach holidays",
+      "romantic escapes",
+      "nature retreats",
+      "slow travel",
+      "digital detox trips"
+    ]
+  },
+
+  "possible_downsides": [
+    "Can feel too quiet outside tourist zones",
+    "Public transport is limited compared to cities",
+    "Seasonal overcrowding in summer",
+    "Less cultural depth than major European cities",
+    "Car may be needed for full exploration"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "spring",
+      "autumn",
+      "summer"
+    ],
+
+    "avoid_if_seeking": {
+      "winter": [
+        "warm sea temperatures",
+        "full beach atmosphere"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 0.7,
+    "spring": 1.2,
+    "summer": 1.5,
+    "autumn": 1.3
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "reflectiveness": 3,
+        "energy": -2,
+        "social_openness": -1
+      },
+
+      "description": "Winter is quiet and peaceful, offering a more local and introspective version of the island.",
+
+      "ideal_for": [
+        "slow reflection",
+        "digital detox",
+        "quiet retreats"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "energy": 2,
+        "nature_connection": 2,
+        "freedom": 1
+      },
+
+      "description": "Spring is one of the most balanced times, with blooming landscapes, mild weather, and calm beaches.",
+
+      "ideal_for": [
+        "nature exploration",
+        "slow travel",
+        "romantic trips"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 3,
+        "social_openness": 2,
+        "nightlife": 2
+      },
+
+      "description": "Summer is vibrant and lively, with beach clubs, tourism, and strong social energy.",
+
+      "ideal_for": [
+        "party beach trips",
+        "friends holidays",
+        "festival-style travel"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "freedom": 2
+      },
+
+      "description": "Autumn softens the island into a warm, peaceful, and less crowded version of itself.",
+
+      "ideal_for": [
+        "romantic escapes",
+        "slow travel",
+        "emotional recovery trips"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 8,
+      "description": "Great for solo travelers seeking peace, reflection, and nature connection."
+    },
+
+    "couple_trip": {
+      "score": 10,
+      "description": "One of the strongest romantic destinations in Europe with sun, sea, and emotional calm."
+    },
+
+    "friends_trip": {
+      "score": 9,
+      "description": "Excellent for group beach holidays, nightlife, and shared relaxation experiences."
+    },
+
+    "creative_escape": {
+      "score": 8,
+      "description": "Nature, light, and slow rhythm support creativity and mental reset."
+    },
+
+    "emotional_reset": {
+      "score": 10,
+      "description": "One of the best destinations for emotional recovery, relaxation, and nervous system reset."
+    },
+
+    "digital_nomad_stay": {
+      "score": 8,
+      "description": "Strong lifestyle balance with nature, cafés, and remote-work friendly environment."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 8,
+    "couples": 10,
+    "friends": 9,
+    "creative_groups": 8,
+    "digital_nomads": 8
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "sun seekers",
+      "nature lovers",
+      "slow travelers",
+      "romantic personalities",
+      "emotional reset seekers"
+    ],
+
+    "less_suited_for": [
+      "fast city explorers",
+      "nightlife-only travelers",
+      "high stimulation seekers",
+      "urban culture focused travelers"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "slow",
+
+    "emotional_style": "natural and calming",
+
+    "social_style": "relaxed and seasonal",
+
+    "beauty_type": "coastal and organic",
+
+    "primary_energy": "sun and emotional reset",
+
+    "travel_feeling": "Mallorca feels like exhaling for the first time in weeks."
+  }
+}

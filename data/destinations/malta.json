@@ -1,0 +1,103 @@
+{
+  "id": "malta_mt",
+  "city": "Malta",
+  "country": "Malta",
+
+  "destination_types": [
+    "island",
+    "beach",
+    "history",
+    "mediterranean",
+    "summer destination"
+  ],
+
+  "experience_styles": [
+    "coastal relaxation",
+    "historic exploration",
+    "summer nightlife",
+    "island road trips",
+    "boat excursions"
+  ],
+
+  "core_identity": {
+    "essence": "A Mediterranean island blending turquoise waters, historic stone cities, and relaxed southern European energy.",
+
+    "city_feeling": "Malta feels sunny, social, warm, and easygoing with a balance of history and beach life.",
+
+    "emotional_tone": [
+      "warm",
+      "social",
+      "sunny",
+      "historic",
+      "easygoing",
+      "vibrant"
+    ]
+  },
+
+  "tags": [
+    "mediterranean",
+    "beaches",
+    "historic cities",
+    "summer",
+    "nightlife",
+    "boats",
+    "sun",
+    "island"
+  ],
+
+  "archetypes": [
+    "summer traveler",
+    "social explorer",
+    "history lover",
+    "island wanderer",
+    "sun seeker"
+  ],
+
+  "emotional_signature": {
+    "energy": 7,
+    "romanticism": 7,
+    "social_openness": 8,
+    "spontaneity": 7,
+    "emotional_warmth": 8,
+    "sensory_intensity": 7,
+    "mystery": 5,
+    "freedom": 8,
+    "reflectiveness": 5,
+    "cultural_depth": 7,
+    "nature_connection": 7,
+    "comfort_zone_expansion": 5
+  },
+
+  "contextual_attributes": {
+    "walkability": 7,
+    "nightlife": 8,
+    "public_transport": 7,
+    "digital_nomad_friendly": 8,
+    "nature_access": 7,
+    "luxury_feeling": 7
+  },
+
+  "sensory_profile": {
+    "soundscape": "Sea waves, beach clubs, harbor movement, summer conversations, and church bells.",
+
+    "visual_feeling": "Golden stone architecture, turquoise water, boats, coastal cliffs, and sunlit streets.",
+
+    "pace": "moderate",
+
+    "dominant_mood": "Summer freedom and Mediterranean warmth."
+  },
+
+  "destination_dna": {
+    "pace": "moderate",
+
+    "emotional_style": "warm and social",
+
+    "social_style": "open and lively",
+
+    "beauty_type": "historic coastal charm",
+
+    "primary_energy": "sun and social freedom",
+
+    "travel_feeling": "Malta feels like summer becoming a lifestyle."
+  }
+}

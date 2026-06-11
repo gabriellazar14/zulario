@@ -1,0 +1,275 @@
+{
+  "id": "phuket_th",
+  "city": "Phuket",
+  "country": "Thailand",
+
+  "destination_types": [
+    "island",
+    "beach",
+    "nightlife",
+    "tourism",
+    "tropical"
+  ],
+
+  "experience_styles": [
+    "beach party mix",
+    "tropical relaxation",
+    "nightlife exploration",
+    "island hopping",
+    "touristic energy immersion"
+  ],
+
+  "core_identity": {
+    "essence": "A vibrant tropical island where beach life, nightlife, tourism, and cultural contrast blend into a high-energy emotional experience.",
+
+    "city_feeling": "Phuket feels dynamic, sensory, and dual-natured — calm beaches by day, intense social energy by night.",
+
+    "emotional_tone": [
+      "energetic",
+      "sensory",
+      "social",
+      "touristic",
+      "contrast-driven",
+      "lively"
+    ]
+  },
+
+  "tags": [
+    "beach",
+    "island",
+    "nightlife",
+    "tourism",
+    "tropical",
+    "party",
+    "adventure",
+    "social"
+  ],
+
+  "archetypes": [
+    "party traveler",
+    "beach explorer",
+    "social adventurer",
+    "freedom seeker",
+    "contrast lover"
+  ],
+
+  "emotional_signature": {
+    "energy": 9,
+    "romanticism": 7,
+    "social_openness": 9,
+    "spontaneity": 9,
+    "emotional_warmth": 8,
+    "sensory_intensity": 10,
+    "mystery": 6,
+    "freedom": 9,
+    "reflectiveness": 5,
+    "cultural_depth": 6,
+    "nature_connection": 8,
+    "comfort_zone_expansion": 9
+  },
+
+  "contextual_attributes": {
+    "walkability": 6,
+    "nightlife": 10,
+    "public_transport": 5,
+    "digital_nomad_friendly": 8,
+    "nature_access": 9,
+    "luxury_feeling": 7
+  },
+
+  "sensory_profile": {
+    "soundscape": "Beach clubs, waves, motorbikes, night music, street markets, and tropical nightlife energy.",
+
+    "visual_feeling": "Turquoise beaches, neon nightlife areas, limestone cliffs, crowded markets, and tropical sunsets.",
+
+    "pace": "fast",
+
+    "dominant_mood": "High-energy tropical contrast between calm and chaos."
+  },
+
+  "match_narratives": {
+    "high_match": "Phuket may strongly resonate with you if you enjoy high-energy travel with both relaxation and nightlife. You likely like destinations where each day can feel different — calm beaches, island trips, parties, and social exploration. This is a place of contrast and intensity.",
+
+    "medium_match": "You may enjoy Phuket if you are seeking a mix of beach relaxation and social nightlife, especially during fun-focused trips with friends or partner travel.",
+
+    "low_match_warning": "If you strongly prefer quiet nature, cultural depth, or calm emotional environments, Phuket may feel too crowded, commercial, or overstimulating.",
+
+    "emotional_hook": "A place where the day slows down and the night wakes everything up.",
+
+    "ideal_for": [
+      "beach holidays",
+      "party trips",
+      "friends travel",
+      "island hopping",
+      "social adventure travel"
+    ]
+  },
+
+  "possible_downsides": [
+    "Can be very crowded in peak season",
+    "Highly touristic in main areas",
+    "Noise and nightlife may be overwhelming",
+    "Less authentic local immersion in tourist zones",
+    "Traffic and transport delays"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "november",
+      "december",
+      "january",
+      "february"
+    ],
+
+    "avoid_if_seeking": {
+      "may": [
+        "dry weather",
+        "low humidity"
+      ],
+
+      "october": [
+        "stable beach conditions"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 1.4,
+    "spring": 1.2,
+    "summer": 1.6,
+    "autumn": 1.3
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "energy": 2,
+        "social_openness": 2
+      },
+
+      "description": "Peak season brings perfect beach weather, social energy, and full nightlife intensity.",
+
+      "ideal_for": [
+        "party travel",
+        "beach holidays",
+        "friends trips"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "energy": 1,
+        "nature_connection": 1
+      },
+
+      "description": "Spring is warm and active, slightly less crowded but still very lively.",
+
+      "ideal_for": [
+        "balanced beach trips",
+        "island exploration",
+        "social travel"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 3,
+        "spontaneity": 2
+      },
+
+      "description": "Summer is hot, humid, and very energetic with strong tourism flow.",
+
+      "ideal_for": [
+        "adventure travel",
+        "party trips",
+        "social exploration"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 1,
+        "freedom": 1
+      },
+
+      "description": "Autumn transitions from rainy to calmer conditions with fewer crowds.",
+
+      "ideal_for": [
+        "off-season travel",
+        "budget trips",
+        "quieter beach stays"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 7,
+      "description": "Good for independent exploration but can feel overwhelming in nightlife zones."
+    },
+
+    "couple_trip": {
+      "score": 9,
+      "description": "Strong mix of romance, beaches, and nightlife experiences."
+    },
+
+    "friends_trip": {
+      "score": 10,
+      "description": "One of the best destinations for group beach parties and social travel."
+    },
+
+    "creative_escape": {
+      "score": 8,
+      "description": "High sensory stimulation can inspire creativity but may reduce calm focus."
+    },
+
+    "emotional_reset": {
+      "score": 7,
+      "description": "Good for fun reset, but not ideal for deep silence or introspection."
+    },
+
+    "digital_nomad_stay": {
+      "score": 8,
+      "description": "Popular with remote workers due to lifestyle balance and affordability."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 7,
+    "couples": 9,
+    "friends": 10,
+    "creative_groups": 8,
+    "digital_nomads": 8
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "social travelers",
+      "party seekers",
+      "beach lovers",
+      "adventure seekers",
+      "high-energy personalities"
+    ],
+
+    "less_suited_for": [
+      "quiet retreat seekers",
+      "culture-heavy travelers",
+      "slow travel personalities",
+      "low-stimulation seekers"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "fast",
+
+    "emotional_style": "high contrast",
+
+    "social_style": "very active and touristic",
+
+    "beauty_type": "tropical energetic",
+
+    "primary_energy": "contrast between relaxation and nightlife",
+
+    "travel_feeling": "Phuket feels like two worlds in one day."
+  }
+}

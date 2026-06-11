@@ -1,0 +1,275 @@
+{
+  "id": "berlin_de",
+  "city": "Berlin",
+  "country": "Germany"
+
+  "destination_types": [
+    "city",
+    "urban",
+    "creative",
+    "alternative",
+    "historical"
+  ],
+
+  "experience_styles": [
+    "urban exploration",
+    "creative freedom",
+    "nightlife discovery",
+    "cultural immersion",
+    "raw city experience"
+  ],
+
+  "core_identity": {
+    "essence": "A raw, expressive metropolis where history, creativity, freedom, and counterculture constantly reshape the city’s identity.",
+
+    "city_feeling": "Berlin feels free, experimental, and emotionally unfiltered — a place where you can reinvent yourself without asking permission.",
+
+    "emotional_tone": [
+      "free",
+      "raw",
+      "experimental",
+      "diverse",
+      "intense",
+      "unfiltered"
+    ]
+  },
+
+  "tags": [
+    "alternative",
+    "creative",
+    "nightlife",
+    "historic",
+    "urban",
+    "diverse",
+    "freedom",
+    "experimental"
+  ],
+
+  "archetypes": [
+    "creative rebel",
+    "urban explorer",
+    "night wanderer",
+    "freedom seeker",
+    "culture hacker"
+  ],
+
+  "emotional_signature": {
+    "energy": 9,
+    "romanticism": 6,
+    "social_openness": 9,
+    "spontaneity": 9,
+    "emotional_warmth": 5,
+    "sensory_intensity": 9,
+    "mystery": 8,
+    "freedom": 10,
+    "reflectiveness": 7,
+    "cultural_depth": 9,
+    "nature_connection": 5,
+    "comfort_zone_expansion": 10
+  },
+
+  "contextual_attributes": {
+    "walkability": 8,
+    "nightlife": 10,
+    "public_transport": 9,
+    "digital_nomad_friendly": 9,
+    "nature_access": 6,
+    "luxury_feeling": 5
+  },
+
+  "sensory_profile": {
+    "soundscape": "Electronic music, underground clubs, multilingual conversations, street noise, bicycles, and industrial echoes.",
+
+    "visual_feeling": "Modern architecture mixed with brutalism, graffiti-covered walls, historical remnants, and constantly evolving neighborhoods.",
+
+    "pace": "fast",
+
+    "dominant_mood": "Free, intense, and creatively chaotic."
+  },
+
+  "match_narratives": {
+    "high_match": "Berlin may strongly resonate with you if you are drawn to freedom, self-expression, and environments that feel alive, unpredictable, and creatively charged. You likely enjoy exploring without structure, discovering underground culture, meeting diverse people, and experiencing cities that encourage reinvention and experimentation.",
+
+    "medium_match": "You may connect with Berlin during phases where you seek stimulation, independence, and new perspectives. It is especially rewarding for travelers who enjoy nightlife, creative scenes, and urban exploration without limits.",
+
+    "low_match_warning": "If you strongly prefer calm, romantic, aesthetically harmonious, or emotionally soft destinations, Berlin may feel overwhelming, chaotic, or too intense.",
+
+    "emotional_hook": "A city where you can become someone new every day.",
+
+    "ideal_for": [
+      "nightlife exploration",
+      "creative immersion",
+      "solo urban discovery",
+      "social experimentation",
+      "freedom-focused travel"
+    ]
+  },
+
+  "possible_downsides": [
+    "Can feel emotionally cold or detached",
+    "Fast pace may be overwhelming for calm travelers",
+    "Not visually romantic or traditionally beautiful",
+    "Requires openness to chaos and unpredictability",
+    "Some areas feel rough or industrial"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+
+    "avoid_if_seeking": {
+      "winter": [
+        "warmth",
+        "outdoor comfort"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 0.7,
+    "spring": 1.2,
+    "summer": 1.5,
+    "autumn": 1.1
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "energy": -2,
+        "social_openness": -1
+      },
+
+      "description": "Winter in Berlin becomes more introspective, industrial, and quiet, with strong café culture and indoor creative spaces.",
+
+      "ideal_for": [
+        "solo reflection",
+        "museum visits",
+        "art spaces",
+        "slow urban travel"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "energy": 2,
+        "social_openness": 2,
+        "freedom": 1
+      },
+
+      "description": "Spring brings Berlin back to life, with parks, outdoor gatherings, street culture, and growing creative energy.",
+
+      "ideal_for": [
+        "urban exploration",
+        "creative travel",
+        "social discovery"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 3,
+        "social_openness": 3,
+        "nightlife": 3
+      },
+
+      "description": "Summer is Berlin at its peak: festivals, open-air clubs, lakes, parks, and endless nightlife.",
+
+      "ideal_for": [
+        "party travel",
+        "friend groups",
+        "nightlife experiences",
+        "freedom travel"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "mystery": 2
+      },
+
+      "description": "Autumn adds depth and moodiness, making Berlin feel more artistic, cinematic, and introspective.",
+
+      "ideal_for": [
+        "creative travelers",
+        "solo exploration",
+        "art-focused trips"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 9,
+      "description": "Perfect for independent exploration, self-discovery, and unrestricted urban wandering."
+    },
+
+    "couple_trip": {
+      "score": 7,
+      "description": "Works for unconventional couples who enjoy nightlife, culture, and freedom rather than romantic aesthetics."
+    },
+
+    "friends_trip": {
+      "score": 10,
+      "description": "One of Europe’s best cities for group nightlife, festivals, and shared experiences."
+    },
+
+    "creative_escape": {
+      "score": 10,
+      "description": "Extremely strong creative energy for art, music, design, and experimental thinking."
+    },
+
+    "emotional_reset": {
+      "score": 6,
+      "description": "Better for stimulation and reinvention than calm emotional recovery."
+    },
+
+    "digital_nomad_stay": {
+      "score": 9,
+      "description": "Highly functional for long stays with strong infrastructure, culture, and networking opportunities."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 9,
+    "couples": 7,
+    "friends": 10,
+    "creative_groups": 10,
+    "digital_nomads": 9
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "freedom seekers",
+      "creative personalities",
+      "nightlife lovers",
+      "experimental thinkers",
+      "urban explorers"
+    ],
+
+    "less_suited_for": [
+      "calm travel seekers",
+      "romantic aesthetic travelers",
+      "luxury-focused tourists",
+      "slow nature-only travelers"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "fast",
+
+    "emotional_style": "raw and expressive",
+
+    "social_style": "open and experimental",
+
+    "beauty_type": "industrial and alternative",
+
+    "primary_energy": "freedom and reinvention",
+
+    "travel_feeling": "Berlin feels like a city that never asks who you used to be."
+  }
+}

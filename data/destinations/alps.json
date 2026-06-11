@@ -1,0 +1,279 @@
+{
+  "id": "alps_eu",
+  "city": "The Alps",
+  "country": "Europe",
+
+  "destination_types": [
+    "mountains",
+    "nature",
+    "adventure",
+    "winter sports",
+    "wellness"
+  ],
+
+  "experience_styles": [
+    "mountain escape",
+    "ski and snow adventure",
+    "hiking exploration",
+    "wellness retreat",
+    "nature immersion"
+  ],
+
+  "core_identity": {
+    "essence": "A vast mountain region across Europe where dramatic peaks, alpine villages, and pure natural landscapes create a deeply grounding and expansive emotional experience.",
+
+    "city_feeling": "The Alps feel powerful, quiet, and clarifying — a place where scale, silence, and nature reset your internal rhythm.",
+
+    "emotional_tone": [
+      "pure",
+      "majestic",
+      "calming",
+      "powerful",
+      "crisp",
+      "reflective"
+    ]
+  },
+
+  "tags": [
+    "mountains",
+    "ski",
+    "nature",
+    "hiking",
+    "snow",
+    "wellness",
+    "adventure",
+    "fresh air"
+  ],
+
+  "archetypes": [
+    "nature seeker",
+    "adventure explorer",
+    "ski traveler",
+    "wellness retreat traveler",
+    "silent wanderer"
+  ],
+
+  "emotional_signature": {
+    "energy": 7,
+    "romanticism": 7,
+    "social_openness": 6,
+    "spontaneity": 6,
+    "emotional_warmth": 7,
+    "sensory_intensity": 8,
+    "mystery": 8,
+    "freedom": 10,
+    "reflectiveness": 9,
+    "cultural_depth": 7,
+    "nature_connection": 10,
+    "comfort_zone_expansion": 9
+  },
+
+  "contextual_attributes": {
+    "walkability": 5,
+    "nightlife": 4,
+    "public_transport": 6,
+    "digital_nomad_friendly": 7,
+    "nature_access": 10,
+    "luxury_feeling": 9
+  },
+
+  "sensory_profile": {
+    "soundscape": "Wind over peaks, snow crunching, distant cowbells, rivers flowing, and absolute mountain silence.",
+
+    "visual_feeling": "Snow-covered peaks, alpine lakes, wooden chalets, green valleys, and dramatic mountain horizons.",
+
+    "pace": "slow to moderate",
+
+    "dominant_mood": "Crisp, powerful, and mentally clarifying."
+  },
+
+  "match_narratives": {
+    "high_match": "The Alps may strongly resonate with you if you are seeking clarity, nature immersion, and emotional reset through silence and scale. You likely enjoy environments that feel powerful yet peaceful, where movement and stillness coexist in nature.",
+
+    "medium_match": "You may connect with the Alps during active travel phases such as hiking, skiing, or wellness retreats. It works well for both adventure and restorative trips depending on the season.",
+
+    "low_match_warning": "If you strongly prefer beach life, urban culture, nightlife, or warm climates, the Alps may feel too cold, quiet, or physically demanding.",
+
+    "emotional_hook": "A place where silence becomes louder than noise.",
+
+    "ideal_for": [
+      "ski trips",
+      "hiking adventures",
+      "wellness retreats",
+      "nature escapes",
+      "emotional reset trips"
+    ]
+  },
+
+  "possible_downsides": [
+    "Weather-dependent accessibility",
+    "Seasonal limitations (ski vs summer hiking)",
+    "Can be expensive in resort areas",
+    "Less cultural city life",
+    "Requires physical activity for full experience"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "december",
+      "january",
+      "february",
+      "june",
+      "july",
+      "august",
+      "september"
+    ],
+
+    "avoid_if_seeking": {
+      "april": [
+        "stable snow conditions",
+        "summer hiking conditions"
+      ],
+
+      "october": [
+        "ski season conditions"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 1.5,
+    "spring": 1.2,
+    "summer": 1.4,
+    "autumn": 1.1
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "energy": 2,
+        "mystery": 3,
+        "reflectiveness": 2
+      },
+
+      "description": "Winter transforms the Alps into a snow-focused world of skiing, silence, and cozy mountain life.",
+
+      "ideal_for": [
+        "ski trips",
+        "winter wellness",
+        "cozy retreats"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "nature_connection": 3,
+        "freedom": 2
+      },
+
+      "description": "Spring brings melting snow, green valleys, and quiet hiking landscapes.",
+
+      "ideal_for": [
+        "nature walks",
+        "calm retreats",
+        "light hiking"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 2,
+        "freedom": 2
+      },
+
+      "description": "Summer is perfect for hiking, lakes, and alpine exploration.",
+
+      "ideal_for": [
+        "trekking",
+        "mountain lakes",
+        "outdoor adventure"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "mystery": 2
+      },
+
+      "description": "Autumn is quiet, golden, and introspective in mountain villages.",
+
+      "ideal_for": [
+        "slow travel",
+        "photography",
+        "emotional reset"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 8,
+      "description": "Great for introspection, hiking, and personal reset in nature."
+    },
+
+    "couple_trip": {
+      "score": 10,
+      "description": "Highly romantic mountain escapes, especially in cozy winter lodges."
+    },
+
+    "friends_trip": {
+      "score": 9,
+      "description": "Perfect for ski trips, hiking groups, and shared adventure travel."
+    },
+
+    "creative_escape": {
+      "score": 9,
+      "description": "Extremely strong environment for clarity, focus, and creative thinking."
+    },
+
+    "emotional_reset": {
+      "score": 10,
+      "description": "One of the strongest natural environments for mental reset and grounding."
+    },
+
+    "digital_nomad_stay": {
+      "score": 7,
+      "description": "Good for seasonal remote work, especially in calm mountain villages."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 8,
+    "couples": 10,
+    "friends": 9,
+    "creative_groups": 9,
+    "digital_nomads": 7
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "nature lovers",
+      "adventure seekers",
+      "slow travelers",
+      "wellness-focused personalities",
+      "clarity seekers"
+    ],
+
+    "less_suited_for": [
+      "beach-only travelers",
+      "nightlife seekers",
+      "urban culture explorers",
+      "warm climate seekers"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "slow to moderate",
+
+    "emotional_style": "pure and grounding",
+
+    "social_style": "quiet and nature-based",
+
+    "beauty_type": "dramatic natural landscapes",
+
+    "primary_energy": "clarity and reset",
+
+    "travel_feeling": "The Alps feel like your thoughts finally stop racing."
+  }
+}

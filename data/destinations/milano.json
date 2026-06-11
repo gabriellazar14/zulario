@@ -1,0 +1,275 @@
+{
+  "id": "milano_it",
+  "city": "Milan",
+  "country": "Italy",
+
+  "destination_types": [
+    "city",
+    "fashion",
+    "business",
+    "cultural",
+    "modern"
+  ],
+
+  "experience_styles": [
+    "urban sophistication",
+    "fashion exploration",
+    "modern city rhythm",
+    "design-focused travel",
+    "fast-paced discovery"
+  ],
+
+  "core_identity": {
+    "essence": "A modern European powerhouse where fashion, design, business, and culture merge into a fast, elegant urban rhythm.",
+
+    "city_feeling": "Milan feels polished, ambitious, stylish, and forward-moving — a city driven by aesthetics, success, and contemporary culture.",
+
+    "emotional_tone": [
+      "stylish",
+      "ambitious",
+      "fast",
+      "elegant",
+      "modern",
+      "structured"
+    ]
+  },
+
+  "tags": [
+    "fashion",
+    "design",
+    "business",
+    "modern",
+    "urban",
+    "stylish",
+    "fast-paced",
+    "elegant"
+  ],
+
+  "archetypes": [
+    "style seeker",
+    "urban professional",
+    "design lover",
+    "ambitious explorer",
+    "modern traveler"
+  ],
+
+  "emotional_signature": {
+    "energy": 8,
+    "romanticism": 6,
+    "social_openness": 7,
+    "spontaneity": 6,
+    "emotional_warmth": 5,
+    "sensory_intensity": 8,
+    "mystery": 5,
+    "freedom": 7,
+    "reflectiveness": 6,
+    "cultural_depth": 8,
+    "nature_connection": 4,
+    "comfort_zone_expansion": 7
+  },
+
+  "contextual_attributes": {
+    "walkability": 8,
+    "nightlife": 8,
+    "public_transport": 9,
+    "digital_nomad_friendly": 8,
+    "nature_access": 4,
+    "luxury_feeling": 10
+  },
+
+  "sensory_profile": {
+    "soundscape": "Fashion district buzz, espresso machines, tram movement, business conversations, and nightlife energy.",
+
+    "visual_feeling": "Modern architecture, luxury storefronts, elegant streets, glass buildings, and curated aesthetic spaces.",
+
+    "pace": "fast",
+
+    "dominant_mood": "Stylish, structured, and ambitious."
+  },
+
+  "match_narratives": {
+    "high_match": "Milan may strongly resonate with you if you are drawn to stylish, modern, and ambitious environments where aesthetics and progress shape everyday life. You likely enjoy fashion, design, urban sophistication, and cities that feel polished and forward-moving. Milan rewards people who appreciate structure, elegance, and contemporary culture.",
+
+    "medium_match": "You may connect with Milan during phases where you seek inspiration, style, and urban energy. It works well for travelers who enjoy a balance of culture, shopping, food, and fast-paced exploration.",
+
+    "low_match_warning": "If you strongly prefer slow travel, nature immersion, emotional warmth, or chaotic authenticity, Milan may feel too structured, business-oriented, or emotionally distant.",
+
+    "emotional_hook": "A city where style is a way of life.",
+
+    "ideal_for": [
+      "fashion-focused travel",
+      "urban exploration",
+      "business trips",
+      "design inspiration",
+      "stylish city breaks"
+    ]
+  },
+
+  "possible_downsides": [
+    "Can feel expensive and commercial in central areas",
+    "Less emotional warmth than southern Italian cities",
+    "Fast pace may feel overwhelming for slow travelers",
+    "Limited natural landscapes inside the city",
+    "Some areas feel more business-focused than atmospheric"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "spring",
+      "autumn"
+    ],
+
+    "avoid_if_seeking": {
+      "summer": [
+        "cool temperatures",
+        "low crowds"
+      ],
+
+      "winter": [
+        "warm outdoor atmosphere",
+        "sunny conditions"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 0.9,
+    "spring": 1.3,
+    "summer": 1.2,
+    "autumn": 1.3
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "energy": -1
+      },
+
+      "description": "Winter in Milan feels structured, elegant, and indoor-focused with strong café culture and fashion energy.",
+
+      "ideal_for": [
+        "fashion events",
+        "museum visits",
+        "urban lifestyle travel"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "energy": 2,
+        "walkability": 1,
+        "social_openness": 1
+      },
+
+      "description": "Spring brings balance and elegance, making Milan feel lively, stylish, and comfortable for exploration.",
+
+      "ideal_for": [
+        "city breaks",
+        "fashion discovery",
+        "cultural travel"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 2,
+        "nightlife": 2
+      },
+
+      "description": "Summer is warm and active but can feel intense and humid, with a mix of nightlife and quieter business rhythm.",
+
+      "ideal_for": [
+        "nightlife travel",
+        "short city stays",
+        "shopping trips"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "cultural_depth": 1
+      },
+
+      "description": "Autumn enhances Milan’s elegance and creative energy, making it ideal for fashion, design, and cultural exploration.",
+
+      "ideal_for": [
+        "design inspiration",
+        "creative trips",
+        "stylish travel experiences"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 7,
+      "description": "Good for independent travelers focused on style, culture, and urban exploration."
+    },
+
+    "couple_trip": {
+      "score": 8,
+      "description": "Works well for couples who enjoy stylish experiences, restaurants, and modern city energy."
+    },
+
+    "friends_trip": {
+      "score": 8,
+      "description": "Great for group trips focused on shopping, nightlife, and urban lifestyle experiences."
+    },
+
+    "creative_escape": {
+      "score": 9,
+      "description": "Strong inspiration for fashion, design, architecture, and modern creativity."
+    },
+
+    "emotional_reset": {
+      "score": 5,
+      "description": "Better for stimulation and inspiration than emotional calm or recovery."
+    },
+
+    "digital_nomad_stay": {
+      "score": 8,
+      "description": "Good infrastructure and strong professional environment, especially for creative industries."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 7,
+    "couples": 8,
+    "friends": 8,
+    "creative_groups": 9,
+    "digital_nomads": 8
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "style-driven travelers",
+      "creative professionals",
+      "urban explorers",
+      "fashion lovers",
+      "modern lifestyle seekers"
+    ],
+
+    "less_suited_for": [
+      "nature-focused travelers",
+      "slow emotional travelers",
+      "budget-only travelers",
+      "people seeking rustic authenticity"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "fast",
+
+    "emotional_style": "stylish and structured",
+
+    "social_style": "professional and modern",
+
+    "beauty_type": "design and elegance",
+
+    "primary_energy": "fashion and ambition",
+
+    "travel_feeling": "Milan feels like walking through a living design magazine."
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "id": "dublin_ie",
+  "city": "Dublin",
+  "country": "Ireland",
+
+  "destination_types": [
+    "city",
+    "cultural",
+    "historical",
+    "social",
+    "literary"
+  ],
+
+  "experience_styles": [
+    "pub culture immersion",
+    "friendly social exploration",
+    "literary city wandering",
+    "coastal urban discovery",
+    "casual nightlife experience"
+  ],
+
+  "core_identity": {
+    "essence": "A warm, social, and literary city where storytelling, pub culture, music, and everyday friendliness define the urban experience.",
+
+    "city_feeling": "Dublin feels welcoming, conversational, and human — a city where connection happens easily and stories shape the atmosphere.",
+
+    "emotional_tone": [
+      "friendly",
+      "warm",
+      "social",
+      "lively",
+      "story-driven",
+      "casual"
+    ]
+  },
+
+  "tags": [
+    "social",
+    "literary",
+    "pub culture",
+    "friendly",
+    "walkable",
+    "music",
+    "coastal",
+    "historic"
+  ],
+
+  "archetypes": [
+    "social explorer",
+    "story seeker",
+    "music lover",
+    "friendly wanderer",
+    "casual urban traveler"
+  ],
+
+  "emotional_signature": {
+    "energy": 7,
+    "romanticism": 6,
+    "social_openness": 9,
+    "spontaneity": 8,
+    "emotional_warmth": 9,
+    "sensory_intensity": 7,
+    "mystery": 5,
+    "freedom": 7,
+    "reflectiveness": 6,
+    "cultural_depth": 8,
+    "nature_connection": 6,
+    "comfort_zone_expansion": 7
+  },
+
+  "contextual_attributes": {
+    "walkability": 8,
+    "nightlife": 9,
+    "public_transport": 8,
+    "digital_nomad_friendly": 8,
+    "nature_access": 6,
+    "luxury_feeling": 6
+  },
+
+  "sensory_profile": {
+    "soundscape": "Live music in pubs, street conversations, laughter, traditional Irish music, and coastal wind.",
+
+    "visual_feeling": "Brick buildings, colorful doors, green parks, river reflections, and cozy pub interiors.",
+
+    "pace": "moderate",
+
+    "dominant_mood": "Warm, social, and storytelling-driven."
+  },
+
+  "match_narratives": {
+    "high_match": "Dublin may strongly resonate with you if you enjoy friendly, social cities where connection happens naturally and the atmosphere feels human and welcoming. You likely appreciate music, storytelling, casual nightlife, and places where interactions feel easy and authentic. The city rewards openness, curiosity, and a love for cultural warmth rather than visual perfection.",
+
+    "medium_match": "You may connect with Dublin during phases where you seek social energy, relaxed exploration, and emotional warmth. It is especially rewarding for travelers who enjoy pub culture, live music, and walking through lively but comfortable urban environments.",
+
+    "low_match_warning": "If you strongly prefer quiet, highly structured, visually polished, or intensely cinematic destinations, Dublin may feel too casual, rainy, or inconsistent in atmosphere.",
+
+    "emotional_hook": "A city where every conversation feels like part of a bigger story.",
+
+    "ideal_for": [
+      "social travel",
+      "pub culture exploration",
+      "music-focused trips",
+      "casual city breaks",
+      "friendly group travel"
+    ]
+  },
+
+  "possible_downsides": [
+    "Frequent rainy weather",
+    "Can feel expensive for accommodations",
+    "Less visually dramatic than other European capitals",
+    "Nightlife can be crowded in central areas",
+    "Limited architectural diversity compared to older European cities"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "spring",
+      "summer"
+    ],
+
+    "avoid_if_seeking": {
+      "winter": [
+        "dry weather",
+        "outdoor comfort"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 0.8,
+    "spring": 1.2,
+    "summer": 1.3,
+    "autumn": 1.1
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "energy": -1,
+        "social_openness": 1
+      },
+
+      "description": "Winter in Dublin is cozy and pub-centered, with strong indoor social life and a reflective, intimate atmosphere.",
+
+      "ideal_for": [
+        "pub evenings",
+        "solo reflection",
+        "cultural exploration"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "energy": 2,
+        "walkability": 1,
+        "emotional_warmth": 1
+      },
+
+      "description": "Spring brings fresh energy, green landscapes, and more outdoor social life across the city.",
+
+      "ideal_for": [
+        "city walks",
+        "cultural discovery",
+        "social travel"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 2,
+        "social_openness": 2,
+        "nightlife": 2
+      },
+
+      "description": "Summer is Dublin at its most vibrant, with festivals, outdoor pubs, live music, and long social evenings.",
+
+      "ideal_for": [
+        "friends trips",
+        "music festivals",
+        "social nightlife",
+        "city exploration"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "mystery": 1
+      },
+
+      "description": "Autumn creates a cozy, slightly nostalgic atmosphere with warm pubs and softer city energy.",
+
+      "ideal_for": [
+        "slow travel",
+        "writers",
+        "quiet exploration"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 8,
+      "description": "Great for solo travelers who enjoy social environments where meeting people feels natural and easy."
+    },
+
+    "couple_trip": {
+      "score": 8,
+      "description": "Works well for couples who enjoy relaxed social energy, music, and cozy shared experiences."
+    },
+
+    "friends_trip": {
+      "score": 10,
+      "description": "One of Europe’s best cities for group travel, nightlife, pubs, and shared social experiences."
+    },
+
+    "creative_escape": {
+      "score": 8,
+      "description": "Strong inspiration from music, literature, storytelling, and social atmosphere."
+    },
+
+    "emotional_reset": {
+      "score": 7,
+      "description": "Provides comfort and warmth, but not deep solitude or silence."
+    },
+
+    "digital_nomad_stay": {
+      "score": 8,
+      "description": "Good infrastructure, strong social environment, and creative energy for longer stays."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 8,
+    "couples": 8,
+    "friends": 10,
+    "creative_groups": 9,
+    "digital_nomads": 8
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "social personalities",
+      "music lovers",
+      "story seekers",
+      "friendly travelers",
+      "casual explorers"
+    ],
+
+    "less_suited_for": [
+      "silent retreat seekers",
+      "highly structured travelers",
+      "sun-and-perfection seekers",
+      "visually dramatic destination lovers"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "moderate",
+
+    "emotional_style": "warm and social",
+
+    "social_style": "open and conversational",
+
+    "beauty_type": "cozy and lived-in",
+
+    "primary_energy": "human connection",
+
+    "travel_feeling": "Dublin feels like a city that talks back to you."
+  }
+}
+```

@@ -1,0 +1,278 @@
+{
+  "id": "brussels_be",
+  "city": "Brussels",
+  "country": "Belgium",
+
+  "destination_types": [
+    "city",
+    "cultural",
+    "urban",
+    "creative"
+  ],
+
+  "experience_styles": [
+    "slow discovery",
+    "creative exploration",
+    "social wandering",
+    "cultural immersion",
+    "urban reflection"
+  ],
+
+  "core_identity": {
+    "essence": "A multicultural capital where different cultures, languages, lifestyles, and creative energies constantly overlap.",
+
+    "city_feeling": "Brussels feels alive through diversity, movement, hidden neighborhoods, and cultural contrasts rather than polished perfection.",
+
+    "emotional_tone": [
+      "cosmopolitan",
+      "stimulating",
+      "layered",
+      "creative",
+      "thoughtful",
+      "socially fluid"
+    ]
+  },
+
+  "tags": [
+    "international",
+    "creative",
+    "diverse",
+    "urban",
+    "cultural",
+    "layered",
+    "social",
+    "alternative"
+  ],
+
+  "archetypes": [
+    "urban explorer",
+    "creative thinker",
+    "culture seeker",
+    "social observer",
+    "slow traveler"
+  ],
+
+  "emotional_signature": {
+    "energy": 7,
+    "romanticism": 5,
+    "social_openness": 8,
+    "spontaneity": 7,
+    "emotional_warmth": 6,
+    "sensory_intensity": 7,
+    "mystery": 6,
+    "freedom": 8,
+    "reflectiveness": 7,
+    "cultural_depth": 9,
+    "nature_connection": 4,
+    "comfort_zone_expansion": 8
+  },
+
+  "contextual_attributes": {
+    "walkability": 7,
+    "nightlife": 7,
+    "public_transport": 8,
+    "digital_nomad_friendly": 8,
+    "nature_access": 4,
+    "luxury_feeling": 5
+  },
+
+  "sensory_profile": {
+    "soundscape": "Multilingual conversations, café terraces, trams, music, and constantly shifting urban energy.",
+
+    "visual_feeling": "Historic architecture mixed with imperfect modern layers, street art, hidden alleys, and contrasting neighborhoods.",
+
+    "pace": "moderate-fast",
+
+    "dominant_mood": "Curious, socially dynamic, and intellectually stimulating."
+  },
+
+  "match_narratives": {
+    "high_match": "Brussels may feel deeply rewarding if you enjoy places that slowly reveal themselves through atmosphere, diversity, and unexpected discovery. You are likely energized by cultural contrasts, creative environments, and destinations that feel authentic rather than perfectly curated. The city suits travelers who enjoy wandering without rigid plans and discovering meaning through neighborhoods, conversations, cafés, and everyday urban life.",
+
+    "medium_match": "You may connect with Brussels during periods where you seek movement, perspective, and cultural variety. The city works especially well for travelers who enjoy observing people, exploring different identities within one destination, and balancing stimulation with slow discovery.",
+
+    "low_match_warning": "If you strongly prefer emotionally warm destinations, highly polished beauty, or calm nature-focused environments, Brussels may sometimes feel fragmented, grey, or emotionally distant.",
+
+    "emotional_hook": "A city that rewards curiosity more than expectations.",
+
+    "ideal_for": [
+      "solo exploration",
+      "creative inspiration",
+      "multicultural experiences",
+      "urban discovery",
+      "slow social travel"
+    ]
+  },
+
+  "possible_downsides": [
+    "Can feel visually inconsistent between neighborhoods",
+    "Grey weather may feel emotionally heavy during winter",
+    "Less romantic than more visually harmonious European cities",
+    "Some districts feel administrative rather than atmospheric",
+    "The city's emotional depth appears gradually rather than instantly"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "spring",
+      "autumn"
+    ],
+
+    "avoid_if_seeking": {
+      "summer": [
+        "quietness",
+        "local calm"
+      ],
+
+      "winter": [
+        "sunlight",
+        "nature-focused travel"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 0.8,
+    "spring": 1.0,
+    "summer": 1.4,
+    "autumn": 1.1
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "energy": -2,
+        "mystery": 3
+      },
+
+      "description": "Winter makes Brussels quieter, slower, and more introspective. Cafés, museums, bookstores, and rainy streets create a thoughtful and cinematic atmosphere.",
+
+      "ideal_for": [
+        "solo reflection",
+        "creative work",
+        "museum trips",
+        "slow urban travel"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "social_openness": 1,
+        "freedom": 1
+      },
+
+      "description": "Spring brings balance and softness to the city. Neighborhoods feel more welcoming, terraces become lively, and the atmosphere becomes lighter and more social.",
+
+      "ideal_for": [
+        "couple trips",
+        "slow exploration",
+        "cultural weekends"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 2,
+        "social_openness": 2,
+        "nightlife": 2
+      },
+
+      "description": "Summer reveals Brussels at its most vibrant and international, filled with festivals, terraces, outdoor events, nightlife, and spontaneous social energy.",
+
+      "ideal_for": [
+        "friend groups",
+        "nightlife travel",
+        "social exploration",
+        "festival experiences"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "mystery": 2
+      },
+
+      "description": "Autumn gives Brussels a deeper and more atmospheric feeling, perfect for travelers drawn to cinematic streets, creativity, and reflective urban experiences.",
+
+      "ideal_for": [
+        "writers",
+        "creative travelers",
+        "slow emotional resets"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 8,
+      "description": "Excellent for independent travelers who enjoy wandering, observing urban life, and discovering hidden atmosphere through exploration."
+    },
+
+    "couple_trip": {
+      "score": 6,
+      "description": "Best suited for couples who enjoy cultural exploration, cafés, art, and intellectually stimulating environments rather than purely romantic escapes."
+    },
+
+    "friends_trip": {
+      "score": 8,
+      "description": "Very rewarding for socially curious groups interested in nightlife, food, neighborhoods, and multicultural energy."
+    },
+
+    "creative_escape": {
+      "score": 9,
+      "description": "The city's contrasts, creative atmosphere, architecture, and diversity can strongly stimulate inspiration and new perspectives."
+    },
+
+    "emotional_reset": {
+      "score": 6,
+      "description": "Works better for mental stimulation and perspective shifts than for complete emotional calm or relaxation."
+    },
+
+    "digital_nomad_stay": {
+      "score": 8,
+      "description": "Strong café culture, international atmosphere, and European connectivity make Brussels highly functional for long urban stays."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 8,
+    "couples": 6,
+    "friends": 8,
+    "creative_groups": 9,
+    "digital_nomads": 8
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "curious travelers",
+      "creative personalities",
+      "people energized by diversity",
+      "travelers who enjoy imperfect authenticity",
+      "social observers"
+    ],
+
+    "less_suited_for": [
+      "travelers seeking strong romantic atmosphere",
+      "nature-focused travelers",
+      "luxury-focused experiences",
+      "people needing calm and visual harmony"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "moderate-fast",
+
+    "emotional_style": "layered and exploratory",
+
+    "social_style": "international and fluid",
+
+    "beauty_type": "hidden and imperfect",
+
+    "primary_energy": "cultural movement",
+
+    "travel_feeling": "The more you explore Brussels, the more hidden layers you discover."
+  }
+}
+

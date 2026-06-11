@@ -1,0 +1,273 @@
+{
+  "id": "tallinn_ee",
+  "city": "Tallinn",
+  "country": "Estonia",
+
+  "destination_types": [
+    "city",
+    "cultural",
+    "historical",
+    "coastal",
+    "digital_nomad"
+  ],
+
+  "experience_styles": [
+    "medieval wandering",
+    "slow discovery",
+    "coastal calm exploration",
+    "digital nomad living",
+    "quiet cultural immersion"
+  ],
+
+  "core_identity": {
+    "essence": "A compact medieval city on the Baltic coast where digital modernity and historic old-town atmosphere coexist in harmony.",
+
+    "city_feeling": "Tallinn feels calm, compact, and quietly magical — a place where time feels slowed down and digitally modern at the same time.",
+
+    "emotional_tone": [
+      "calm",
+      "introspective",
+      "magical",
+      "historic",
+      "clean",
+      "balanced"
+    ]
+  },
+
+  "tags": [
+    "medieval",
+    "coastal",
+    "digital_nomad",
+    "calm",
+    "historic",
+    "walkable",
+    "quiet",
+    "aesthetic"
+  ],
+
+  "archetypes": [
+    "quiet explorer",
+    "digital wanderer",
+    "history lover",
+    "slow traveler",
+    "introverted observer"
+  ],
+
+  "emotional_signature": {
+    "energy": 5,
+    "romanticism": 6,
+    "social_openness": 6,
+    "spontaneity": 5,
+    "emotional_warmth": 6,
+    "sensory_intensity": 5,
+    "mystery": 7,
+    "freedom": 7,
+    "reflectiveness": 8,
+    "cultural_depth": 8,
+    "nature_connection": 6,
+    "comfort_zone_expansion": 6
+  },
+
+  "contextual_attributes": {
+    "walkability": 10,
+    "nightlife": 5,
+    "public_transport": 7,
+    "digital_nomad_friendly": 10,
+    "nature_access": 6,
+    "luxury_feeling": 6
+  },
+
+  "sensory_profile": {
+    "soundscape": "Quiet cobblestone streets, soft café conversations, distant seagulls, and minimal urban noise.",
+
+    "visual_feeling": "Medieval towers, pastel-colored old town buildings, snowy rooftops, and clean Nordic-style urban design.",
+
+    "pace": "slow",
+
+    "dominant_mood": "Calm, reflective, and slightly magical."
+  },
+
+  "match_narratives": {
+    "high_match": "Tallinn may deeply resonate with you if you are drawn to calm, structured, and aesthetically balanced environments where history meets modern simplicity. You likely enjoy slow walks, cozy cafés, digital comfort, and places that feel peaceful yet slightly magical. The city is ideal for introspective travelers and those who prefer clarity over chaos.",
+
+    "medium_match": "You may connect with Tallinn during phases where you seek calm productivity, light exploration, and emotional balance. It works well for travelers who enjoy small, walkable cities with a mix of history and modern digital life.",
+
+    "low_match_warning": "If you strongly prefer intense nightlife, large metropolitan energy, warm climates, or highly stimulating environments, Tallinn may feel too quiet, cold, or minimal.",
+
+    "emotional_hook": "A city where silence feels structured and peaceful.",
+
+    "ideal_for": [
+      "slow travel",
+      "digital nomad stays",
+      "calm exploration",
+      "introverted journeys",
+      "coastal reflection"
+    ]
+  },
+
+  "possible_downsides": [
+    "Limited nightlife compared to major European capitals",
+    "Can feel too quiet for high-energy travelers",
+    "Cold winters may reduce outdoor comfort",
+    "Smaller scale may feel limiting for long-term urban excitement",
+    "Less spontaneous social energy than larger cities"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "spring",
+      "summer"
+    ],
+
+    "avoid_if_seeking": {
+      "winter": [
+        "warm weather",
+        "outdoor social life"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 0.7,
+    "spring": 1.1,
+    "summer": 1.3,
+    "autumn": 1.0
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "reflectiveness": 3,
+        "energy": -2,
+        "mystery": 2
+      },
+
+      "description": "Winter turns Tallinn into a quiet, snowy medieval setting with strong introspective and cozy indoor atmosphere.",
+
+      "ideal_for": [
+        "solo reflection",
+        "cozy travel",
+        "cultural immersion",
+        "slow urban life"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "energy": 2,
+        "freedom": 1,
+        "walkability": 1
+      },
+
+      "description": "Spring brings freshness and balance, making Tallinn feel alive again with gentle movement and outdoor life.",
+
+      "ideal_for": [
+        "slow exploration",
+        "cultural walks",
+        "calm discovery travel"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "social_openness": 2,
+        "energy": 2,
+        "nightlife": 1
+      },
+
+      "description": "Summer is Tallinn’s most vibrant season, with long daylight, outdoor cafés, festivals, and coastal activity.",
+
+      "ideal_for": [
+        "light social travel",
+        "friends trips",
+        "coastal relaxation"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "mystery": 2
+      },
+
+      "description": "Autumn adds a soft cinematic mood to Tallinn, making it feel peaceful, nostalgic, and deeply atmospheric.",
+
+      "ideal_for": [
+        "writers",
+        "solo travelers",
+        "slow emotional trips"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 9,
+      "description": "Excellent for independent travelers who enjoy calm exploration, reflection, and structured silence in a walkable city."
+    },
+
+    "couple_trip": {
+      "score": 7,
+      "description": "Good for calm, intimate couples who enjoy cozy atmospheres, old town walks, and peaceful travel experiences."
+    },
+
+    "friends_trip": {
+      "score": 6,
+      "description": "Works for relaxed group travel, though nightlife and high-energy experiences are limited."
+    },
+
+    "creative_escape": {
+      "score": 8,
+      "description": "The quiet and structured environment supports focus, writing, thinking, and creative clarity."
+    },
+
+    "emotional_reset": {
+      "score": 9,
+      "description": "One of the strongest destinations for emotional reset, calmness, and mental clarity."
+    },
+
+    "digital_nomad_stay": {
+      "score": 10,
+      "description": "Extremely strong for digital nomads due to infrastructure, safety, calm environment, and high quality of life."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 9,
+    "couples": 7,
+    "friends": 6,
+    "creative_groups": 8,
+    "digital_nomads": 10
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "calm personalities",
+      "introverts",
+      "digital nomads",
+      "slow travelers",
+      "reflection-focused individuals"
+    ],
+
+    "less_suited_for": [
+      "nightlife seekers",
+      "high-energy travelers",
+      "warm-climate seekers",
+      "large-scale city lovers"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "slow",
+
+    "emotional_style": "calm and structured",
+
+    "social_style": "quiet and minimal",
+
+    "beauty_type": "medieval and clean",
+
+    "primary_energy": "balance and clarity",
+
+    "travel_feeling": "Tallinn feels like stepping into a quiet, modern fairytale."
+  }
+}

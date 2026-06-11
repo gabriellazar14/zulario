@@ -1,0 +1,277 @@
+{
+  "id": "athens_gr",
+  "city": "Athens",
+  "country": "Greece",
+
+  "destination_types": [
+    "city",
+    "historical",
+    "cultural",
+    "mediterranean",
+    "urban"
+  ],
+
+  "experience_styles": [
+    "ancient-modern fusion",
+    "historical exploration",
+    "sunlit wandering",
+    "cultural immersion",
+    "mediterranean urban discovery"
+  ],
+
+  "core_identity": {
+    "essence": "A city where ancient history and modern Mediterranean life coexist in constant contrast, creating a raw and energetic cultural landscape.",
+
+    "city_feeling": "Athens feels warm, chaotic, historic, and alive — a place where past and present constantly collide in the streets.",
+
+    "emotional_tone": [
+      "energetic",
+      "historic",
+      "raw",
+      "sunny",
+      "chaotic",
+      "alive"
+    ]
+  },
+
+  "tags": [
+    "ancient",
+    "mediterranean",
+    "historical",
+    "urban",
+    "sunny",
+    "cultural",
+    "chaotic",
+    "authentic"
+  ],
+
+  "archetypes": [
+    "history seeker",
+    "urban wanderer",
+    "sun lover",
+    "culture explorer",
+    "raw city traveler"
+  ],
+
+  "emotional_signature": {
+    "energy": 8,
+    "romanticism": 7,
+    "social_openness": 8,
+    "spontaneity": 8,
+    "emotional_warmth": 8,
+    "sensory_intensity": 9,
+    "mystery": 7,
+    "freedom": 8,
+    "reflectiveness": 7,
+    "cultural_depth": 10,
+    "nature_connection": 6,
+    "comfort_zone_expansion": 8
+  },
+
+  "contextual_attributes": {
+    "walkability": 8,
+    "nightlife": 8,
+    "public_transport": 7,
+    "digital_nomad_friendly": 7,
+    "nature_access": 6,
+    "luxury_feeling": 6
+  },
+
+  "sensory_profile": {
+    "soundscape": "Street music, busy cafés, traffic mixed with ancient ruins silence, lively conversations, and nightlife energy.",
+
+    "visual_feeling": "White stone ruins, ancient temples above the city, modern graffiti, sunlit streets, and dense urban layering.",
+
+    "pace": "fast",
+
+    "dominant_mood": "Warm, chaotic, and historically powerful."
+  },
+
+  "match_narratives": {
+    "high_match": "Athens may strongly resonate with you if you are drawn to raw, energetic cities where history is not preserved behind glass but lived within everyday life. You likely enjoy warm climates, spontaneous exploration, cultural depth, and destinations that feel intense and alive rather than polished. The city rewards curiosity, openness, and a love for contrast between ancient and modern worlds.",
+
+    "medium_match": "You may connect with Athens during periods where you seek stimulation, warmth, cultural immersion, and a mix of chaos and history. It works especially well for travelers who enjoy walking through cities that feel layered, imperfect, and full of energy.",
+
+    "low_match_warning": "If you strongly prefer calm, clean, organized, or emotionally quiet destinations, Athens may feel overwhelming, noisy, or chaotic.",
+
+    "emotional_hook": "A city where ancient history breathes through modern chaos.",
+
+    "ideal_for": [
+      "cultural exploration",
+      "sunny city breaks",
+      "historical discovery",
+      "urban wandering",
+      "Mediterranean travel"
+    ]
+  },
+
+  "possible_downsides": [
+    "Can feel chaotic and noisy in central areas",
+    "Summer heat may be intense",
+    "Less visually cohesive than classic European capitals",
+    "Some areas feel worn or unstructured",
+    "Not ideal for travelers seeking calm or order"
+  ],
+
+  "seasonality": {
+    "best_seasons": [
+      "spring",
+      "autumn"
+    ],
+
+    "avoid_if_seeking": {
+      "summer": [
+        "cool weather",
+        "low intensity travel"
+      ],
+
+      "winter": [
+        "warm beach conditions",
+        "high outdoor activity"
+      ]
+    }
+  },
+
+  "seasonal_intensity": {
+    "winter": 0.9,
+    "spring": 1.2,
+    "summer": 1.5,
+    "autumn": 1.3
+  },
+
+  "seasonal_profiles": {
+    "winter": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "energy": -1,
+        "mystery": 1
+      },
+
+      "description": "Winter in Athens is milder and calmer, offering a more local and less tourist-heavy experience.",
+
+      "ideal_for": [
+        "slow cultural trips",
+        "museum visits",
+        "urban exploration"
+      ]
+    },
+
+    "spring": {
+      "emotional_shift": {
+        "energy": 2,
+        "walkability": 1,
+        "emotional_warmth": 1
+      },
+
+      "description": "Spring is one of the best times in Athens, with perfect weather, blooming landscapes, and balanced city energy.",
+
+      "ideal_for": [
+        "city exploration",
+        "historical tourism",
+        "Mediterranean travel"
+      ]
+    },
+
+    "summer": {
+      "emotional_shift": {
+        "energy": 3,
+        "social_openness": 2,
+        "nightlife": 2
+      },
+
+      "description": "Summer is intense, hot, and vibrant, with strong nightlife and busy tourist activity.",
+
+      "ideal_for": [
+        "nightlife travel",
+        "beach + city combo trips",
+        "social exploration"
+      ]
+    },
+
+    "autumn": {
+      "emotional_shift": {
+        "reflectiveness": 2,
+        "cultural_depth": 1
+      },
+
+      "description": "Autumn softens Athens into a more balanced and enjoyable city with fewer crowds and better exploration conditions.",
+
+      "ideal_for": [
+        "cultural travel",
+        "slow exploration",
+        "historical discovery"
+      ]
+    }
+  },
+
+  "trip_contexts": {
+    "solo_trip": {
+      "score": 8,
+      "description": "Great for independent travelers who enjoy exploring layered cities filled with history and energy."
+    },
+
+    "couple_trip": {
+      "score": 8,
+      "description": "Strong for couples who enjoy warm climates, cultural depth, and shared exploration experiences."
+    },
+
+    "friends_trip": {
+      "score": 8,
+      "description": "Very good for groups combining nightlife, culture, and spontaneous exploration."
+    },
+
+    "creative_escape": {
+      "score": 9,
+      "description": "Athens strongly stimulates creativity through its contrast of ancient history and modern chaos."
+    },
+
+    "emotional_reset": {
+      "score": 6,
+      "description": "Better for stimulation and perspective than for calm emotional recovery."
+    },
+
+    "digital_nomad_stay": {
+      "score": 7,
+      "description": "Good lifestyle balance with culture, sun, and affordability, but less structured than northern European hubs."
+    }
+  },
+
+  "group_compatibility": {
+    "solo_travelers": 8,
+    "couples": 8,
+    "friends": 8,
+    "creative_groups": 9,
+    "digital_nomads": 7
+  },
+
+  "personality_alignment": {
+    "best_for": [
+      "curious travelers",
+      "history lovers",
+      "sun seekers",
+      "cultural explorers",
+      "urban wanderers"
+    ],
+
+    "less_suited_for": [
+      "quiet luxury travelers",
+      "order-seeking personalities",
+      "cold-climate lovers",
+      "minimal stimulation seekers"
+    ]
+  },
+
+  "destination_dna": {
+    "pace": "fast",
+
+    "emotional_style": "raw and historic",
+
+    "social_style": "open and lively",
+
+    "beauty_type": "ancient + chaotic",
+
+    "primary_energy": "history and life collision",
+
+    "travel_feeling": "Athens feels like walking inside a living ancient memory under the sun."
+  }
+}
