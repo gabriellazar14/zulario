@@ -225,7 +225,15 @@ export default function DestinationsPage() {
       aria-label={`Explore ${d.name}`}
     >
       <img
-        src={d.image}
+       src={
+  d.image?.startsWith("/images/")
+    ? d.image
+    : d.image?.startsWith("/Images/")
+    ? d.image.replace("/Images/", "/images/")
+    : d.image?.startsWith("/")
+    ? `/images${d.image}`
+    : `/images/${d.image || "default.jpg"}`
+}
         alt={d.name}
         className="absolute -inset-[1px] w-[calc(100%+2px)] h-[calc(100%+2px)] object-cover brightness-110 contrast-105 saturate-110 transition-transform duration-700 group-hover:scale-110"
       />
