@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
                 t.src="https://www.clarity.ms/tag/"+i;
                 y=l.getElementsByTagName(r)[0];
                 y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
+            })(window, document, "clarity", "script", "x5avisbaft");
           `}
         </Script>
 
