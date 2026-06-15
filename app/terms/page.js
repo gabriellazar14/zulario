@@ -1,4 +1,10 @@
 import Link from "next/link";
+import {
+  FaInstagram,
+  FaTiktok,
+  FaXTwitter,
+  FaFacebookF,
+} from "react-icons/fa6";
 
 export default function TermsPage() {
 return ( <main className="min-h-screen bg-[#070b16] text-white px-6 py-12"> <div className="max-w-4xl mx-auto">
@@ -168,6 +174,68 @@ return ( <main className="min-h-screen bg-[#070b16] text-white px-6 py-12"> <div
 
     </div>
   </div>
-</main>
-);
+ {/* FOOTER */}
+      <footer className="relative z-10 border-t border-white/10 mt-16">
+        <div className="max-w-6xl mx-auto px-6 py-12">
+          <div className="grid md:grid-cols-3 gap-10">
+            <div>
+              <h3 className="text-2xl font-light tracking-wider text-white mb-3">
+                zulario
+              </h3>
+              <p className="text-white/60 leading-relaxed max-w-sm">
+                Discover destinations that match your personality, travel style,
+                and the experiences you're looking for.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-2 text-white/90">Explore</h4>
+              <div className="flex flex-col gap-1 text-white/60">
+                <Link href="/quiz">Take the Quiz</Link>
+                <Link href="/destinations">Destinations</Link>
+                <Link href="/about">About</Link>
+                <Link href="/faq">FAQ</Link>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-2 text-white/90">
+                Travel Matching
+              </h4>
+              <ul className="space-y-2 text-white/60">
+                <li>✓ Personality-based recommendations</li>
+                <li>✓ Emotional destination matching</li>
+                <li>✓ Solo & group travel compatibility</li>
+                <li>✓ Beyond popularity rankings</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-5 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-white/40 text-sm">
+              © 2026 Zulario. All rights reserved.
+            </p>
+
+            <div className="flex items-center gap-4 text-sm text-white/50">
+              <Link href="/privacy">Privacy</Link>
+              <Link href="/terms">Terms</Link>
+
+              <a href="https://instagram.com/myzulario/" target="_blank" rel="noreferrer">
+                <FaInstagram size={20} />
+              </a>
+              <a href="https://tiktok.com/@myzulario" target="_blank" rel="noreferrer">
+                <FaTiktok size={20} />
+              </a>
+              <a href="https://x.com/myzulario" target="_blank" rel="noreferrer">
+                <FaXTwitter size={20} />
+              </a>
+              <a href="https://facebook.com/myzulario/" target="_blank" rel="noreferrer">
+                <FaFacebookF size={20} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  );
 }

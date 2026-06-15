@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { createQuizGroup } from "@/lib/supabase";
 import { FaInstagram, FaTiktok, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -83,7 +83,58 @@ function DestinationCard({
 export default function Home() {
   const router = useRouter();
   const [activeIndex, setActiveIndex] = useState(1);
+const [showCookies, setShowCookies] = useState(false);
+const [showCookiePreferences, setShowCookiePreferences] = useState(false);
+const [analyticsCookies, setAnalyticsCookies] = useState(false);
+const [personalizationCookies, setPersonalizationCookies] = useState(false);
 
+useEffect(() => {
+  const consent = localStorage.getItem("cookieConsent");
+
+  if (!consent) {
+    setShowCookies(true);
+  }
+}, []);
+
+const acceptCookies = () => {
+  localStorage.setItem(
+    "cookieConsent",
+    JSON.stringify({
+      necessary: true,
+      analytics: true,
+      personalization: true,
+    })
+  );
+
+  setShowCookies(false);
+};
+
+const rejectCookies = () => {
+  localStorage.setItem(
+    "cookieConsent",
+    JSON.stringify({
+      necessary: true,
+      analytics: false,
+      personalization: false,
+    })
+  );
+
+  setShowCookies(false);
+};
+
+const saveCookiePreferences = () => {
+  localStorage.setItem(
+    "cookieConsent",
+    JSON.stringify({
+      necessary: true,
+      analytics: analyticsCookies,
+      personalization: personalizationCookies,
+    })
+  );
+
+  setShowCookies(false);
+  setShowCookiePreferences(false);
+};
   const destinations = [
     {
       image: "/images/kilimanjaro.jpg",
@@ -287,6 +338,131 @@ export default function Home() {
           ))}
         </div>
       </section>
+{showCookies && (
+  <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] w-[95%] max-w-4xl rounded-3xl border border-white/10 bg-[#0b1220]/95 backdrop-blur-2xl shadow-2xl p-6">
+    {!showCookiePreferences ? (
+      <>
+        <h3 className="text-xl font-semibold mb-2">
+          🍪 Your Privacy Matters
+        </h3>
+
+        <p className="text-white/70 text-sm leading-relaxed mb-3">
+          We use cookies to improve your experience, remember your travel
+          preferences, and analyze website usage.
+        </p>
+
+        <p className="text-white/45 text-xs mb-5">
+          Read our{" "}
+          <Link href="/privacy" className="underline hover:text-white">
+            Privacy Policy
+          </Link>
+          .
+        </p>
+
+        <div className="flex flex-wrap gap-3">
+          <button
+            onClick={acceptCookies}
+            className="px-5 py-3 rounded-xl bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] font-semibold hover:scale-105 transition"
+          >
+            Accept All
+          </button>
+
+          <button
+            onClick={rejectCookies}
+            className="px-5 py-3 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 transition"
+          >
+            Reject Non-Essential
+          </button>
+
+          <button
+            onClick={() => setShowCookiePreferences(true)}
+            className="px-5 py-3 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 transition"
+          >
+            Manage Preferences
+          </button>
+        </div>
+      </>
+    ) : (
+      <>
+        <h3 className="text-xl font-semibold mb-2">
+          Cookie Preferences
+        </h3>
+
+        <p className="text-white/60 text-sm mb-5">
+          Choose which optional cookies Zulario can use.
+        </p>
+
+        <div className="space-y-4 mb-6">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <div className="flex items-center justify-between gap-4">
+              <div>
+                <h4 className="font-semibold">Necessary Cookies</h4>
+                <p className="text-white/55 text-sm">
+                  Required for security and basic website functionality.
+                </p>
+              </div>
+              <span className="text-sm text-white/45">Always Active</span>
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <div className="flex items-center justify-between gap-4">
+              <div>
+                <h4 className="font-semibold">Analytics Cookies</h4>
+                <p className="text-white/55 text-sm">
+                  Help us understand how visitors use Zulario.
+                </p>
+              </div>
+
+              <input
+                type="checkbox"
+                checked={analyticsCookies}
+                onChange={(e) => setAnalyticsCookies(e.target.checked)}
+                className="w-5 h-5"
+              />
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <div className="flex items-center justify-between gap-4">
+              <div>
+                <h4 className="font-semibold">Personalization Cookies</h4>
+                <p className="text-white/55 text-sm">
+                  Remember your travel preferences and improve matching.
+                </p>
+              </div>
+
+              <input
+                type="checkbox"
+                checked={personalizationCookies}
+                onChange={(e) =>
+                  setPersonalizationCookies(e.target.checked)
+                }
+                className="w-5 h-5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap gap-3">
+          <button
+            onClick={saveCookiePreferences}
+            className="px-5 py-3 rounded-xl bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] font-semibold hover:scale-105 transition"
+          >
+            Save Preferences
+          </button>
+
+          <button
+            onClick={() => setShowCookiePreferences(false)}
+            className="px-5 py-3 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 transition"
+          >
+            Back
+          </button>
+        </div>
+      </>
+    )}
+  </div>
+)}
 
       {/* FOOTER */}
       <footer className="relative z-10 border-t border-white/10">
