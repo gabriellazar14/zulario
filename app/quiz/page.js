@@ -1426,17 +1426,14 @@ text-[#9eb8ff]
             Previous
           </button>
 
-          <button
-            onClick={goNext}
-            disabled={!selectedAnswer || (groupId && !name.trim())}
-            className={`px-6 py-4 rounded-xl font-semibold transition ${
-              !selectedAnswer || (groupId && !name.trim())
-                ? "bg-white/10 text-white/30 cursor-not-allowed"
-                : "text-white bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] shadow-[0_10px_30px_rgba(79,124,255,0.3)] hover:scale-105"
-            }`}
-          >
-            {current === questions.length - 1 ? "Finish" : "Next"}
-          </button>
+       <button
+  onClick={goNext}
+  disabled={!selectedAnswer || (groupId && !name.trim())}
+  className="px-6 py-4 rounded-xl text-white font-semibold bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] shadow-lg hover:scale-105 transition disabled:opacity-40 disabled:cursor-not-allowed"
+>
+  {current === questions.length - 1 ? "Finish" : "Next"}
+</button>
+
         </div>
 
         <p className="mt-8 text-center text-white/50">

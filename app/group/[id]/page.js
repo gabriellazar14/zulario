@@ -115,11 +115,11 @@ export default function GroupPage() {
 
       {/* ACTION BUTTONS */}
       <div className="flex flex-col sm:flex-row justify-center gap-4">
-        <Link href={`/quiz?groupId=${id}`}>
-          <button className="px-6 py-4 rounded-xl border-none text-white font-semibold bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] shadow-[0_10px_30px_rgba(79,124,255,0.3)] hover:scale-105 transition cursor-pointer">
-            Take the Quiz
-          </button>
-        </Link>
+      <Link href={`/quiz?groupId=${id}`}>
+  <button className="px-6 py-4 rounded-xl text-white font-semibold bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] shadow-lg hover:scale-105 transition">
+    Take the Quiz
+  </button>
+</Link>
 
         <Link href={`/group/${id}/results`}>
           <button className="px-6 py-4 rounded-xl border border-white/15 bg-white/5 text-white font-semibold hover:bg-white/10 transition cursor-pointer">

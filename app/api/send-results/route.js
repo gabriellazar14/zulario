@@ -1,43 +1,22 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request) {
   try {
-    const { email, results } = await request.json();
+    const apiKey = process.env.RESEND_API_KEY;
 
-    if (!email || !results?.length) {
+    if (!apiKey) {
       return Response.json(
-        { error: "Missing email or results" },
-        { status: 400 }
+        { error: "Missing RESEND_API_KEY" },
+        { status: 500 }
       );
     }
 
-    const html = `
-      <h1>Your Zulario Travel Matches</h1>
-      ${results
-        .map(
-          (r) => `
-          <div style="margin-bottom:24px;">
-            <h2>${r.percentage}% match — ${r.city}, ${r.country}</h2>
-            <p>${r.emotional_hook || ""}</p>
-          </div>
-        `
-        )
-        .join("")}
-    `;
+    const resend = new Resend(apiKey);
 
-    const data = await resend.emails.send({
-      from: "Zulario <onboarding@resend.dev>",
-      to: email,
-      subject: "Your Zulario Travel Matches",
-      html,
-    });
+    const { email, results } = await request.json();
 
-    return Response.json({ success: true, data });
+    // your email sending code here
   } catch (error) {
-    console.error("Send results email error:", error);
-
     return Response.json(
       { error: error.message || "Email failed" },
       { status: 500 }
