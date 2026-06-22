@@ -1,0 +1,509 @@
+(Use `node --trace-warnings ...` to show where the warning was created)
+   0 | The Alps | Europe
+   1 | Brussels | Belgium
+   2 | Algarve | Portugal
+   3 | Athens | Greece
+   4 | Bali | Indonesia
+   5 | Banff National Park | Canada
+   6 | Berlin | Germany
+   7 | Corfu | Greece
+   8 | Crete | Greece
+   9 | Dolomites | Italy
+  10 | Dublin | Ireland
+  11 | Edinburgh | United Kingdom
+  12 | Florence | Italy
+  13 | Himalayas | Nepal
+  14 | Hurghada | Egypt
+  15 | Kilimanjaro | Tanzania
+  16 | Machu Picchu | Peru
+  17 | Mallorca | Spain
+  18 | Malta | Malta
+  19 | Milan | Italy
+  20 | Patagonia | Argentina/Chile
+  21 | Phuket | Thailand
+  22 | Prague | Czech Republic
+  23 | Seychelles | Seychelles
+  24 | Tallinn | Estonia
+  25 | Paris | France
+  26 | Nice | France
+  27 | Lyon | France
+  28 | Bordeaux | France
+  29 | Strasbourg | France
+  30 | Marseille | France
+  31 | Annecy | France
+  32 | Colmar | France
+  33 | Cannes | France
+  34 | Chamonix (Mont Blanc) | France
+  35 | Rome | Italy
+  36 | Venice | Italy
+  37 | Naples | Italy
+  38 | Amalfi Coast | Italy
+  39 | Cinque Terre | Italy
+  40 | Sicily (Palermo, Taormina) | Italy
+  41 | Sardinia | Italy
+  42 | Lake Como | Italy
+  43 | Barcelona | Spain
+  44 | Madrid | Spain
+  45 | Seville | Spain
+  46 | Valencia | Spain
+  47 | Granada | Spain
+  48 | Bilbao | Spain
+  49 | Ibiza | Spain
+  50 | Tenerife (Canary Islands) | Spain
+  51 | San Sebastián | Spain
+  52 | Santorini | Greece
+  53 | Mykonos | Greece
+  54 | Rhodes | Greece
+  55 | Naxos | Greece
+  56 | Paros | Greece
+  57 | Zakynthos | Greece
+  58 | Meteora | Greece
+  59 | Lisbon | Portugal
+  60 | Porto | Portugal
+  61 | Madeira | Portugal
+  62 | Azores | Portugal
+  63 | Interlaken | Switzerland
+  64 | Zermatt (Matterhorn) | Switzerland
+  65 | Geneva | Switzerland
+  66 | Munich | Germany
+  67 | Hamburg | Germany
+  68 | Heidelberg | Germany
+  69 | Black Forest | Germany
+  70 | Vienna | Austria
+  71 | Salzburg | Austria
+  72 | Hallstatt | Austria
+  73 | Innsbruck | Austria
+  74 | Zell am See | Austria
+  75 | London | United Kingdom
+  76 | Bath | United Kingdom
+  77 | Oxford | United Kingdom
+  78 | Isle of Skye | United Kingdom
+  79 | Amsterdam | Netherlands
+  80 | Rotterdam | Netherlands
+  81 | Utrecht | Netherlands
+  82 | Giethoorn | Netherlands
+  83 | The Hague | Netherlands
+  84 | Ghent | Belgium
+  85 | Antwerp | Belgium
+  86 | Dinant | Belgium
+  87 | Český Krumlov | Czech Republic
+  88 | Karlovy Vary | Czech Republic
+  89 | Budapest | Hungary
+  90 | Lake Balaton | Hungary
+  91 | Kraków | Poland
+  92 | Warsaw | Poland
+  93 | Gdańsk | Poland
+  94 | Dubrovnik | Croatia
+  95 | Split | Croatia
+  96 | Plitvice Lakes | Croatia
+  97 | Hvar | Croatia
+  98 | Lake Bled | Slovenia
+  99 | Ljubljana | Slovenia
+ 100 | Piran | Slovenia
+ 101 | Reykjavik | Iceland
+ 102 | Golden Circle | Iceland
+ 103 | Blue Lagoon | Iceland
+ 104 | Vik (South Coast) | Iceland
+ 105 | Oslo | Norway
+ 106 | Bergen | Norway
+ 107 | Lofoten Islands | Norway
+ 108 | Geirangerfjord | Norway
+ 109 | Stockholm | Sweden
+ 110 | Helsinki | Finland
+ 111 | New York | United States of America
+ 112 | Los Angeles | United States of America
+ 113 | San Francisco | United States of America
+ 114 | Orlando | United States of America
+ 115 | Chicago | United States of America
+ 116 | Vatican City | Holy See
+ 117 | Las Vegas | United States of America
+ 118 | Istanbul | Türkiye
+ 119 | Washington D.C. | United States of America
+ 120 | Boston | United States of America
+ 121 | Miami | United States of America
+ 122 | Copenhagen | Denmark
+ 123 | Tokyo | Japan
+ 124 | San Diego | United States of America
+ 125 | Toronto | Canada
+ 126 | Frankfurt | Germany
+ 127 | Pisa | Italy
+ 128 | Bangkok | Thailand
+ 129 | Cologne | Germany
+ 130 | Monaco | Monaco
+ 131 | Dubai | United Arab Emirates
+ 132 | Montreal | Canada
+ 133 | Vancouver | Canada
+ 134 | Singapore | Singapore
+ 135 | Bratislava | Slovakia
+ 136 | Manchester | United Kingdom
+ 137 | Osaka | Japan
+ 138 | Kyoto | Japan
+ 139 | Cancún | Mexico
+ 140 | Hong Kong | Hong Kong
+ 141 | Luxembourg | Luxembourg
+ 142 | Verona | Italy
+ 143 | Moscow | Russian Federation
+ 144 | Seoul | Korea, South
+ 145 | Málaga | Spain
+ 146 | Sydney | Australia
+ 147 | Beijing | China
+ 148 | Glasgow | United Kingdom
+ 149 | Bologna | Italy
+ 150 | Niagara Falls | Canada
+ 151 | Shanghai | China
+ 152 | Antalya | Türkiye
+ 153 | Kuala Lumpur | Malaysia
+ 154 | Dusseldorf | Germany
+ 155 | Birmingham | United Kingdom
+ 156 | Zagreb | Croatia
+ 157 | Saint Petersburg | Russian Federation
+ 158 | Melbourne | Australia
+ 159 | Riga | Latvia
+ 160 | Liverpool | United Kingdom
+ 161 | Cairo | Egypt
+ 162 | Genoa | Italy
+ 163 | Stuttgart | Germany
+ 164 | Cambridge | United Kingdom
+ 165 | Marrakesh | Morocco
+ 166 | Brighton | United Kingdom
+ 167 | Dresden | Germany
+ 168 | Nuremberg | Germany
+ 169 | Abu Dhabi | United Arab Emirates
+ 170 | Bucharest | Romania
+ 171 | Valletta | Malta
+ 172 | Siena | Italy
+ 173 | Bern | Switzerland
+ 174 | Sofia | Bulgaria
+ 175 | Nassau | Bahamas
+ 176 | Taipei | Taiwan
+ 177 | Basel | Switzerland
+ 178 | Belgrade | Serbia
+ 179 | Como | Italy
+ 180 | Quebec City | Canada
+ 181 | Versailles | France
+ 182 | Vilnius | Lithuania
+ 183 | Cardiff | United Kingdom
+ 184 | Buenos Aires | Argentina
+ 185 | Ho Chi Minh City | Viet Nam
+ 186 | York | United Kingdom
+ 187 | Rio de Janeiro | Brazil
+ 188 | Thessaloniki | Greece
+ 189 | Bristol | United Kingdom
+ 190 | Belfast | United Kingdom
+ 191 | Turin | Italy
+ 192 | Hanoi | Viet Nam
+ 193 | Lille | France
+ 194 | Toledo | Spain
+ 195 | Ottawa | Canada
+ 196 | Palermo | Italy
+ 197 | Córdoba | Spain
+ 198 | Toulouse | France
+ 199 | Victoria | Canada
+ 200 | Heraklion | Greece
+ 201 | Bergamo | Italy
+ 202 | Mexico City | Mexico
+ 203 | Denpasar | Indonesia
+ 204 | Lausanne | Switzerland
+ 205 | Dover | United Kingdom
+ 206 | New Delhi | India
+ 207 | Calgary | Canada
+ 208 | Kotor | Montenegro
+ 209 | Trieste | Italy
+ 210 | Malmo | Sweden
+ 211 | Tbilisi | Georgia
+ 212 | Galway | Ireland
+ 213 | Izmir | Türkiye
+ 214 | São Paulo | Brazil
+ 215 | Leeds | United Kingdom
+ 216 | Kyiv | Ukraine
+ 217 | Gothenburg | Sweden
+ 218 | Tel Aviv | Israel
+ 219 | Jerusalem | Israel
+ 220 | Newcastle upon Tyne | United Kingdom
+ 221 | Gibraltar | Gibraltar
+ 222 | Calais | France
+ 223 | Catania | Italy
+ 224 | Macau | Macao
+ 225 | Cape Town | South Africa
+ 226 | Lima | Peru
+ 227 | Ankara | Türkiye
+ 228 | Manila | Philippines
+ 229 | Doha | Qatar
+ 230 | Alicante | Spain
+ 231 | Inverness | United Kingdom
+ 232 | Mostar | Bosnia and Herzegovina
+ 233 | Sorrento | Italy
+ 234 | Zadar | Croatia
+ 235 | Cork | Ireland
+ 236 | Bremen | Germany
+ 237 | Chiang Mai | Thailand
+ 238 | Brisbane | Australia
+ 239 | Pompeii | Italy
+ 240 | Casablanca | Morocco
+ 241 | Lampedusa | Italy
+ 242 | Providenciales | Turks and Caicos
+ 243 | Saint Barthélemy | Saint Barthélemy
+ 244 | Bahamas | Bahamas
+ 245 | Tasmania | Australia
+ 246 | Tahiti | Tahiti
+ 247 | Vanuatu | Vanuatu
+ 248 | Palaui Island | Philippines
+ 249 | Queensland | Australia
+ 250 | Tulum | Mexico
+ 251 | Malaysia | Malaysia
+ 252 | Palawan | Philippines
+ 253 | British Virgin Islands | British Virgin Islands
+ 254 | Isle of Harris | United Kingdom
+ 255 | Sumba | Indonesia
+ 256 | Galapagos Islands | Ecuador
+ 257 | Koh Phi Phi | Thailand
+ 258 | Rarotonga | Cook Islands
+ 259 | Tioman Island | Malaysia
+ 260 | Barbados | Barbados
+ 261 | Lefkada | Greece
+ 262 | Maldives | Maldives
+ 263 | Saint Martin | Saint Martin
+ 264 | Koh Lipe | Thailand
+ 265 | Bermuda | Bermuda
+ 266 | Grenada | Grenada
+ 267 | Cuba | Cuba
+ 268 | Margaret River | Australia
+ 269 | Dominican Republic | Dominican Republic
+ 270 | Bahía Solano | Colombia
+ 271 | Roatán | Honduras
+ 272 | Auckland | New Zealand
+ 273 | Dominical | Costa Rica
+ 274 | Negril | Jamaica
+ 275 | Normandy | France
+ 276 | Zanzibar | Tanzania
+ 277 | Goa | India
+ 278 | Fiji | Fiji
+ 279 | Placencia | Belize
+ 280 | St. John | U.S. Virgin Islands
+ 281 | Langkawi | Malaysia
+ 282 | Salvador | Brazil
+ 283 | Florida Panhandle | United States
+ 284 | Koh Rong | Cambodia
+ 285 | Little Corn Island | Nicaragua
+ 286 | Prince Edward Island | Canada
+ 287 | Railay | Thailand
+ 288 | Diani Beach | Kenya
+ 289 | Haiti | Haiti
+ 290 | Okinawa | Japan
+ 291 | Sharm El Sheikh | Egypt
+ 292 | Beidaihe | China
+ 293 | Essaouira | Morocco
+ 294 | Koh Phangan | Thailand
+ 295 | Derawan Islands | Indonesia
+ 296 | Andaman Islands | India
+ 297 | Hayama | Japan
+ 298 | Skagen | Denmark
+ 299 | Mauritius | Mauritius
+ 300 | Nelson Tasman | New Zealand
+ 301 | Los Roques | Venezuela
+ 302 | Belize Cayes | Belize
+ 303 | Camargue | France
+ 304 | Elba | Italy
+ 305 | Ölüdeniz | Turkey
+ 306 | Puerto Rico | Puerto Rico
+ 307 | Vilanculos | Mozambique
+ 308 | Jeffreys Bay | South Africa
+ 309 | Unawatuna | Sri Lanka
+ 310 | Cape Maclear | Malawi
+ 311 | Antigua and Barbuda | Antigua and Barbuda
+ 312 | Boracay | Philippines
+ 313 | Oregon Coast | United States
+ 314 | Hoi An | Vietnam
+ 315 | Aruba | Aruba
+ 316 | Byron Bay | Australia
+ 317 | Baja California Sur | Mexico
+ 318 | Rab Island | Croatia
+ 319 | Anguilla | Anguilla
+ 320 | Phu Quoc | Vietnam
+ 321 | Coromandel Peninsula | New Zealand
+ 322 | Fernando de Noronha | Brazil
+ 323 | Ifaty | Madagascar
+ 324 | Wild Coast | South Africa
+ 325 | Tobago | Trinidad and Tobago
+ 326 | Northern Ireland Coast | United Kingdom
+ 327 | Andes | Argentina, Chile, Peru, Bolivia, Ecuador, Colombia, Venezuela
+ 328 | Rocky Mountains | Canada, United States
+ 329 | Alps | France, Switzerland, Italy, Austria, Germany, Slovenia, Liechtenstein, Monaco
+ 330 | Caucasus Mountains | Russia, Georgia, Azerbaijan, Armenia
+ 331 | Atlas Mountains | Morocco, Algeria, Tunisia
+ 332 | Karakoram | Pakistan, China, India
+ 333 | Hindu Kush | Afghanistan, Pakistan
+ 334 | Ural Mountains | Russia, Kazakhstan
+ 335 | Appalachian Mountains | United States, Canada
+ 336 | Carpathian Mountains | Romania, Ukraine, Poland, Slovakia, Hungary, Czech Republic, Austria, Serbia
+ 337 | Pyrenees | Spain, France, Andorra
+ 338 | Sierra Nevada | United States
+ 339 | Tian Shan | Kyrgyzstan, Kazakhstan, China, Uzbekistan
+ 340 | Altai Mountains | Russia, Mongolia, China, Kazakhstan
+ 341 | Dinaric Alps | Slovenia, Croatia, Bosnia and Herzegovina, Montenegro, Albania, Serbia, Kosovo
+ 342 | Scandinavian Mountains | Norway, Sweden
+ 343 | Alaska Range | United States
+ 344 | Zagros Mountains | Iran, Iraq, Turkey
+ 345 | Kunlun Mountains | China
+ 346 | Great Dividing Range | Australia
+ 347 | Pamir Mountains | Tajikistan, Kyrgyzstan, Afghanistan, China
+ 348 | Drakensberg | South Africa, Lesotho
+ 349 | Cantabrian Mountains | Spain
+ 350 | Andes of Venezuela | Venezuela
+ 351 | Sayan Mountains | Russia, Mongolia
+ 352 | Brooks Range | United States
+ 353 | Verkhoyansk Range | Russia
+ 354 | Coast Mountains | Canada, United States
+ 355 | Western Ghats | India
+ 356 | Transantarctic Mountains | Antarctica
+ 357 | Sudetes | Czech Republic, Poland, Germany
+ 358 | Cascade Range | United States, Canada
+ 359 | Ethiopian Highlands | Ethiopia, Eritrea
+ 360 | Southern Alps | New Zealand
+ 361 | Sierra Madre | Mexico
+ 362 | Apennines | Italy
+ 363 | Hengduan Mountains | China
+ 364 | Andes of Tierra del Fuego | Chile, Argentina
+ 365 | Hijaz Mountains | Saudi Arabia
+ 366 | Barisan Mountains | Indonesia
+ 367 | Rwenzori Mountains | Uganda, Democratic Republic of the Congo
+ 368 | Taurus Mountains | Turkey
+ 369 | Virunga Mountains | Rwanda, Uganda, Democratic Republic of the Congo
+ 370 | Cordillera Central (Colombia) | Colombia
+ 371 | Stanovoy Range | Russia
+ 372 | Owen Stanley Range | Papua New Guinea
+ 373 | Jotunheimen | Norway
+ 374 | Ahaggar Mountains | Algeria
+ 375 | Cordillera Occidental (Ecuador) | Ecuador
+ 376 | Vindhya Range | India
+ 377 | Balkan Mountains | Bulgaria, Serbia
+ 378 | Mackenzie Mountains | Canada
+ 379 | Sudirman Range | Indonesia
+ 380 | Cordillera Central (Philippines) | Philippines
+ 381 | Qinling Mountains | China
+ 382 | Sierras Pampeanas | Argentina
+ 383 | Jura Mountains | France, Switzerland
+ 384 | Central Highlands (New Guinea) | Papua New Guinea
+ 385 | Pontic Mountains | Turkey
+ 386 | Khibiny Mountains | Russia
+ 387 | Wicklow Mountains | Ireland
+ 388 | Vosges Mountains | France
+ 389 | Ore Mountains | Germany, Czech Republic
+ 390 | Cairngorms | United Kingdom
+ 391 | Troodos Mountains | Cyprus
+ 392 | Massif Central | France
+ 393 | Rhodope Mountains | Bulgaria, Greece
+ 394 | Pindus Mountains | Greece, Albania
+ 395 | Măcin Mountains | Romania
+ 396 | Grampian Mountains | Scotland
+ 397 | Cambrian Mountains | Wales
+ 398 | Tatra Mountains | Slovakia, Poland
+ 399 | Rila Mountains | Bulgaria
+ 400 | Pirin Mountains | Bulgaria
+ 401 | Cordillera Central (Dominican Republic) | Dominican Republic
+ 402 | Blue Mountains | Australia
+ 403 | Snowy Mountains | Australia
+ 404 | Eastern Ghats | India
+ 405 | Aravalli Range | India
+ 406 | Satpura Range | India
+ 407 | Cardamom Mountains | Cambodia
+ 408 | Annamite Range | Laos, Vietnam
+ 409 | Tenasserim Hills | Myanmar, Thailand
+ 410 | Chin Hills | Myanmar, India
+ 411 | Cordillera Darwin | Chile
+ 412 | Sierras de Córdoba | Argentina
+ 413 | Khingan Range | China, Russia
+ 414 | Cordillera de Talamanca | Costa Rica, Panama
+ 415 | Alborz Mountains | Iran
+ 416 | Cordillera Neovolcánica | Mexico
+ 417 | Caucasus Minor | Armenia, Azerbaijan, Georgia
+ 418 | Cordillera Occidental (Colombia) | Colombia
+ 419 | Cordillera Occidental (Peru) | Peru
+ 420 | Cordillera Central (Costa Rica) | Costa Rica
+ 421 | Wind River Range | United States
+ 422 | Cordillera Occidental (Bolivia) | Bolivia
+ 423 | Făgăraș Mountains | Romania
+ 424 | Ozark Mountains | United States
+ 425 | Southern Alps – New Zealand’s backbone, the Southern Alps, are a young and rapidly rising mountain range. Their dramatic landscapes, shaped by tectonic uplift and glaciation, have gained worldwide fame. | New Zealand
+ 426 | Adršpašsko-teplické skály | Czechia
+ 427 | Antigua | Antigua and Barbuda
+ 428 | Arches National Park | United States
+ 429 | Arenal Volcano National Park | Costa Rica
+ 430 | Banff National Park | Canada
+ 431 | Brač | Croatia
+ 432 | Bryce Canyon National Park | United States
+ 433 | Canyonlands National Park | United States
+ 434 | Capri | Italy
+ 435 | Chichen-Itza | Mexico
+ 436 | Chobe National Park | Botswana
+ 437 | Corsica | France
+ 438 | Curonian Spit National Park | Lithuania
+ 439 | Easter Island | Chile
+ 440 | Etosha National Park | Namibia
+ 441 | Formentera | Spain
+ 442 | Gili Trawangan | Indonesia
+ 443 | Glacier National Park | United States
+ 444 | Grand Canyon National Park | United States
+ 445 | Grand Teton National Park | United States
+ 446 | Gullfoss waterfall | Iceland
+ 447 | Göreme National Park | Turkey
+ 448 | Hawaii | United States
+ 449 | Hokkaido | Japan
+ 450 | Hong Kong Island | China
+ 451 | Iguazu National Park | Argentina
+ 452 | Itsukushima Island | Japan
+ 453 | Jasper National Park | Canada
+ 454 | Khao Sok National Park | Thailand
+ 455 | Kilimanjaro National Park | Tanzania
+ 456 | Ko Lanta Yai | Thailand
+ 457 | Ko Phi Phi Don | Thailand
+ 458 | Krka National Park | Croatia
+ 459 | Kruger National Park | South Africa
+ 460 | La Maddalena | Italy
+ 461 | La Réunion | France
+ 462 | Lake District | United Kingdom
+ 463 | Lombok | Indonesia
+ 464 | Low Tatras National Park | Slovakia
+ 465 | Maasai Mara National Reserve | Kenya
+ 466 | Manuel Antonio National Park | Costa Rica
+ 467 | Mesa Verde National Park | United States
+ 468 | Milford Sound | New Zealand
+ 469 | Milos | Greece
+ 470 | Mont Saint-Michel | France
+ 471 | Mount Cook National Park | New Zealand
+ 472 | Mount Rainier National Park | United States
+ 473 | North Cape | Norway
+ 474 | Olympic National Park | United States
+ 475 | Parque Nacional de Sierra Nevada | Spain
+ 476 | Petra | Jordan
+ 477 | Picos de Europa National Park | Spain
+ 478 | Plitvice Lakes National Park | Croatia
+ 479 | Rab | Croatia
+ 480 | Redwood National Park | United States
+ 481 | Rocky Mountains National Park | United States
+ 482 | Rügen | Germany
+ 483 | Sequoia National Park | United States
+ 484 | Serengeti National Park | Tanzania
+ 485 | Skye | United Kingdom
+ 486 | Slovak Paradise National Park | Slovakia
+ 487 | São Miguel Island | Portugal
+ 488 | Table Mountain National Park | South Africa
+ 489 | Tatra National Park | Poland
+ 490 | Teide National Park | Spain
+ 491 | Tihanyi-félsziget | Hungary
+ 492 | Tikal National Park | Guatemala
+ 493 | Tongariro National Park | New Zealand
+ 494 | Torres del Paine National Park | Chile
+ 495 | Tortuguero National Park | Costa Rica
+ 496 | Triglav National Park | Slovenia
+ 497 | Twelve Apostles Marine National Park | Australia
+ 498 | Uluru-Kata Tjuta National Park | Australia
+ 499 | Vancouver Island | Canada
+ 500 | Vatnajökull National Park | Iceland
+ 501 | Vesuvius National Park | Italy
+ 502 | Vysoké Tatry | Slovakia
+ 503 | Wicklow Mountains National Park | Ireland
+ 504 | Yellowstone National Park | United States
+ 505 | Yosemite National Park | United States
+ 506 | Zion National Park | United States
+ 507 | Þingvellir National Park | Iceland

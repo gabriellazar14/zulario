@@ -4,6 +4,52 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { getSharedResult } from "@/lib/supabase";
 
+function MatchCircle({ percentage }) {
+  const size = 82;
+  const stroke = 4;
+  const radius = (size - stroke) / 2;
+  const circumference = 2 * Math.PI * radius;
+
+  const progress = Math.max(0, Math.min(100, percentage));
+  const offset = circumference - (progress / 100) * circumference;
+
+  return (
+    <div className="relative w-20 h-20">
+      <svg
+        width={size}
+        height={size}
+        viewBox={`0 0 ${size} ${size}`}
+        className="-rotate-90"
+      >
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={radius}
+          fill="rgba(0,0,0,0.35)"
+          stroke="rgba(255,255,255,0.2)"
+          strokeWidth={stroke}
+        />
+
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={radius}
+          fill="transparent"
+          stroke="#6d5dfc"
+          strokeWidth={stroke}
+          strokeLinecap="round"
+          strokeDasharray={circumference}
+          strokeDashoffset={offset}
+        />
+      </svg>
+
+      <div className="absolute inset-0 flex items-center justify-center text-xl font-bold text-white">
+        {percentage}%
+      </div>
+    </div>
+  );
+}
+
 function ResultCard({ match }) {
   const data = match.destination.data;
   const narrative = data.match_narratives?.high_match || "";
@@ -19,9 +65,8 @@ function ResultCard({ match }) {
       <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-black/10" />
 
       <div className="absolute top-6 left-6">
-        <div className="w-20 h-20 rounded-full border-4 border-[#6d5dfc] bg-black/30 backdrop-blur-md flex items-center justify-center text-xl font-bold text-white">
-          {match.percentage}%
-        </div>
+       <MatchCircle percentage={match.percentage} />
+       
         <div className="mt-2 text-xs tracking-widest text-white/70 text-center">
           MATCH
         </div>

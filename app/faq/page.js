@@ -11,12 +11,12 @@ import {
 export default function FAQPage() {
  const faqs = [
 {
-q: "How does Zuralio match me with destinations?",
-a: "Zuralio compares your quiz answers with destination profiles built around atmosphere, pace, culture, nature, adventure, romance, climate, and emotional travel style. It looks for places that feel aligned with who you are and the type of experience you want right now.",
+q: "How does Zulario match me with destinations?",
+a: "Zulario compares your quiz answers with destination profiles built around atmosphere, pace, culture, nature, adventure, romance, climate, and emotional travel style. It looks for places that feel aligned with who you are and the type of experience you want right now.",
 },
 {
-q: "Is Zuralio powered by AI?",
-a: "Yes. Zuralio uses AI-assisted matching combined with structured destination data and travel personality signals to recommend destinations that fit your preferences and travel style.",
+q: "Is Zulario powered by AI?",
+a: "Yes. Zulario uses AI-assisted matching combined with structured destination data and travel personality signals to recommend destinations that fit your preferences and travel style.",
 },
 {
 q: "Are the results personalized?",
@@ -24,30 +24,30 @@ a: "Yes. Your recommendations are based on your own quiz answers, preferences, a
 },
 {
 q: "Why did I get a specific destination?",
-a: "Every destination has its own emotional signature, atmosphere profile, personality alignment, and travel characteristics. Zuralio compares those signals with your answers to find the strongest match.",
+a: "Every destination has its own emotional signature, atmosphere profile, personality alignment, and travel characteristics. Zulario compares those signals with your answers to find the strongest match.",
 },
 {
-q: "Is Zuralio based on popularity rankings?",
+q: "Is Zulario based on popularity rankings?",
 a: "No. Popularity is only one possible factor. A destination can be famous or completely underrated—what matters most is how well it matches your travel personality and preferences.",
 },
 {
 q: "Can I choose nearby destinations only?",
-a: "Yes. If you prefer nearby travel, Zuralio can prioritize destinations closer to your region and reduce long-distance recommendations.",
+a: "Yes. If you prefer nearby travel, Zulario can prioritize destinations closer to your region and reduce long-distance recommendations.",
 },
 {
 q: "Can I still discover destinations anywhere in the world?",
-a: "Absolutely. If you are open to worldwide travel, Zuralio expands the search globally and focuses on finding the best emotional and personality match.",
+a: "Absolutely. If you are open to worldwide travel, Zulario expands the search globally and focuses on finding the best emotional and personality match.",
 },
 {
 q: "Can I take the quiz with friends?",
 a: "Yes. You can create a Group Quiz, invite friends, and discover destinations that match the entire group rather than just one traveler.",
 },
 {
-q: "How many destinations does Zuralio analyze?",
-a: "Zuralio currently analyzes hundreds of destinations around the world and continuously expands its destination library with new cities, regions, and travel experiences.",
+q: "How many destinations does Zulario analyze?",
+a: "Zulario currently analyzes hundreds of destinations around the world and continuously expands its destination library with new cities, regions, and travel experiences.",
 },
 {
-q: "Is Zuralio free to use?",
+q: "Is Zulario free to use?",
 a: "Yes. The travel personality quiz, destination matching, destination library, and group quiz features are currently free to use.",
 },
 {
@@ -56,10 +56,10 @@ a: "No. You can take the quiz and use group matching without creating an account
 },
 {
 q: "What happens to my data?",
-a: "Quiz answers, optional feedback, and saved email addresses are processed according to our Privacy Policy. Zuralio does not sell your personal information.",
+a: "Quiz answers, optional feedback, and saved email addresses are processed according to our Privacy Policy. Zulario does not sell your personal information.",
 },
 {
-q: "Can Zuralio help me plan my trip too?",
+q: "Can Zulario help me plan my trip too?",
 a: "That is part of our long-term vision. We aim to evolve from destination matching into personalized itineraries, activity suggestions, and intelligent travel planning.",
 },
 ];
@@ -91,7 +91,7 @@ a: "That is part of our long-term vision. We aim to evolve from destination matc
       <div className="relative z-10 max-w-5xl mx-auto pt-16">
         <div className="rounded-[32px] border border-white/15 bg-white/10 backdrop-blur-2xl p-8 md:p-14 shadow-[0_30px_100px_rgba(0,0,0,0.45)]">
           <div className="inline-flex mb-6 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-white/70">
-            Zuralio FAQ
+            Zulario FAQ
           </div>
 
           <h1 className="text-4xl md:text-4xl font-bold mb-6 leading-tight">
@@ -101,7 +101,7 @@ a: "That is part of our long-term vision. We aim to evolve from destination matc
           <p className="text-lg md:text-xl text-white/70 leading-relaxed mb-8 max-w-3xl">
             Everything you need to know about travel personality matching,
             nearby and worldwide destination results, group quizzes, and how
-            Zuralio finds places that feel right for you.
+            Zulario finds places that feel right for you.
           </p>
 
      
@@ -137,7 +137,7 @@ a: "That is part of our long-term vision. We aim to evolve from destination matc
 </h2>
 
 <p className="text-white/75 leading-relaxed mb-5 max-w-3xl">
-  The best way to experience Zuralio is to take the travel personality quiz and
+  The best way to experience Zulario is to take the travel personality quiz and
   discover destinations that truly match your mood, personality, and travel style.
 </p>
 

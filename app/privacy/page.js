@@ -28,7 +28,7 @@ export default function PrivacyPage() {
               1. Information We Collect
             </h2>
             <p>
-             Zuralio may collect quiz answers, travel preferences, group quiz 
+             Zulario may collect quiz answers, travel preferences, group quiz 
              participation data, feedback submitted by users, email addresses 
              voluntarily provided to save results, and basic technical or analytics 
              information.
@@ -41,7 +41,7 @@ export default function PrivacyPage() {
             </h2>
             <p>
               We use information to generate destination matches, improve the
-              matching experience, maintain security, and improve Zuralio.
+              matching experience, maintain security, and improve Zulario.
             </p>
           </section>
 
@@ -60,11 +60,11 @@ export default function PrivacyPage() {
               4. Cookies and Analytics
             </h2>
             <p>
-              Zuralio may use cookies and analytics services, such as Google Analytics 
+              Zulario may use cookies and analytics services, such as Google Analytics 
               or Microsoft Clarity, to understand how the website is used and improve 
               the user experience. These services may collect usage information, device 
               information, and interaction data to help us understand how visitors use 
-              Zuralio and improve the product.            </p>
+              Zulario and improve the product.            </p>
           </section>
 
           <section>
@@ -72,8 +72,8 @@ export default function PrivacyPage() {
               5. Data Sharing
             </h2>
             <p>
-              Zuralio does not sell personal information. Some data may be processed 
-              by trusted third-party service providers that help operate Zuralio, 
+              Zulario does not sell personal information. Some data may be processed 
+              by trusted third-party service providers that help operate Zulario, 
               including hosting, database, analytics, and email delivery services. 
               These providers process information only as necessary to provide their services.
             </p>
@@ -87,7 +87,7 @@ export default function PrivacyPage() {
     If you choose to save your travel results, we collect and store the
     email address you provide together with your travel matches. This
     information is used only to deliver or preserve your results and to
-    improve your experience with Zuralio.
+    improve your experience with Zulario.
   </p>
 
   <p className="mt-3">
@@ -104,7 +104,7 @@ export default function PrivacyPage() {
   <p>
     You may request access to, correction of, or deletion of your personal
 information, including saved travel results and associated email addresses,
-by contacting us at contact@zuralio.com.
+by contacting us at contact@zulario.com.
   </p>
 </section>
 
@@ -113,7 +113,7 @@ by contacting us at contact@zuralio.com.
               8. Legal Basis for Processing
             </h2>
             <p>We process personal information only where we have a valid legal basis to do so, 
-              including your consent, our legitimate interests in improving Zuralio, or where 
+              including your consent, our legitimate interests in improving Zulario, or where 
               processing is necessary to provide the services you request.</p>
           </section>
 
@@ -122,7 +122,7 @@ by contacting us at contact@zuralio.com.
               9. Data Retention
             </h2>
             <p>We retain personal information only for as long as necessary to provide 
-              our services, improve Zuralio, comply with legal obligations, or until you 
+              our services, improve Zulario, comply with legal obligations, or until you 
               request deletion of your information.</p>
           </section>
 
@@ -130,7 +130,7 @@ by contacting us at contact@zuralio.com.
             <h2 className="text-2xl font-semibold text-white mb-3">
              10. International Data Transfers
             </h2>
-            <p>Some service providers used by Zuralio may process information outside 
+            <p>Some service providers used by Zulario may process information outside 
               your country of residence. Where applicable, appropriate safeguards are 
               used to protect personal information in accordance with applicable privacy laws.</p>
           </section>
@@ -140,7 +140,7 @@ by contacting us at contact@zuralio.com.
               11. Contact
             </h2>
             <p>If you have questions about this Privacy Policy or wish to exercise your 
-              privacy rights, please contact us at contact@zuralio.com.</p>
+              privacy rights, please contact us at contact@zulario.com.</p>
           </section>
 
                 <section>
@@ -148,7 +148,7 @@ by contacting us at contact@zuralio.com.
               12. Changes to This Privacy Policy
             </h2>
             <p>We may update this Privacy Policy from time to time to reflect changes 
-              to Zuralio or applicable laws. The latest version will always be available 
+              to Zulario or applicable laws. The latest version will always be available 
               on this page, together with the date of the most recent update.</p>
           </section>
 

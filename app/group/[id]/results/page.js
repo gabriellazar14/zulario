@@ -39,7 +39,58 @@ function averageScores(responses) {
 
   return total;
 }
+function MatchCircle({ percentage }) {
+  const size = 82;
+  const stroke = 4;
 
+  const radius = (size - stroke) / 2;
+  const circumference = 2 * Math.PI * radius;
+
+  const offset =
+    circumference - (percentage / 100) * circumference;
+
+  let color = "#ef4444"; // red
+
+  if (percentage >= 90) color = "#6d5dfc";
+  else if (percentage >= 80) color = "#4f7cff";
+  else if (percentage >= 70) color = "#38bdf8";
+
+  return (
+    <div className="relative w-20 h-20">
+      <svg
+        width={size}
+        height={size}
+        viewBox={`0 0 ${size} ${size}`}
+        className="-rotate-90"
+      >
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={radius}
+          fill="rgba(0,0,0,0.35)"
+          stroke="rgba(255,255,255,0.15)"
+          strokeWidth={stroke}
+        />
+
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={radius}
+          fill="transparent"
+          stroke={color}
+          strokeWidth={stroke}
+          strokeLinecap="round"
+          strokeDasharray={circumference}
+          strokeDashoffset={offset}
+        />
+      </svg>
+
+      <div className="absolute inset-0 flex items-center justify-center text-xl font-bold text-white">
+        {percentage}%
+      </div>
+    </div>
+  );
+}
 function ResultCard({ match, labelText = "MATCH", onSeeDetails }) {
   const data = match.destination.data;
   const narrative = data.match_narratives?.high_match || "";
@@ -54,15 +105,13 @@ function ResultCard({ match, labelText = "MATCH", onSeeDetails }) {
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-black/10" />
 
-      <div className="absolute top-6 left-6">
-        <div className="w-20 h-20 rounded-full border-4 border-[#6d5dfc] bg-black/30 backdrop-blur-md flex items-center justify-center text-xl font-bold text-white">
-          {match.percentage}%
-        </div>
+<div className="absolute top-6 left-6">
+  <MatchCircle percentage={match.percentage} />
 
-        <div className="mt-2 text-xs tracking-widest text-white/70 text-center">
-          {labelText}
-        </div>
-      </div>
+  <div className="mt-2 text-xs tracking-widest text-white/70 text-center">
+    {labelText}
+  </div>
+</div>
 
       <div className="absolute bottom-6 left-6 right-6 text-white">
         <h2 className="text-4xl font-bold mb-2">{data.city}</h2>
@@ -230,11 +279,12 @@ ${groupResultsLink}`;
 
       <header className="relative -top-10 z-20 mb-1">
         <a href="/" className="inline-flex items-center">
-          <img
-            src="/zulario.png"
-            alt="Zulario Logo"
-            className="h-36 w-auto"
-          />
+        <img
+    src="/zulario.png"
+    alt="Zulario Logo"
+    className="h-20 w-auto"
+  />
+
         </a>
       </header>
 

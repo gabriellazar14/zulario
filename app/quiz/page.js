@@ -367,8 +367,56 @@ const questions = [
     ],
   },
 ];
+function MatchCircle({ percentage }) {
+  const size = 82;
+  const stroke = 4;
+
+  const radius = (size - stroke) / 2;
+  const circumference = 2 * Math.PI * radius;
+
+  const progress = Math.max(0, Math.min(100, percentage));
+
+  const offset =
+    circumference - (progress / 100) * circumference;
+
+  return (
+    <div className="relative w-20 h-20">
+      <svg
+        width={size}
+        height={size}
+        viewBox={`0 0 ${size} ${size}`}
+        className="-rotate-90"
+      >
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={radius}
+          fill="rgba(0,0,0,0.35)"
+          stroke="rgba(255,255,255,0.2)"
+          strokeWidth={stroke}
+        />
+
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={radius}
+          fill="transparent"
+          stroke="#6d5dfc"
+          strokeWidth={stroke}
+          strokeLinecap="round"
+          strokeDasharray={circumference}
+          strokeDashoffset={offset}
+        />
+      </svg>
+
+      <div className="absolute inset-0 flex items-center justify-center text-xl font-bold text-white">
+        {percentage}%
+      </div>
+    </div>
+  );
+}
 function ResultCard({ match, onSeeDetails }) {
-  const data = match.destination.data;
+  const data = match.destination?.data || match.destination || {};
   const narrative = data.match_narratives?.high_match || "";
 
   return (
@@ -381,14 +429,13 @@ function ResultCard({ match, onSeeDetails }) {
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-black/10" />
 
-      <div className="absolute top-6 left-6">
-        <div className="w-20 h-20 rounded-full border-4 border-[#6d5dfc] bg-black/30 backdrop-blur-md flex items-center justify-center text-xl font-bold text-white">
-          {match.percentage}%
-        </div>
-        <div className="mt-2 text-xs tracking-widest text-white/70 text-center">
-          MATCH
-        </div>
-      </div>
+   <div className="absolute top-6 left-6">
+  <MatchCircle percentage={match.percentage} />
+
+  <div className="mt-2 text-xs tracking-widest text-white/70 text-center">
+    MATCH
+  </div>
+</div>
 
       <div className="absolute bottom-6 left-6 right-6 text-white">
         <h2 className="text-4xl font-bold mb-2">{data.city}</h2>
@@ -582,14 +629,64 @@ const shareText = `I discovered my Zulario travel matches.
 See my results here:
 ${shareLink}`;
 const saveMyResults = async () => {
-  if (!email.trim() || !result?.length) return;
+  console.log("Button clicked");
 
-  const saved = await saveUserResult(email.trim(), result.slice(0, 3));
-
-  if (saved) {
-    setSavedEmailResult(true);
-    setEmail("");
+  if (!email.trim()) {
+    alert("Please enter an email address");
+    return;
   }
+
+  if (!result?.length) {
+    alert("No results found");
+    return;
+  }
+
+  console.log("Saving results for:", email);
+
+  const cleanResults = result.slice(0, 3).map((match) => {
+    const data = match.destination?.data || match.destination || {};
+
+    return {
+      percentage: match.percentage,
+      city: data.city,
+      country: data.country,
+      image: data.image,
+      emotional_hook: data.match_narratives?.emotional_hook,
+    };
+  });
+
+  console.log("Results payload:", cleanResults);
+
+  const saved = await saveUserResult(email.trim(), cleanResults);
+
+  console.log("Supabase response:", saved);
+
+  if (!saved) {
+    alert("Could not save your results.");
+    return;
+  }
+
+  const response = await fetch("/api/send-results", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email: email.trim(),
+      results: cleanResults,
+    }),
+  });
+
+  const emailResponse = await response.json();
+  console.log("Email API response:", emailResponse);
+
+  if (!response.ok) {
+    alert(emailResponse.error || "Results saved, but email failed.");
+    return;
+  }
+
+  setSavedEmailResult(true);
+  setEmail("");
 };
 const copyResults = async () => {
   await navigator.clipboard.writeText(shareText);
@@ -614,11 +711,11 @@ if (loading) {
         </h1>
 
         <div className="space-y-3 text-left max-w-sm mx-auto text-white/75 mb-6">
-          <p>✓ Personality</p>
-  <p>✓ Energy</p>
+   <p>✓ Personality Profile</p>
+  <p>✓ Emotional Preferences</p>
   <p>✓ Travel Style</p>
-  <p>✓ Culture</p>
-  <p>✓ Atmosphere</p>
+  <p>✓ Cultural Interests</p>
+  <p>✓ Destination Atmosphere</p>
         </div>
 
         <p className="text-white/60">
@@ -648,11 +745,12 @@ if (loading) {
 
 <header className="relative -top-10 z-20 mb-1">
   <a href="/" className="inline-flex items-center">
-    <img
-      src="/zulario.png"
-      alt="Zulario Logo"
-      className="h-36 w-auto"
-    />
+  <img
+    src="/zulario.png"
+    alt="Zulario Logo"
+    className="h-20 w-auto"
+  />
+
   </a>
 </header>
 
@@ -691,6 +789,60 @@ if (loading) {
               />
             ))}
           </div>
+{/* More destinations */}
+{result.length > 3 && (
+  <div className="mt-14 max-w-3xl mx-auto">
+    <h2 className="text-3xl font-bold text-center mb-3 text-white">
+       More destinations you may love
+    </h2>
+
+    <p className="text-center text-white/60 mb-8">
+      Other places that also fit your travel personality.
+    </p>
+
+    <div className="space-y-4">
+      {result.slice(3, 10).map((match) => {
+        const data = match.destination?.data || match.destination || {};
+        const emotionalHook =
+          data.match_narratives?.emotional_hook ||
+          data.destination_dna?.travel_feeling ||
+          data.sensory_profile?.dominant_mood ||
+          "A destination that matches your travel personality.";
+
+        return (
+          <div
+            key={data.id || `${data.city}-${data.country}`}
+            className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-3 hover:bg-white/10 transition"
+          >
+            <img
+              src={data.image}
+              alt={data.city}
+              className="w-20 h-20 rounded-xl object-cover flex-shrink-0"
+            />
+
+            <div className="flex-1 min-w-0">
+              <div className="flex items-start justify-between gap-4">
+                <div className="min-w-0">
+                  <h3 className="text-lg font-semibold text-white truncate">
+                    {data.city}, {data.country}
+                  </h3>
+
+                  <p className="mt-1 text-sm text-white/60 italic leading-relaxed">
+                    {emotionalHook}
+                  </p>
+                </div>
+
+                <div className="shrink-0 text-xl font-bold text-[#8f84ff]">
+                  {match.percentage}%
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+)}
 
        <div className="mt-14 max-w-3xl mx-auto">
 
@@ -746,7 +898,7 @@ if (loading) {
     onClick={saveMyResults}
     className="px-6 py-4 rounded-xl text-white font-semibold bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] hover:scale-105 transition"
   >
-    Save Results
+    Email My Travel Matches
   </button>
 </div>
 

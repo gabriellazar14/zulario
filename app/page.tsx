@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { createQuizGroup } from "@/lib/supabase";
 import { FaInstagram, FaTiktok, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 function DestinationCard({
   image,
@@ -180,18 +181,21 @@ const saveCookiePreferences = () => {
 
       {/* NAV */}
       <header className="absolute top-0 left-0 w-full z-30 px-8 md:px-8 py-0 flex items-center justify-between">
-        <div className="flex items-center">
+<div className="mt-4 ml-6 flex flex-col items-start">
   <img
     src="/zulario.png"
     alt="Zulario Logo"
-    className="h-36 w-auto"
+    className="h-20 w-auto"
   />
-</div>
 
-        <nav className="hidden md:flex gap-8 text-sm text-white/75">
-          <Link href="/destinations" className="hover:text-white transition">
+  <span className="ml-7 -mt-2 text-[9px] uppercase tracking-[0.3em] text-white/45">
+    Travel made personal
+  </span>
+</div>
+        <nav className="hidden md:flex gap-8 text-sm text-white/75 mr-12">
+        {/*  <Link href="/destinations" className="hover:text-white transition">
             Explore
-          </Link>
+          </Link>*/}
           <Link href="/about" className="hover:text-white transition">
             About
           </Link>
@@ -203,15 +207,11 @@ const saveCookiePreferences = () => {
 
       {/* HERO */}
       <section className="relative z-10 min-h-screen flex flex-col lg:flex-row pt-28 pb-16">
-        <div className="flex-1 px-16 md:px-20 flex flex-col justify-center">
-          <div className="inline-flex w-fit mb-6 px-5 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-white/75">
-            Travel Personality Matching
-          </div>
+ <div className="flex-1 px-16 md:px-20 flex flex-col justify-center">
 
-          <h1 className="text-5xl md:text-6xl font-bold leading-[1.05] tracking-[-1px] mb-6 max-w-3xl">
-            Discover destinations that match who you are
-          </h1>
-
+    <h1 className="mt-54text-5xl md:text-5xl font-bold leading-[1.05] tracking-[-1px] mb-6 max-w-3xl">
+      Discover destinations that match who you are
+    </h1>
           <p className="text-lg text-white/70 mb-9 max-w-md leading-relaxed">
             Travel is personal. Find places aligned with your personality,
             energy, and travel style.
@@ -219,8 +219,9 @@ const saveCookiePreferences = () => {
 
           <div className="flex flex-wrap gap-4 mb-10">
             <Link href="/quiz">
-              <button className="px-6 py-4 rounded-xl text-white font-semibold bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] shadow-[0_10px_30px_rgba(79,124,255,0.3)] hover:scale-105 transition">
-                Take the Quiz
+             <button className="px-6 py-4 rounded-xl text-white font-semibold
+bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc]
+shadow-lg hover:scale-105 transition">         Take the Quiz
               </button>
             </Link>
 
@@ -233,44 +234,70 @@ const saveCookiePreferences = () => {
           </div>
 
           <div className="flex flex-col gap-2 text-sm text-white/65">
+          <span>✓ Free Travel Personality Test</span>
             <span>✓ 50+ Curated Destinations</span>
             <span>✓ Personality-Based Matching</span>
             <span>✓ Solo & Group Travel Quizzes</span>
           </div>
         </div>
 
-        <div className="hidden lg:flex flex-1 items-center justify-center relative px-10">
-          <div className="relative z-10 w-[760px] h-[560px]">
-            <div className="relative h-full flex items-center justify-center">
-              {(() => {
-                const leftIndex = (activeIndex + 1) % destinations.length;
-                const rightIndex = (activeIndex + 2) % destinations.length;
+       <div className="relative h-full flex items-center justify-center -translate-y-8">   <div className="relative z-10 w-[760px] h-[560px]">
+       <motion.div
+  layout
+  className="relative h-full flex items-center justify-center -translate-y-8"
+>
 
-                return (
-                  <>
-                    <DestinationCard
-                      {...destinations[leftIndex]}
-                      onClick={() => setActiveIndex(leftIndex)}
-                      className="z-10 hover:z-50 w-[250px] h-[385px] -mr-16 rotate-[-6deg] brightness-130 translate-y-6 cursor-pointer"
-                    />
+  {(() => {
+    const leftIndex = (activeIndex + 1) % destinations.length;
+    const rightIndex = (activeIndex + 2) % destinations.length;
 
-                    <DestinationCard
-                      {...destinations[activeIndex]}
-                      featured
-                      className="z-30 w-[315px] h-[435px] rotate-[2deg] brightness-130"
-                    />
+    const left = destinations[leftIndex];
+    const active = destinations[activeIndex];
+    const right = destinations[rightIndex];
 
-                    <DestinationCard
-                      {...destinations[rightIndex]}
-                      onClick={() => setActiveIndex(rightIndex)}
-                      className="z-10 hover:z-50 w-[250px] h-[385px] -ml-16 rotate-[6deg] brightness-130 translate-y-6 cursor-pointer"
-                    />
-                  </>
-                );
-              })()}
-            </div>
+    return (
+      <>
+        <motion.div
+          layout
+          transition={{ type: "spring", stiffness: 120, damping: 18 }}
+          className="z-10 hover:z-50 -mr-16 translate-y-6"
+        >
+          <DestinationCard
+            {...left}
+            onClick={() => setActiveIndex(leftIndex)}
+            className="w-[220px] h-[340px] rotate-[-6deg] brightness-130 cursor-pointer"
+          />
+        </motion.div>
 
-            <div className="absolute bottom-8 left-1/2 z-40 flex -translate-x-1/2 gap-3">
+        <motion.div
+          layout
+          transition={{ type: "spring", stiffness: 120, damping: 18 }}
+          className="z-30"
+        >
+          <DestinationCard
+            {...active}
+            featured
+            className="w-[280px] h-[390px] rotate-[2deg] brightness-130"
+          />
+        </motion.div>
+
+        <motion.div
+          layout
+          transition={{ type: "spring", stiffness: 120, damping: 18 }}
+          className="z-10 hover:z-50 -ml-16 translate-y-6"
+        >
+          <DestinationCard
+            {...right}
+            onClick={() => setActiveIndex(rightIndex)}
+            className="w-[220px] h-[340px] rotate-[6deg] brightness-130 cursor-pointer"
+          />
+        </motion.div>
+      </>
+    );
+  })()}
+</motion.div>
+
+   <div className="absolute bottom-20 left-1/2 z-40 flex -translate-x-1/2 gap-2">
               {destinations.map((_, index) => (
                 <button
                   key={index}
@@ -321,7 +348,7 @@ const saveCookiePreferences = () => {
             {
               n: "3",
               title: "Discover Your Matches",
-              text: "Receive destinations that align with who you are, not just what's trending. Every recommendation comes with an explanation.",
+              text: "Receive destinations that align with who you are, not just what's trending. Every recommendation comes with a detailed description.",
             },
           ].map((step) => (
             <div

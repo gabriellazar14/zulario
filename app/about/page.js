@@ -33,7 +33,7 @@ export default function AboutPage() {
       <div className="relative z-10 max-w-5xl mx-auto pt-16">
         <div className="rounded-[32px] border border-white/15 bg-white/10 backdrop-blur-2xl p-8 md:p-14 shadow-[0_30px_100px_rgba(0,0,0,0.45)]">
           <div className="inline-flex mb-6 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-white/70">
-            About Zuralio
+            About Zulario
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -41,7 +41,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-white/70 leading-relaxed mb-8 max-w-3xl">
-            Zuralio helps you discover destinations that match your personality,
+            Zulario helps you discover destinations that match your personality,
             emotions, energy, travel mindset, and real-world travel preferences —
             not just what is popular online.
           </p>
@@ -64,7 +64,7 @@ export default function AboutPage() {
 
           <div className="rounded-2xl border border-white/10 bg-white/5 p-8 mb-12">
             <h2 className="text-2xl font-semibold mb-4">
-              Why Zuralio exists
+              Why Zulario exists
             </h2>
 
             <p className="text-white/75 leading-relaxed">
@@ -76,7 +76,7 @@ export default function AboutPage() {
             </p>
 
             <p className="text-white/75 leading-relaxed mt-4">
-              Zuralio was created to answer a different question:
+              Zulario was created to answer a different question:
               <span className="text-white font-semibold">
                 {" "}Where would you feel happiest right now?
               </span>
@@ -92,7 +92,7 @@ export default function AboutPage() {
 
               <p className="text-white/80 leading-relaxed">
                 We imagine a future where travel recommendations are based on
-                who you are, not just where everyone else goes. Zuralio is
+                who you are, not just where everyone else goes. Zulario is
                 designed to help every traveler discover places that genuinely
                 fit their personality, mood, and travel rhythm.
               </p>
@@ -105,7 +105,7 @@ export default function AboutPage() {
               </h2>
 
               <p className="text-white/70 mb-4">
-                Most travel websites ask where you want to go. Zuralio starts
+                Most travel websites ask where you want to go. Zulario starts
                 with how you want to feel.
               </p>
 
@@ -141,7 +141,7 @@ export default function AboutPage() {
             {/* BLOCK 4 */}
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:bg-white/[0.07] transition">
               <h2 className="text-2xl font-semibold mb-4">
-                What Zuralio Considers
+                What Zulario Considers
               </h2>
 
               <p className="text-white/70 mb-4">
@@ -161,7 +161,7 @@ export default function AboutPage() {
 
           <div className="mt-12 rounded-2xl border border-white/10 bg-white/5 p-8">
             <h2 className="text-2xl font-semibold mb-4">
-              Why I built Zuralio
+              Why I built Zulario
             </h2>
 
             <p className="text-white/75 leading-relaxed">
@@ -178,7 +178,7 @@ export default function AboutPage() {
             </p>
 
             <p className="text-white/75 leading-relaxed mt-4">
-              Zuralio was created to answer one simple question:
+              Zulario was created to answer one simple question:
               <span className="text-white font-semibold">
                 {" "}Where would you feel most alive right now?
               </span>

@@ -11,7 +11,7 @@ export default function GroupPage() {
   const groupLink = `http://localhost:3000/group/${id}`;
 
   const shareText =
-    `Join my Zuralio group travel quiz: ${groupLink}`;
+    `Join my Zulario group travel quiz: ${groupLink}`;
 
   const copyLink = async () => {
     try {
@@ -93,7 +93,7 @@ export default function GroupPage() {
         <a
           href={`https://t.me/share/url?url=${encodeURIComponent(
             groupLink
-          )}&text=${encodeURIComponent("Join my Zuralio group travel quiz:")}`}
+          )}&text=${encodeURIComponent("Join my Zulario group travel quiz:")}`}
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 py-2 rounded-xl border border-white/15 bg-white/5 text-white font-semibold text-sm hover:bg-white/10 transition inline-flex items-center gap-2"
@@ -104,7 +104,7 @@ export default function GroupPage() {
 
         <a
           href={`mailto:?subject=${encodeURIComponent(
-            "Zuralio Group Quiz"
+            "Zulario Group Quiz"
           )}&body=${encodeURIComponent(shareText)}`}
           className="px-4 py-2 rounded-xl border border-white/15 bg-white/5 text-white font-semibold text-sm hover:bg-white/10 transition inline-flex items-center gap-2"
         >

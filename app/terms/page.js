@@ -34,7 +34,7 @@ return ( <main className="min-h-screen bg-[#070b16] text-white px-6 py-12"> <div
         </h2>
 
         <p>
-          By accessing or using Zuralio, you agree to be bound by these
+          By accessing or using Zulario, you agree to be bound by these
           Terms of Service and all applicable laws.
         </p>
       </section>
@@ -46,17 +46,17 @@ return ( <main className="min-h-screen bg-[#070b16] text-white px-6 py-12"> <div
 
         <p>
           You must be at least 16 years old, or the minimum age required
-          by applicable law in your country, to use Zuralio.
+          by applicable law in your country, to use Zulario.
         </p>
       </section>
 
       <section>
         <h2 className="text-2xl font-semibold text-white mb-3">
-          3. What Zuralio Does
+          3. What Zulario Does
         </h2>
 
         <p>
-          Zuralio provides AI-assisted personality-based destination
+          Zulario provides AI-assisted personality-based destination
           matching, travel recommendations, destination discovery, and
           group travel matching tools.
         </p>
@@ -68,7 +68,7 @@ return ( <main className="min-h-screen bg-[#070b16] text-white px-6 py-12"> <div
         </h2>
 
         <p>
-          Zuralio generates recommendations algorithmically based on user
+          Zulario generates recommendations algorithmically based on user
           input and destination data. Results are provided for
           informational purposes only and should not be considered
           professional travel advice.
@@ -106,9 +106,9 @@ return ( <main className="min-h-screen bg-[#070b16] text-white px-6 py-12"> <div
         </h2>
 
         <p>
-          The Zuralio name, branding, design, destination modeling,
+          The Zulario name, branding, design, destination modeling,
           algorithms, matching logic, and original content are owned by
-          Zuralio unless otherwise stated.
+          Zulario unless otherwise stated.
         </p>
       </section>
 
@@ -118,7 +118,7 @@ return ( <main className="min-h-screen bg-[#070b16] text-white px-6 py-12"> <div
         </h2>
 
         <p>
-          Zuralio shall not be responsible for travel decisions, bookings,
+          Zulario shall not be responsible for travel decisions, bookings,
           cancellations, losses, damages, delays, or other issues arising
           from use of the platform or its recommendations.
         </p>
@@ -130,7 +130,7 @@ return ( <main className="min-h-screen bg-[#070b16] text-white px-6 py-12"> <div
         </h2>
 
         <p>
-          We strive to keep Zuralio available at all times but do not
+          We strive to keep Zulario available at all times but do not
           guarantee uninterrupted access. The service may be modified,
           suspended, or discontinued without prior notice.
         </p>
@@ -142,7 +142,7 @@ return ( <main className="min-h-screen bg-[#070b16] text-white px-6 py-12"> <div
         </h2>
 
         <p>
-          Zuralio may contain links to third-party websites or services.
+          Zulario may contain links to third-party websites or services.
           We are not responsible for the content, availability, or privacy
           practices of those external services.
         </p>
@@ -155,7 +155,7 @@ return ( <main className="min-h-screen bg-[#070b16] text-white px-6 py-12"> <div
 
         <p>
           These Terms shall be governed by the laws applicable in the
-          jurisdiction where Zuralio operates, without regard to conflict
+          jurisdiction where Zulario operates, without regard to conflict
           of law principles.
         </p>
       </section>

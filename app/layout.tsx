@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Zuralio",
+  title: "Zulario",
   description:
     "Discover destinations that match your personality and travel style.",
 };
