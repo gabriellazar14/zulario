@@ -32,21 +32,19 @@ export default function AboutPage() {
       {/* CONTENT */}
       <div className="relative z-10 max-w-5xl mx-auto pt-16">
         <div className="rounded-[32px] border border-white/15 bg-white/10 backdrop-blur-2xl p-8 md:p-14 shadow-[0_30px_100px_rgba(0,0,0,0.45)]">
-          <div className="inline-flex mb-6 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-white/70">
+          <div className="inline-flex -ml-3 mb-6 px-4 py-2 rounded-full text-sm text-white/70">
             About Zulario
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-4xl font-bold mb-6 leading-tight">
             Travel Matching Beyond Tourism
           </h1>
 
-          <p className="text-lg md:text-xl text-white/70 leading-relaxed mb-8 max-w-3xl">
-            Zulario helps you discover destinations that match your personality,
-            emotions, energy, travel mindset, and real-world travel preferences —
-            not just what is popular online.
+        <p className="text-white/75 leading-relaxed">
+            Zulario helps you discover destinations that match your personality, emotions, energy, travel style, and what you're truly looking for—not just what's popular online.
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-12">
+<div className="flex flex-wrap gap-4 mt-8 mb-12">
             <a
               href="/quiz"
               className="px-6 py-3 rounded-xl bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] text-white font-semibold hover:scale-105 transition"
@@ -54,31 +52,21 @@ export default function AboutPage() {
               Take the travel quiz
             </a>
 
-            <a
-              href="/destinations"
-              className="px-6 py-3 rounded-xl bg-white/10 border border-white/15 text-white font-semibold hover:bg-white/15 transition"
-            >
-              Explore destinations
-            </a>
-          </div>
+                  </div>
 
           <div className="rounded-2xl border border-white/10 bg-white/5 p-8 mb-12">
             <h2 className="text-2xl font-semibold mb-4">
-              Why Zulario exists
+              Why we built Zulario
             </h2>
 
             <p className="text-white/75 leading-relaxed">
-              Finding the right destination should not feel like scrolling
-              through thousands of blogs, social media posts, and generic top-ten
-              lists. Most travel recommendations focus on popularity, but the
-              best destination for one person may feel completely wrong for
-              another.
+              Like many travelers, we spent hours comparing destinations, reading blogs, and scrolling through endless recommendations without feeling any closer to a decision. That made us wonder: what if destinations could be recommended the same way music, movies, or books are—not by popularity, but by personality, travel style, emotions, and the experience you're truly looking for? 
             </p>
 
             <p className="text-white/75 leading-relaxed mt-4">
-              Zulario was created to answer a different question:
+              That's how Zulario was born, to answer one simple question: 
               <span className="text-white font-semibold">
-                {" "}Where would you feel happiest right now?
+                {" "}Where would you feel most alive right now?
               </span>
             </p>
           </div>
@@ -91,17 +79,14 @@ export default function AboutPage() {
               </h2>
 
               <p className="text-white/80 leading-relaxed">
-                We imagine a future where travel recommendations are based on
-                who you are, not just where everyone else goes. Zulario is
-                designed to help every traveler discover places that genuinely
-                fit their personality, mood, and travel rhythm.
+     Travel is more than choosing a destination, it's about finding experiences that feel right for you. Our vision is to make discovering, planning, and experiencing travel as personal as the journey itself, helping every traveler explore the world with confidence and curiosity.
               </p>
             </div>
 
             {/* BLOCK 2 */}
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:bg-white/[0.07] transition">
               <h2 className="text-2xl font-semibold mb-4">
-                Emotional Travel Matching
+                Find your travel Mood
               </h2>
 
               <p className="text-white/70 mb-4">
@@ -141,7 +126,7 @@ export default function AboutPage() {
             {/* BLOCK 4 */}
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:bg-white/[0.07] transition">
               <h2 className="text-2xl font-semibold mb-4">
-                What Zulario Considers
+                What Zulario considers
               </h2>
 
               <p className="text-white/70 mb-4">
@@ -159,38 +144,14 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="mt-12 rounded-2xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold mb-4">
-              Why I built Zulario
-            </h2>
+        
 
-            <p className="text-white/75 leading-relaxed">
-              Like many travelers, I often spent hours comparing destinations,
-              reading blogs, and scrolling through endless recommendations
-              without feeling any closer to a decision.
-            </p>
-
-            <p className="text-white/75 leading-relaxed mt-4">
-              I started wondering if destinations could be matched the same way
-              music, movies, or books are recommended — not by popularity, but
-              by personality, emotions, travel style, and the experience someone
-              is actually looking for.
-            </p>
-
-            <p className="text-white/75 leading-relaxed mt-4">
-              Zulario was created to answer one simple question:
-              <span className="text-white font-semibold">
-                {" "}Where would you feel most alive right now?
-              </span>
-            </p>
-          </div>
-
-          <div className="mt-12 rounded-2xl border border-blue-400/20 bg-blue-500/10 p-8">
+                     <div className="mt-12 rounded-2xl border border-blue-400/20 bg-blue-500/10 p-8">
             <h2 className="text-2xl font-semibold mb-3">
               The journey ahead
             </h2>
 
-            <p className="text-white/75 leading-relaxed max-w-3xl">
+             <p className="text-white/80 leading-relaxed">
               Destination matching is only the beginning. The long-term vision
               is to build an intelligent travel companion that can recommend
               destinations, create personalized itineraries, suggest activities,
@@ -218,34 +179,50 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-       {/* FOOTER */}
-      <footer className="relative z-10 border-t border-white/10 mt-16">
+      {/* FOOTER */}
+      <footer className="relative z-10 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-12">
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-[2fr_1fr_1.25fr] gap-10 items-start">
+            {/* Brand */}
             <div>
-              <h3 className="text-2xl font-light tracking-wider text-white mb-3">
+              <h3 className="text-2xl font-light tracking-wider text-white mb-1">
                 zulario
               </h3>
-              <p className="text-white/60 leading-relaxed max-w-sm">
-                Discover destinations that match your personality, travel style,
-                and the experiences you're looking for.
+      
+              <span className="block text-[9px] uppercase tracking-[0.3em] text-white/45 mb-5">
+                Travel made personal
+              </span>
+      
+              <p className="text-white/55 leading-relaxed max-w-sm">
+                Discover destinations that match who you are
               </p>
             </div>
-
+      
+            {/* Explore */}
             <div>
-              <h4 className="font-semibold mb-2 text-white/90">Explore</h4>
-              <div className="flex flex-col gap-1 text-white/60">
-                <Link href="/quiz">Take the Quiz</Link>
-                <Link href="/destinations">Destinations</Link>
-                <Link href="/about">About</Link>
-                <Link href="/faq">FAQ</Link>
+              <h4 className="font-semibold mb-3 text-white/90">Explore</h4>
+      
+              <div className="flex flex-col gap-2 text-white/60">
+                <Link href="/quiz" className="hover:text-white transition-colors">
+                  Take the Quiz
+                </Link>
+      
+                <Link href="/about" className="hover:text-white transition-colors">
+                  About
+                </Link>
+      
+                <Link href="/faq" className="hover:text-white transition-colors">
+                  FAQ
+                </Link>
               </div>
             </div>
-
+      
+            {/* Travel Matching */}
             <div>
-              <h4 className="font-semibold mb-2 text-white/90">
+              <h4 className="font-semibold mb-3 text-white/90">
                 Travel Matching
               </h4>
+      
               <ul className="space-y-2 text-white/60">
                 <li>✓ Personality-based recommendations</li>
                 <li>✓ Emotional destination matching</li>
@@ -254,27 +231,62 @@ export default function AboutPage() {
               </ul>
             </div>
           </div>
-
-          <div className="mt-8 pt-5 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-white/40 text-sm">
+      
+          {/* Bottom */}
+          <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-5">
+            <p className="text-sm text-white/40">
               © 2026 Zulario. All rights reserved.
             </p>
-
-            <div className="flex items-center gap-4 text-sm text-white/50">
-              <Link href="/privacy">Privacy</Link>
-              <Link href="/terms">Terms</Link>
-
-              <a href="https://instagram.com/myzulario/" target="_blank" rel="noreferrer">
-                <FaInstagram size={20} />
+      
+            <div className="flex items-center gap-6">
+              <Link
+                href="/privacy"
+                className="text-sm text-white/50 hover:text-white transition-colors"
+              >
+                Privacy
+              </Link>
+      
+              <Link
+                href="/terms"
+                className="text-sm text-white/50 hover:text-white transition-colors"
+              >
+                Terms
+              </Link>
+      
+              <a
+                href="https://instagram.com/myzulario/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors"
+              >
+                <FaInstagram size={18} />
               </a>
-              <a href="https://tiktok.com/@myzulario" target="_blank" rel="noreferrer">
-                <FaTiktok size={20} />
+      
+              <a
+                href="https://tiktok.com/@myzulario"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors"
+              >
+                <FaTiktok size={18} />
               </a>
-              <a href="https://x.com/myzulario" target="_blank" rel="noreferrer">
-                <FaXTwitter size={20} />
+      
+              <a
+                href="https://x.com/myzulario"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors"
+              >
+                <FaXTwitter size={18} />
               </a>
-              <a href="https://facebook.com/myzulario/" target="_blank" rel="noreferrer">
-                <FaFacebookF size={20} />
+      
+              <a
+                href="https://facebook.com/myzulario/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors"
+              >
+                <FaFacebookF size={18} />
               </a>
             </div>
           </div>

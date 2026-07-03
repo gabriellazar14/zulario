@@ -444,7 +444,117 @@ async function main() {
   }
 
   const destinations = JSON.parse(fs.readFileSync(DESTINATIONS_FILE, "utf-8"));
-  const batch = destinations.slice(START_INDEX, START_INDEX + LIMIT);
+
+const ONLY_DESTINATIONS = new Set([
+  "andaman_islands",
+  "andes_of_tierra_del_fuego",
+  "andes_of_venezuela",
+  "ankara",
+  "antigua",
+  "basel",
+  "berlin",
+  "brac",
+  "bucharest",
+  "calais",
+  "cannes",
+  "canyonlands_national_park",
+  "capri",
+  "cardamom_mountains",
+  "cardiff",
+  "catania",
+  "chichen_itza",
+  "chobe_national_park",
+  "como",
+  "copenhagen",
+  "corfu",
+  "corsica",
+  "dinant",
+  "eastern_ghats",
+  "fagaras_mountains",
+  "florence",
+  "geneva",
+  "giethoorn",
+  "gili_trawangan",
+  "glasgow",
+  "granada",
+  "gullfoss_waterfall",
+  "hokkaido",
+  "hurghada",
+  "ibiza",
+  "itsukushima_island",
+  "jasper_national_park",
+  "khao_sok_national_park",
+  "khingan_range",
+  "krka_national_park",
+  "lake_como",
+  "lausanne",
+  "la_maddalena",
+  "la_reunion",
+  "leeds",
+  "lille",
+  "lima",
+  "london",
+  "lyon",
+  "maasai_mara_national_reserve",
+  "malaga",
+  "malmo",
+  "manchester",
+  "marrakesh",
+  "milford_sound",
+  "monaco",
+  "montreal",
+  "naples",
+  "new_orleans",
+  "parque_nacional_de_sierra_nevada",
+  "porto",
+  "prague",
+  "rab",
+  "sardinia",
+  "seoul",
+  "shanghai",
+  "sharm_el_sheikh",
+  "sierras_de_cordoba",
+  "sydney",
+  "table_mountain_national_park",
+  "tallinn",
+  "tel_aviv",
+  "the_hague",
+  "tihanyi_felsziget",
+  "tortuguero_national_park",
+  "toulouse",
+  "turin",
+  "uluru_kata_tjuta_national_park",
+  "utrecht",
+  "vancouver",
+  "vancouver_island",
+  "versailles",
+  "vesuvius_national_park",
+  "vienna",
+  "vilnius",
+  "warsaw",
+  "washington_dc",
+  "zagreb"
+]);
+
+const filteredDestinations = destinations.filter((destination) => {
+  const imageName = path.basename(
+    destination.image,
+    path.extname(destination.image)
+  );
+  return ONLY_DESTINATIONS.has(imageName);
+});
+console.log(`Matched destinations: ${filteredDestinations.length}`);
+
+filteredDestinations.forEach(d => {
+  console.log(
+    path.basename(d.image, path.extname(d.image))
+  );
+});
+
+ const batch = filteredDestinations.slice(
+  START_INDEX,
+  START_INDEX + LIMIT
+);
 
   console.log(`Total destinations: ${destinations.length}`);
   console.log(`Start index: ${START_INDEX}`);

@@ -1,39 +1,68 @@
+console.log("Script started");
+
 import fs from "fs";
 import path from "path";
 
-const ROOT = process.cwd();
-const DESTINATIONS_FILE = path.join(ROOT, "destinations.json");
-const IMAGES_DIR = path.join(ROOT, "public", "images");
+const destinations = JSON.parse(
+  fs.readFileSync("../destinations.json", "utf8")
+);
 
-const destinations = JSON.parse(fs.readFileSync(DESTINATIONS_FILE, "utf-8"));
+const imageFolders = [
 
-const missing = [];
+   "D:/our_website/public/images/pexels",
+  "C:/Users/Daniela/Desktop/poze pt 1_2",
+  "C:/Users/Daniela/Desktop/poze pt 1_2/ok",
+  "C:/Users/Daniela/Desktop/poze pt 1_2/not ok"
+];
 
-for (const destination of destinations) {
-  if (!destination.image) continue;
+const allImages = new Set();
 
-  const fileName = destination.image.replace("/images/", "");
-  const imagePath = path.join(IMAGES_DIR, fileName);
+for (const folder of imageFolders) {
+  console.log(`Scanning ${folder}...`);
 
-  if (!fs.existsSync(imagePath)) {
-    missing.push({
-      id: destination.id,
-      city: destination.city,
-      country: destination.country,
-      image: fileName,
-    });
+  const files = fs.readdirSync(folder, {
+    recursive: true,
+    withFileTypes: true
+  });
+
+  for (const file of files) {
+    if (!file.isFile()) continue;
+
+    allImages.add(
+      path.basename(file.name, path.extname(file.name))
+        .toLowerCase()
+    );
   }
 }
 
-console.log(`Total destinations: ${destinations.length}`);
-console.log(`Missing images: ${missing.length}`);
+console.log(`Indexed ${allImages.size} images`);
 
-console.table(missing);
+const missing = [];
 
-fs.writeFileSync(
-  path.join(ROOT, "missing-images.json"),
-  JSON.stringify(missing, null, 2),
-  "utf-8"
+for (const d of destinations) {
+  const baseName = path
+    .basename(d.image, path.extname(d.image))
+    .toLowerCase();
+
+const found = [...allImages].some(
+  img => img === baseName || img.startsWith(baseName + "_")
 );
 
-console.log("Saved missing list to missing-images.json");
+if (!found) {
+  missing.push(baseName);
+}
+}
+
+console.log(`Destinations: ${destinations.length}`);
+console.log(`Images found in folders: ${allImages.size}`);
+console.log(`Missing images: ${missing.length}`);
+
+missing.forEach((name) => console.log(name));
+
+fs.writeFileSync(
+  "missing-images.txt",
+  missing.join("\n"),
+  "utf8"
+);
+
+console.log("Saved: missing-images.txt");

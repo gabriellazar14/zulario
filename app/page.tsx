@@ -40,13 +40,58 @@ function DestinationCard({
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/35 to-transparent" />
 
       <div className="absolute top-7 left-7">
-        <div
-          className={`rounded-full border-4 border-[#6d5dfc] bg-black/25 backdrop-blur-md flex items-center justify-center ${
-            featured ? "w-20 h-20 text-xl" : "w-16 h-16 text-base"
-          }`}
-        >
-          {match}
-        </div>
+{(() => {
+  const percentage = Number(String(match).replace("%", ""));
+  const size = featured ? 80 : 64;
+  const stroke = 4;
+  const radius = (size - stroke) / 2;
+  const circumference = 2 * Math.PI * radius;
+  const offset =
+    circumference - (percentage / 100) * circumference;
+
+  return (
+    <div
+      className="relative flex items-center justify-center"
+      style={{ width: size, height: size }}
+    >
+      <svg
+        width={size}
+        height={size}
+        viewBox={`0 0 ${size} ${size}`}
+        className="-rotate-90"
+      >
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={radius}
+          fill="rgba(0,0,0,0.25)"
+          stroke="rgba(255,255,255,0.25)"
+          strokeWidth={stroke}
+        />
+
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={radius}
+          fill="transparent"
+          stroke="#8b5cf6"
+          strokeWidth={stroke}
+          strokeLinecap="round"
+          strokeDasharray={circumference}
+          strokeDashoffset={offset}
+        />
+      </svg>
+
+      <div
+        className={`absolute inset-0 flex items-center justify-center font-bold ${
+          featured ? "text-xl" : "text-base"
+        }`}
+      >
+        {match}
+      </div>
+    </div>
+  );
+})()}
 
         <div className="mt-2 text-xs tracking-widest text-white/70 text-center">
           MATCH
@@ -57,15 +102,14 @@ function DestinationCard({
         <h3
           style={{ textShadow: "0 3px 12px rgba(0,0,0,0.9)" }}
           className={`font-bold tracking-[-0.04em] ${
-            featured ? "text-4xl" : "text-2xl"
+            featured ? "text-3xl" : "text-1xl"
           }`}
         >
           {title}
         </h3>
-
-        <div className="mt-4 flex items-center gap-3 text-white/85">
-          <span className="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center bg-black/20">
-            {type === "Mountain Explorer"
+<div className="mt-4 flex items-center gap-3 text-white/85">
+  <span className="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center bg-black/20">
+      {type === "Mountain Explorer"
               ? "⛰️"
               : type === "Urban Discoverer"
               ? "🏙️"
@@ -74,7 +118,13 @@ function DestinationCard({
               : "✨"}
           </span>
 
-          <span className={featured ? "text-lg" : "text-sm"}>{type}</span>
+          <span
+  className={`${
+    featured ? "text-lg" : "text-xs"
+  } whitespace-nowrap`}
+>
+  {type}
+</span>
         </div>
       </div>
     </div>
@@ -157,11 +207,22 @@ const saveCookiePreferences = () => {
     },
   ];
 
-  const startGroupQuiz = async () => {
-    const group = await createQuizGroup();
-    if (!group) return;
+const startGroupQuiz = async () => {
+  const newTab = window.open("", "_blank");
+
+  const group = await createQuizGroup();
+
+  if (!group) {
+    newTab?.close();
+    return;
+  }
+
+  if (newTab) {
+    newTab.location.href = `/group/${group.id}`;
+  } else {
     router.push(`/group/${group.id}`);
-  };
+  }
+};
 
   return (
     <main className="min-h-screen text-white overflow-x-hidden relative bg-[#050B1F]">
@@ -209,7 +270,7 @@ const saveCookiePreferences = () => {
       <section className="relative z-10 min-h-screen flex flex-col lg:flex-row pt-28 pb-16">
  <div className="flex-1 px-16 md:px-20 flex flex-col justify-center">
 
-    <h1 className="mt-54text-5xl md:text-5xl font-bold leading-[1.05] tracking-[-1px] mb-6 max-w-3xl">
+    <h1 className="mt-1 text-5xl md:text-5xl font-bold leading-[1.05] tracking-[-1px] mb-6 max-w-3xl">
       Discover destinations that match who you are
     </h1>
           <p className="text-lg text-white/70 mb-9 max-w-md leading-relaxed">
@@ -235,7 +296,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
 
           <div className="flex flex-col gap-2 text-sm text-white/65">
           <span>✓ Free Travel Personality Test</span>
-            <span>✓ 50+ Curated Destinations</span>
+            <span>✓ 500+ Curated Destinations</span>
             <span>✓ Personality-Based Matching</span>
             <span>✓ Solo & Group Travel Quizzes</span>
           </div>
@@ -491,68 +552,119 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
   </div>
 )}
 
-      {/* FOOTER */}
-      <footer className="relative z-10 border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-6 py-12">
-          <div className="grid md:grid-cols-3 gap-10">
-            <div>
-              <h3 className="text-2xl font-light tracking-wider text-white mb-3">
-                zulario
-              </h3>
-              <p className="text-white/60 leading-relaxed max-w-sm">
-                Discover destinations that match your personality, travel style,
-                and the experiences you're looking for.
-              </p>
-            </div>
+   {/* FOOTER */}
+<footer className="relative z-10 border-t border-white/10">
+  <div className="max-w-6xl mx-auto px-6 py-12">
+    <div className="grid md:grid-cols-[2fr_1fr_1.25fr] gap-10 items-start">
+      {/* Brand */}
+      <div>
+        <h3 className="text-2xl font-light tracking-wider text-white mb-1">
+          zulario
+        </h3>
 
-            <div>
-              <h4 className="font-semibold mb-2 text-white/90">Explore</h4>
-              <div className="flex flex-col gap-1 text-white/60">
-                <Link href="/quiz">Take the Quiz</Link>
-                <Link href="/destinations">Destinations</Link>
-                <Link href="/about">About</Link>
-                <Link href="/faq">FAQ</Link>
-              </div>
-            </div>
+        <span className="block text-[9px] uppercase tracking-[0.3em] text-white/45 mb-5">
+          Travel made personal
+        </span>
 
-            <div>
-              <h4 className="font-semibold mb-2 text-white/90">
-                Travel Matching
-              </h4>
-              <ul className="space-y-2 text-white/60">
-                <li>✓ Personality-based recommendations</li>
-                <li>✓ Emotional destination matching</li>
-                <li>✓ Solo & group travel compatibility</li>
-                <li>✓ Beyond popularity rankings</li>
-              </ul>
-            </div>
-          </div>
+        <p className="text-white/55 leading-relaxed max-w-sm">
+          Discover destinations that match who you are
+        </p>
+      </div>
 
-          <div className="mt-8 pt-5 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-white/40 text-sm">
-              © 2026 Zulario. All rights reserved.
-            </p>
+      {/* Explore */}
+      <div>
+        <h4 className="font-semibold mb-3 text-white/90">Explore</h4>
 
-            <div className="flex items-center gap-4 text-sm text-white/50">
-              <Link href="/privacy">Privacy</Link>
-              <Link href="/terms">Terms</Link>
+        <div className="flex flex-col gap-2 text-white/60">
+          <Link href="/quiz" className="hover:text-white transition-colors">
+            Take the Quiz
+          </Link>
 
-              <a href="https://instagram.com/myzulario/" target="_blank">
-                <FaInstagram size={20} />
-              </a>
-              <a href="https://tiktok.com/@myzulario" target="_blank">
-                <FaTiktok size={20} />
-              </a>
-              <a href="https://x.com/myzulario" target="_blank">
-                <FaXTwitter size={20} />
-              </a>
-              <a href="https://facebook.com/myzulario/" target="_blank">
-                <FaFacebookF size={20} />
-              </a>
-            </div>
-          </div>
+          <Link href="/about" className="hover:text-white transition-colors">
+            About
+          </Link>
+
+          <Link href="/faq" className="hover:text-white transition-colors">
+            FAQ
+          </Link>
         </div>
-      </footer>
+      </div>
+
+      {/* Travel Matching */}
+      <div>
+        <h4 className="font-semibold mb-3 text-white/90">
+          Travel Matching
+        </h4>
+
+        <ul className="space-y-2 text-white/60">
+          <li>✓ Personality-based recommendations</li>
+          <li>✓ Emotional destination matching</li>
+          <li>✓ Solo & group travel compatibility</li>
+          <li>✓ Beyond popularity rankings</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Bottom */}
+    <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-5">
+      <p className="text-sm text-white/40">
+        © 2026 Zulario. All rights reserved.
+      </p>
+
+      <div className="flex items-center gap-6">
+        <Link
+          href="/privacy"
+          className="text-sm text-white/50 hover:text-white transition-colors"
+        >
+          Privacy
+        </Link>
+
+        <Link
+          href="/terms"
+          className="text-sm text-white/50 hover:text-white transition-colors"
+        >
+          Terms
+        </Link>
+
+        <a
+          href="https://instagram.com/myzulario/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/60 hover:text-white transition-colors"
+        >
+          <FaInstagram size={18} />
+        </a>
+
+        <a
+          href="https://tiktok.com/@myzulario"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/60 hover:text-white transition-colors"
+        >
+          <FaTiktok size={18} />
+        </a>
+
+        <a
+          href="https://x.com/myzulario"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/60 hover:text-white transition-colors"
+        >
+          <FaXTwitter size={18} />
+        </a>
+
+        <a
+          href="https://facebook.com/myzulario/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/60 hover:text-white transition-colors"
+        >
+          <FaFacebookF size={18} />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
     </main>
   );
 }

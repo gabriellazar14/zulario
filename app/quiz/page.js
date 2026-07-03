@@ -3,6 +3,7 @@
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import { getTravelPersonality } from "@/lib/travelPersonality";
 
 import {
   FaWhatsapp,
@@ -33,329 +34,221 @@ const questions = [
     id: 1,
     question: "When do you imagine taking this trip?",
     answers: [
-      { text: "Winter", scores: { calmness: 2, nature_connection: 2 } },
-      { text: "Spring", scores: { nature_connection: 2 } },
-      { text: "Summer", scores: { energy: 2 } },
-      { text: "Autumn", scores: { calmness: 1 } },
-      { text: "I’m flexible", scores: { adaptability: 2 } },
+      { text: "Winter", scores: { calmness: 2, reflectiveness: 1 } },
+      { text: "Spring", scores: { emotional_warmth: 1, sensory_intensity: 1 } },
+      { text: "Summer", scores: { energy: 2, social_openness: 1 } },
+      { text: "Autumn", scores: { calmness: 1, mystery: 1 } },
+      { text: "I'm flexible", scores: { adaptability: 2 } },
     ],
   },
 
- {
-  id: 2,
-  question: "Where do you plan to travel from?",
-  answers: [
-    {
-      text: "Europe",
-      scores: { origin_region: "europe" },
-    },
-    {
-      text: "North America",
-      scores: { origin_region: "north_america" },
-    },
-    {
-      text: "South America",
-      scores: { origin_region: "south_america" },
-    },
-    {
-      text: "Asia",
-      scores: { origin_region: "asia" },
-    },
-    {
-      text: "Africa",
-      scores: { origin_region: "africa" },
-    },
-    {
-      text: "Oceania",
-      scores: { origin_region: "oceania" },
-    },
-  ],
-},
-{
-  id: 3,
-  question: "How far are you open to traveling?",
-  answers: [
-    {
-      text: "Only destinations near my area",
-      scores: { travel_scope: "nearby" },
-    },
-    {
-      text: "Anywhere, if it matches me",
-      scores: { travel_scope: "anywhere" },
-    },
-  ],
-},
+  {
+    id: 2,
+    question: "Where will you be traveling from?",
+    answers: [
+      { text: "Europe", scores: { origin_region: "europe" } },
+      { text: "North America", scores: { origin_region: "north_america" } },
+      { text: "South America", scores: { origin_region: "south_america" } },
+      { text: "Asia", scores: { origin_region: "asia" } },
+      { text: "Africa", scores: { origin_region: "africa" } },
+      { text: "Oceania", scores: { origin_region: "oceania" } },
+    ],
+  },
 
   {
-  id: 4,
-  question: "What kind of experience are you looking for most right now?",
-  answers: [
-    {
-      text: "A vibrant city atmosphere",
-      scores: {
-        primary_category: "city",
-        city: 10,
-        energy: 6,
-        beach: 0,
-        mountains: 0,
-        nature: 2,
-      },
-    },
-    {
-      text: "Nature and mountains",
-      scores: {
-        primary_category: "mountains",
-        mountains: 10,
-        nature_connection: 8,
-        nature: 6,
-        beach: 0,
-        city: 0,
-      },
-    },
-    {
-      text: "A beach escape",
-      scores: {
-        primary_category: "beach",
-        beach: 10,
-        calmness: 6,
-        nature_connection: 4,
-        city: 0,
-        mountains: 0,
-      },
-          },
-          {
-  text: "A once-in-a-lifetime adventure",
-  scores: {
-    primary_category: "adventure",
-    adventure: 10,
-    transformation: 8,
-    exploration: 8,
-    city: 0,
-    beach: 0,
+    id: 3,
+    question: "How far are you willing to travel for the right experience?",
+    answers: [
+      { text: "I'd prefer somewhere relatively close", scores: { travel_scope: "nearby" } },
+      { text: "Distance doesn't matter if it's worth it", scores: { travel_scope: "anywhere" } },
+    ],
   },
-}
-          
-  ],
-},
+
+  {
+    id: 4,
+    question: "What kind of experience are you craving most right now?",
+    answers: [
+      {
+        text: "A vibrant city full of life",
+        scores: {
+          primary_category: "city",
+          city: 10,
+          energy: 2,
+          cultural_depth: 2,
+          beach: 0,
+          mountains: 0,
+          nature: 0,
+        },
+      },
+      {
+        text: "Mountains, nature, and open spaces",
+        scores: {
+          primary_category: "mountains",
+          mountains: 10,
+          nature_connection: 6,
+          reflectiveness: 2,
+          beach: 0,
+          city: 0,
+        },
+      },
+      {
+        text: "A relaxing beach escape",
+        scores: {
+          primary_category: "beach",
+          beach: 10,
+          calmness: 4,
+          sensory_intensity: 2,
+          city: 0,
+          mountains: 0,
+        },
+      },
+      {
+        text: "A once-in-a-lifetime adventure",
+        scores: {
+    primary_category: "unique_experience",
+unique_experience: 10,
+adventure: 10,
+                    freedom: 3,
+          mystery: 2,
+          city: 0,
+          beach: 0,
+        },
+      },
+    ],
+  },
+
   {
     id: 5,
-    question:
-      "You arrive somewhere completely unfamiliar at sunset. What attracts you first?",
+    question: "What catches your eye first in a new place?",
     answers: [
       { text: "A lively street full of movement and music", scores: { energy: 2 } },
-      { text: "A quiet café with people talking softly", scores: { calmness: 2 } },
-      { text: "A beautiful viewpoint or landscape", scores: { nature_connection: 2 } },
-      {
-        text: "A local gathering or event you unexpectedly find",
-        scores: { social_openness: 2 },
-      },
+      { text: "A cozy café where people linger and talk", scores: { emotional_warmth: 2 } },
+      { text: "A breathtaking viewpoint or landscape", scores: { sensory_intensity: 1, reflectiveness: 1 } },
+      { text: "A local event you unexpectedly stumble upon", scores: { social_openness: 2 } },
     ],
   },
+
   {
     id: 6,
-    question: "Which type of atmosphere affects you most?",
+    question: "What instantly makes you feel like you belong somewhere?",
     answers: [
-      {
-        text: "Places that feel elegant and beautifully organized",
-        scores: { calmness: 1 },
-      },
-      {
-        text: "Places that feel authentic, alive, and imperfect",
-        scores: { energy: 2 },
-      },
-      {
-        text: "Places surrounded by nature and silence",
-        scores: { nature_connection: 3 },
-      },
-      {
-        text: "Places filled with history and timeless character",
-        scores: { mystery: 2 },
-      },
+      { text: "Beautiful streets and thoughtful design", scores: { cultural_depth: 1, calmness: 1 } },
+      { text: "Raw authenticity and local everyday life", scores: { energy: 1, cultural_depth: 1 } },
+      { text: "Open landscapes and natural beauty", scores: { nature_connection: 1, reflectiveness: 2 } },
+      { text: "Stories and traditions hidden around every corner", scores: { mystery: 2 } },
     ],
   },
+
   {
     id: 7,
-    question: "What kind of moments do you enjoy most while traveling?",
+    question: "What would make a perfect travel day complete?",
     answers: [
-      {
-        text: "Deep conversations and meaningful connections",
-        scores: { emotional_warmth: 3 },
-      },
-      {
-        text: "Discovering different cultures and perspectives",
-        scores: { mystery: 2 },
-      },
-      {
-        text: "Unexpected experiences and spontaneity",
-        scores: { energy: 2 },
-      },
-      {
-        text: "Quiet observation and taking everything in slowly",
-        scores: { calmness: 2 },
-      },
+      { text: "A conversation you'll remember for years", scores: { emotional_warmth: 3 } },
+      { text: "Learning something completely unexpected", scores: { mystery: 2 } },
+      { text: "A spontaneous adventure you never planned", scores: { energy: 1, freedom: 1 } },
+      { text: "A quiet moment watching the world go by", scores: { calmness: 2 } },
     ],
   },
+
   {
     id: 8,
-    question: "What kind of atmosphere stays in your memory the longest?",
+    question: "Years later, what are you most likely to remember?",
     answers: [
-      {
-        text: "Romantic and cinematic moments",
-        scores: { emotional_warmth: 3 },
-      },
-      { text: "Places that felt energetic and alive", scores: { energy: 2 } },
-      {
-        text: "Peaceful moments and quiet reflection",
-        scores: { calmness: 2 },
-      },
-      {
-        text: "Intense experiences and unpredictability",
-        scores: { mystery: 2 },
-      },
+      { text: "The people who made the place feel magical", scores: { emotional_warmth: 3 } },
+      { text: "The excitement and buzz of the streets", scores: { energy: 2 } },
+      { text: "A peaceful sunrise or sunset in silence", scores: { calmness: 1, reflectiveness: 1 } },
+      { text: "The unexpected moments that surprised you", scores: { mystery: 2 } },
     ],
   },
+
   {
     id: 9,
-    question: "Which environment feels closest to your ideal rhythm?",
+    question: "In which place would you spend hours without getting bored?",
     answers: [
-      { text: "Elegant and refined", scores: { calmness: 1 } },
-      { text: "Creative and slightly chaotic", scores: { energy: 2 } },
-      { text: "Calm, simple, and peaceful", scores: { calmness: 3 } },
-      {
-        text: "Warm, emotional, and welcoming",
-        scores: { emotional_warmth: 3 },
-      },
+      { text: "An elegant old town full of charm", scores: { cultural_depth: 2 } },
+      { text: "A creative neighborhood full of artists and cafés", scores: { energy: 1, mystery: 1 } },
+      { text: "A secluded spot surrounded by nature", scores: { nature_connection: 1, calmness: 2, reflectiveness: 1 } },
+      { text: "A lively square where people gather and interact", scores: { social_openness: 2, emotional_warmth: 1 } },
     ],
   },
+
   {
     id: 10,
-    question: "What are you hoping this trip gives you emotionally?",
+    question: "If this trip could give you one gift, what would you choose?",
     answers: [
-      {
-        text: "Connection, warmth, and comfort",
-        scores: { emotional_warmth: 3 },
-      },
-      { text: "New perspectives and stimulation", scores: { mystery: 2 } },
-      { text: "Freedom, escape, and wonder", scores: { freedom: 3 } },
-      {
-        text: "Calmness, clarity, and space to breathe",
-        scores: { calmness: 3 },
-      },
+      { text: "Feeling closer to yourself and others", scores: { emotional_warmth: 3 } },
+      { text: "Inspiration and a fresh perspective", scores: { mystery: 1, cultural_depth: 1 } },
+      { text: "A sense of complete freedom", scores: { freedom: 3 } },
+      { text: "Peace of mind", scores: { calmness: 3 } },
     ],
   },
+
   {
     id: 11,
-    question: "What kind of travel experience changes you the most?",
+    question: "Which experience would stay with you forever?",
     answers: [
-      { text: "Nature and isolation", scores: { nature_connection: 3 } },
-      {
-        text: "Discovering completely new environments",
-        scores: { mystery: 3 },
-      },
-      {
-        text: "Romance and emotional connection",
-        scores: { emotional_warmth: 3 },
-      },
-      {
-        text: "Adventure and physical intensity",
-        scores: { energy: 3 },
-      },
+      { text: "Sleeping under the stars far from civilization", scores: { nature_connection: 1, freedom: 2 } },
+      { text: "Exploring somewhere unlike anywhere you've been before", scores: { mystery: 3 } },
+      { text: "Sharing unforgettable moments with someone special", scores: { emotional_warmth: 3 } },
+      { text: "Pushing yourself through an unforgettable adventure", scores: { energy: 2, freedom: 1 } },
     ],
   },
+
   {
     id: 12,
-    question: "Which feeling are you chasing most right now?",
+    question: "What do you feel your life needs most right now?",
     answers: [
-      {
-        text: "Healing and emotional balance",
-        scores: { calmness: 3 },
-      },
-      { text: "Reinvention and fresh energy", scores: { energy: 3 } },
-      {
-        text: "Nostalgia and beautiful memories",
-        scores: { emotional_warmth: 2 },
-      },
-      { text: "Stability and simplicity", scores: { calmness: 2 } },
+      { text: "A chance to slow down and heal", scores: { calmness: 3 } },
+      { text: "Excitement and renewed motivation", scores: { energy: 3 } },
+      { text: "Meaningful memories to cherish", scores: { emotional_warmth: 2 } },
+      { text: "Simplicity and balance", scores: { calmness: 2 } },
     ],
   },
+
   {
     id: 13,
-    question:
-      "During a long day exploring a destination, what matters most to you?",
+    question: "During a long day exploring, what matters most to you?",
     answers: [
-      {
-        text: "Beautiful architecture and aesthetics",
-        scores: { calmness: 1 },
-      },
-      {
-        text: "Discovering places with different personalities",
-        scores: { mystery: 2 },
-      },
-      {
-        text: "Peace, slowness, and quiet moments",
-        scores: { calmness: 3 },
-      },
-      {
-        text: "Social energy, nightlife, and interaction",
-        scores: { energy: 3 },
-      },
+      { text: "Beautiful architecture and aesthetics", scores: { cultural_depth: 2 } },
+      { text: "Discovering places with different personalities", scores: { mystery: 2 } },
+      { text: "Peace, slowness, and quiet moments", scores: { calmness: 3 } },
+      { text: "Social energy, nightlife, and interaction", scores: { energy: 2, social_openness: 1 } },
     ],
   },
+
   {
     id: 14,
-    question: "Which imperfection bothers you the least in a destination?",
+    question: "Which imperfection would bother you the least?",
     answers: [
-      {
-        text: "A place feeling emotionally distant",
-        scores: { mystery: 1 },
-      },
+      { text: "A place feeling emotionally distant", scores: { reflectiveness: 1 } },
       { text: "A bit of chaos and disorder", scores: { energy: 2 } },
-      { text: "Tourist crowds", scores: { calmness: 1 } },
-      { text: "Slower pace and quietness", scores: { calmness: 2 } },
+      { text: "Tourist crowds", scores: { social_openness: 1 } },
+      { text: "A slower pace of life", scores: { calmness: 2 } },
     ],
   },
+
   {
     id: 15,
-    question: "What kind of evening atmosphere attracts you most?",
+    question: "What kind of evening would you be most excited about?",
     answers: [
-      {
-        text: "Elegant bars and intimate spaces",
-        scores: { calmness: 2 },
-      },
-      {
-        text: "Lively streets and spontaneous social energy",
-        scores: { energy: 3 },
-      },
-      {
-        text: "Artistic and alternative places",
-        scores: { mystery: 2 },
-      },
-      {
-        text: "Quiet walks and peaceful evenings",
-        scores: { calmness: 3 },
-      },
+      { text: "Elegant bars and intimate spaces", scores: { calmness: 1, romanticism: 1 } },
+      { text: "Lively streets and spontaneous social energy", scores: { energy: 2, social_openness: 1 } },
+      { text: "Artistic and alternative corners of the city", scores: { mystery: 2 } },
+      { text: "A peaceful walk under the stars", scores: { calmness: 2, reflectiveness: 1 } },
     ],
   },
+
   {
     id: 16,
-    question:
-      "If a destination were a person, who would attract you most?",
+    question: "If your ideal destination had a personality, how would you describe it?",
     answers: [
-      {
-        text: "Calm and emotionally safe",
-        scores: { emotional_warmth: 2 },
-      },
-      {
-        text: "Intelligent and unpredictable",
-        scores: { mystery: 3 },
-      },
-      {
-        text: "Passionate and expressive",
-        scores: { energy: 2 },
-      },
-      { text: "Elegant and composed", scores: { calmness: 2 } },
+      { text: "Kind, calm, and comforting", scores: { emotional_warmth: 2 } },
+      { text: "Curious, intelligent, and full of surprises", scores: { mystery: 3 } },
+      { text: "Bold, passionate, and impossible to ignore", scores: { energy: 2 } },
+      { text: "Sophisticated, graceful, and timeless", scores: { cultural_depth: 2, calmness: 1 } },
     ],
   },
+
   {
     id: 17,
     question: "What kind of change are you secretly looking for?",
@@ -367,6 +260,7 @@ const questions = [
     ],
   },
 ];
+
 function MatchCircle({ percentage }) {
   const size = 82;
   const stroke = 4;
@@ -419,6 +313,8 @@ function ResultCard({ match, onSeeDetails }) {
   const data = match.destination?.data || match.destination || {};
   const narrative = data.match_narratives?.high_match || "";
 
+  const personality = getTravelPersonality(data);
+
   return (
     <div className="relative h-[520px] rounded-[32px] overflow-hidden shadow-2xl bg-transparent">
       <img
@@ -429,7 +325,8 @@ function ResultCard({ match, onSeeDetails }) {
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-black/10" />
 
-   <div className="absolute top-6 left-6">
+{/* Match Circle */}
+<div className="absolute top-6 left-6 z-20">
   <MatchCircle percentage={match.percentage} />
 
   <div className="mt-2 text-xs tracking-widest text-white/70 text-center">
@@ -437,13 +334,20 @@ function ResultCard({ match, onSeeDetails }) {
   </div>
 </div>
 
+{/* Personality Badge */}
+<div className="absolute top-2 right-6 z-20">
+  <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/30 backdrop-blur-md px-3 py-2 text-sm font-semibold text-white/90">
+    <span>{personality.icon}</span>
+    <span>{personality.label}</span>
+  </div>
+</div>
       <div className="absolute bottom-6 left-6 right-6 text-white">
         <h2 className="text-4xl font-bold mb-2">{data.city}</h2>
         <p className="text-white/70 mb-4">{data.country}</p>
 
-        <p className="text-sm text-white/80 leading-relaxed">
-          {narrative}
-        </p>
+ <p className="text-sm text-white/80 leading-relaxed line-clamp-4 overflow-hidden">
+  {narrative}
+</p>
 
        <button
   onClick={onSeeDetails}
@@ -575,6 +479,7 @@ const createShareLink = async () => {
 
     try {
     const finalScores = buildScores(updatedAnswers);
+    console.log(finalScores);
 const destinations = await getDestinations();
 const matches = matchDestination(finalScores, destinations);
 
@@ -864,8 +769,8 @@ if (loading) {
 
       <button
         onClick={resetQuiz}
-        className="px-6 py-4 rounded-xl text-white font-semibold bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] shadow-[0_10px_30px_rgba(79,124,255,0.3)] hover:scale-105 transition"
-      >
+       className="px-6 py-4 rounded-xl text-white font-semibold bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] hover:scale-105 transition"
+     >
         Take Quiz Again
       </button>
 
@@ -982,49 +887,46 @@ if (loading) {
     )}
   </div>
 </div>
-       {selectedDestination && (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 px-6 overflow-hidden"
-      onClick={() => setSelectedDestination(null)}
-    >
-      <div
-        onClick={(e) => e.stopPropagation()}
-        className="relative max-w-3xl w-full max-h-[85vh] rounded-3xl bg-[#0b1220] border border-white/15 text-white shadow-2xl overflow-hidden"
-      >
-      <div
-    className="max-h-[85vh] overflow-y-auto p-8"
-    style={{
-      scrollbarColor: "#6d5dfc transparent",
-      scrollbarWidth: "thin",
-    }}
-  >
-  <div className="sticky top-1 z-50 flex justify-end h-0 -mr-9 pointer-events-none">
-  <button
+      {selectedDestination && (
+  <div
+    className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 px-6 overflow-hidden"
     onClick={() => setSelectedDestination(null)}
-    className="
-      pointer-events-auto
-      flex
-      items-center
-      justify-center
-      w-10
-      h-10
-      -mt-4
-      bg-transparent
-      text-white/70
-      text-3xl
-      hover:text-white
-    "
   >
-    ×
-  </button>
-</div>
+    <div
+      onClick={(e) => e.stopPropagation()}
+      className="relative max-w-3xl w-full max-h-[85vh] rounded-3xl bg-[#0b1220] border border-white/15 text-white shadow-2xl overflow-hidden"
+    >
+      <button
+        onClick={() => setSelectedDestination(null)}
+        className="absolute top-0 right-2 z-50 flex items-center justify-center w-10 h-10 text-white/70 text-3xl hover:text-white transition"
+      >
+        ×
+      </button>
 
-      <img
-  src={selectedDestination.image}
-  alt={selectedDestination.city}
-  className="w-full h-72 object-cover rounded-2xl mb-6"
-/>
+      <div
+        className="max-h-[85vh] overflow-y-auto p-8"
+        style={{
+          scrollbarColor: "#6d5dfc transparent",
+          scrollbarWidth: "thin",
+        }}
+      >
+        <div className="relative w-full aspect-[3/2] rounded-2xl overflow-hidden mb-6 bg-black/20">
+          <img
+            src={selectedDestination.image}
+            alt={selectedDestination.city}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
+{(() => {
+  const personality = getTravelPersonality(selectedDestination);
 
+  return (
+    <div className="inline-flex items-center gap-2 rounded-full border border-[#6d5dfc]/30 bg-[#6d5dfc]/15 px-4 py-2 text-sm font-semibold text-[#c8c2ff] mb-4">
+      <span>{personality.icon}</span>
+      <span>{personality.label}</span>
+    </div>
+  );
+})()}
 <h2 className="text-4xl font-bold mb-1">
   {selectedDestination.city}
 </h2>
@@ -1041,8 +943,8 @@ if (loading) {
   </p>
 )}
 
-   <p className="text-xl font-semibold mb-3">
-  Personality Match
+  <p className="text-xl font-semibold mb-3">
+  This destination fits your travel style
 </p>
 
 {/* ARCHETYPE BADGES */}
@@ -1297,8 +1199,8 @@ text-[#9eb8ff]
 
       <button
         onClick={() => setShareOpen(false)}
-        className="px-6 py-4 rounded-xl border-none text-white font-semibold bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] shadow-[0_10px_30px_rgba(79,124,255,0.3)] hover:scale-105 transition cursor-pointer"
-      >
+         className="px-6 py-4 rounded-xl text-white font-semibold bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] hover:scale-105 transition"
+     >
         Close
       </button>
     </div>
@@ -1306,67 +1208,118 @@ text-[#9eb8ff]
 )}
 
 {/* FOOTER */}
-      <footer className="relative z-10 border-t border-white/10 mt-20">
-        <div className="max-w-6xl mx-auto px-6 py-12">
-          <div className="grid md:grid-cols-3 gap-10">
-            <div>
-              <h3 className="text-2xl font-light tracking-wider text-white mb-3">
-                zulario
-              </h3>
-              <p className="text-white/60 leading-relaxed max-w-sm">
-                Discover destinations that match your personality, travel style,
-                and the experiences you're looking for.
-              </p>
-            </div>
+<footer className="relative z-10 border-t border-white/10">
+  <div className="max-w-6xl mx-auto px-6 py-12">
+    <div className="grid md:grid-cols-[2fr_1fr_1.25fr] gap-10 items-start">
+      {/* Brand */}
+      <div>
+        <h3 className="text-2xl font-light tracking-wider text-white mb-1">
+          zulario
+        </h3>
 
-            <div>
-              <h4 className="font-semibold mb-2 text-white/90">Explore</h4>
-              <div className="flex flex-col gap-1 text-white/60">
-                <Link href="/quiz">Take the Quiz</Link>
-                <Link href="/destinations">Destinations</Link>
-                <Link href="/about">About</Link>
-                <Link href="/faq">FAQ</Link>
-              </div>
-            </div>
+        <span className="block text-[9px] uppercase tracking-[0.3em] text-white/45 mb-5">
+          Travel made personal
+        </span>
 
-            <div>
-              <h4 className="font-semibold mb-2 text-white/90">
-                Travel Matching
-              </h4>
-              <ul className="space-y-2 text-white/60">
-                <li>✓ Personality-based recommendations</li>
-                <li>✓ Emotional destination matching</li>
-                <li>✓ Solo & group travel compatibility</li>
-                <li>✓ Beyond popularity rankings</li>
-              </ul>
-            </div>
-          </div>
+        <p className="text-white/55 leading-relaxed max-w-sm">
+          Discover destinations that match who you are
+        </p>
+      </div>
 
-          <div className="mt-8 pt-5 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-white/40 text-sm">
-              © 2026 Zulario. All rights reserved.
-            </p>
+      {/* Explore */}
+      <div>
+        <h4 className="font-semibold mb-3 text-white/90">Explore</h4>
 
-            <div className="flex items-center gap-4 text-sm text-white/50">
-              <Link href="/privacy">Privacy</Link>
-              <Link href="/terms">Terms</Link>
+        <div className="flex flex-col gap-2 text-white/60">
+          <Link href="/quiz" className="hover:text-white transition-colors">
+            Take the Quiz
+          </Link>
 
-              <a href="https://instagram.com/myzulario/" target="_blank" rel="noreferrer">
-                <FaInstagram size={20} />
-              </a>
-              <a href="https://tiktok.com/@myzulario" target="_blank" rel="noreferrer">
-                <FaTiktok size={20} />
-              </a>
-              <a href="https://x.com/myzulario" target="_blank" rel="noreferrer">
-                <FaXTwitter size={20} />
-              </a>
-              <a href="https://facebook.com/myzulario/" target="_blank" rel="noreferrer">
-                <FaFacebookF size={20} />
-              </a>
-            </div>
-          </div>
+          <Link href="/about" className="hover:text-white transition-colors">
+            About
+          </Link>
+
+          <Link href="/faq" className="hover:text-white transition-colors">
+            FAQ
+          </Link>
         </div>
-      </footer>
+      </div>
+
+      {/* Travel Matching */}
+      <div>
+        <h4 className="font-semibold mb-3 text-white/90">
+          Travel Matching
+        </h4>
+
+        <ul className="space-y-2 text-white/60">
+          <li>✓ Personality-based recommendations</li>
+          <li>✓ Emotional destination matching</li>
+          <li>✓ Solo & group travel compatibility</li>
+          <li>✓ Beyond popularity rankings</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Bottom */}
+    <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-5">
+      <p className="text-sm text-white/40">
+        © 2026 Zulario. All rights reserved.
+      </p>
+
+      <div className="flex items-center gap-6">
+        <Link
+          href="/privacy"
+          className="text-sm text-white/50 hover:text-white transition-colors"
+        >
+          Privacy
+        </Link>
+
+        <Link
+          href="/terms"
+          className="text-sm text-white/50 hover:text-white transition-colors"
+        >
+          Terms
+        </Link>
+
+        <a
+          href="https://instagram.com/myzulario/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/60 hover:text-white transition-colors"
+        >
+          <FaInstagram size={18} />
+        </a>
+
+        <a
+          href="https://tiktok.com/@myzulario"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/60 hover:text-white transition-colors"
+        >
+          <FaTiktok size={18} />
+        </a>
+
+        <a
+          href="https://x.com/myzulario"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/60 hover:text-white transition-colors"
+        >
+          <FaXTwitter size={18} />
+        </a>
+
+        <a
+          href="https://facebook.com/myzulario/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/60 hover:text-white transition-colors"
+        >
+          <FaFacebookF size={18} />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
 
   </main>
 );
@@ -1380,6 +1333,22 @@ text-[#9eb8ff]
       <div className="absolute inset-0 bg-gradient-to-br from-[#070b16] via-[#070b16]/85 to-blue-950/70" />
 
       <div className="relative z-10 w-full max-w-3xl rounded-3xl border border-white/15 bg-white/10 backdrop-blur-2xl p-10 shadow-[0_30px_100px_rgba(0,0,0,0.45)]">
+ <div className="absolute top-5 right-5">
+  <button
+    type="button"
+    onClick={() => {
+      if (groupId) {
+        window.location.href = `/group/${groupId}`;
+      } else {
+        window.location.href = "/";
+      }
+    }}
+    className="flex items-center justify-center w-10 h-10 rounded-full text-white/70 text-3xl hover:text-white transition"
+  >
+    &times;
+  </button>
+
+</div>
         <h1 className="text-3xl font-bold mb-8 text-center">
           Travel Quiz
         </h1>

@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+destinations.zip
+dest.txt
+dest_new.txt
+dest_removed.txt
+scripts/missing-images.txt

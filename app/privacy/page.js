@@ -154,68 +154,120 @@ by contacting us at contact@zulario.com.
 
         </div>
       </div>
+
   {/* FOOTER */}
-      <footer className="relative z-10 border-t border-white/10 mt-16">
-        <div className="max-w-6xl mx-auto px-6 py-12">
-          <div className="grid md:grid-cols-3 gap-10">
-            <div>
-              <h3 className="text-2xl font-light tracking-wider text-white mb-3">
-                zulario
-              </h3>
-              <p className="text-white/60 leading-relaxed max-w-sm">
-                Discover destinations that match your personality, travel style,
-                and the experiences you're looking for.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-2 text-white/90">Explore</h4>
-              <div className="flex flex-col gap-1 text-white/60">
-                <Link href="/quiz">Take the Quiz</Link>
-                <Link href="/destinations">Destinations</Link>
-                <Link href="/about">About</Link>
-                <Link href="/faq">FAQ</Link>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-2 text-white/90">
-                Travel Matching
-              </h4>
-              <ul className="space-y-2 text-white/60">
-                <li>✓ Personality-based recommendations</li>
-                <li>✓ Emotional destination matching</li>
-                <li>✓ Solo & group travel compatibility</li>
-                <li>✓ Beyond popularity rankings</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-8 pt-5 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-white/40 text-sm">
-              © 2026 Zulario. All rights reserved.
-            </p>
-
-            <div className="flex items-center gap-4 text-sm text-white/50">
-              <Link href="/privacy">Privacy</Link>
-              <Link href="/terms">Terms</Link>
-
-              <a href="https://instagram.com/myzulario/" target="_blank" rel="noreferrer">
-                <FaInstagram size={20} />
-              </a>
-              <a href="https://tiktok.com/@myzulario" target="_blank" rel="noreferrer">
-                <FaTiktok size={20} />
-              </a>
-              <a href="https://x.com/myzulario" target="_blank" rel="noreferrer">
-                <FaXTwitter size={20} />
-              </a>
-              <a href="https://facebook.com/myzulario/" target="_blank" rel="noreferrer">
-                <FaFacebookF size={20} />
-              </a>
-            </div>
+  <footer className="relative mt-10 z-10 border-t border-white/10">
+    <div className="max-w-6xl mx-auto px-6 py-12">
+      <div className="grid md:grid-cols-[2fr_1fr_1.25fr] gap-10 items-start">
+        {/* Brand */}
+        <div>
+          <h3 className="text-2xl font-light tracking-wider text-white mb-1">
+            zulario
+          </h3>
+  
+          <span className="block text-[9px] uppercase tracking-[0.3em] text-white/45 mb-5">
+            Travel made personal
+          </span>
+  
+          <p className="text-white/55 leading-relaxed max-w-sm">
+            Discover destinations that match who you are
+          </p>
+        </div>
+  
+        {/* Explore */}
+        <div>
+          <h4 className="font-semibold mb-3 text-white/90">Explore</h4>
+  
+          <div className="flex flex-col gap-2 text-white/60">
+            <Link href="/quiz" className="hover:text-white transition-colors">
+              Take the Quiz
+            </Link>
+  
+            <Link href="/about" className="hover:text-white transition-colors">
+              About
+            </Link>
+  
+            <Link href="/faq" className="hover:text-white transition-colors">
+              FAQ
+            </Link>
           </div>
         </div>
-      </footer>
+  
+        {/* Travel Matching */}
+        <div>
+          <h4 className="font-semibold mb-3 text-white/90">
+            Travel Matching
+          </h4>
+  
+          <ul className="space-y-2 text-white/60">
+            <li>✓ Personality-based recommendations</li>
+            <li>✓ Emotional destination matching</li>
+            <li>✓ Solo & group travel compatibility</li>
+            <li>✓ Beyond popularity rankings</li>
+          </ul>
+        </div>
+      </div>
+  
+      {/* Bottom */}
+      <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-5">
+        <p className="text-sm text-white/40">
+          © 2026 Zulario. All rights reserved.
+        </p>
+  
+        <div className="flex items-center gap-6">
+          <Link
+            href="/privacy"
+            className="text-sm text-white/50 hover:text-white transition-colors"
+          >
+            Privacy
+          </Link>
+  
+          <Link
+            href="/terms"
+            className="text-sm text-white/50 hover:text-white transition-colors"
+          >
+            Terms
+          </Link>
+  
+          <a
+            href="https://instagram.com/myzulario/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/60 hover:text-white transition-colors"
+          >
+            <FaInstagram size={18} />
+          </a>
+  
+          <a
+            href="https://tiktok.com/@myzulario"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/60 hover:text-white transition-colors"
+          >
+            <FaTiktok size={18} />
+          </a>
+  
+          <a
+            href="https://x.com/myzulario"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/60 hover:text-white transition-colors"
+          >
+            <FaXTwitter size={18} />
+          </a>
+  
+          <a
+            href="https://facebook.com/myzulario/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/60 hover:text-white transition-colors"
+          >
+            <FaFacebookF size={18} />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
     </main>
   );
 }

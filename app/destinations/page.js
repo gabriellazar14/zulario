@@ -1,3 +1,4 @@
+{/* 
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -278,8 +279,8 @@ export default function DestinationsPage() {
 })}
           </div>
         )}
-      </div>
-  {/* FOOTER */}
+      </div> */}
+  {/* FOOTER 
       <footer className="relative z-10 border-t border-white/10 mt-16">
         <div className="max-w-6xl mx-auto px-6 py-12">
           <div className="grid md:grid-cols-3 gap-10">
@@ -343,4 +344,4 @@ export default function DestinationsPage() {
       </footer>
     </main>
   );
-}
+}*/}
