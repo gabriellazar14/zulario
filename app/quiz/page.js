@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
@@ -33,13 +34,47 @@ const questions = [
   {
     id: 1,
     question: "When do you imagine taking this trip?",
-    answers: [
-      { text: "Winter", scores: { calmness: 2, reflectiveness: 1 } },
-      { text: "Spring", scores: { emotional_warmth: 1, sensory_intensity: 1 } },
-      { text: "Summer", scores: { energy: 2, social_openness: 1 } },
-      { text: "Autumn", scores: { calmness: 1, mystery: 1 } },
-      { text: "I'm flexible", scores: { adaptability: 2 } },
-    ],
+answers: [
+  {
+    text: "Winter",
+    scores: {
+      selected_season: "winter",
+      calmness: 2,
+      reflectiveness: 1,
+    },
+  },
+  {
+    text: "Spring",
+    scores: {
+      selected_season: "spring",
+      emotional_warmth: 1,
+      sensory_intensity: 1,
+    },
+  },
+  {
+    text: "Summer",
+    scores: {
+      selected_season: "summer",
+      energy: 2,
+      social_openness: 1,
+    },
+  },
+  {
+    text: "Autumn",
+    scores: {
+      selected_season: "autumn",
+      calmness: 1,
+      mystery: 1,
+    },
+  },
+  {
+    text: "I'm flexible",
+    scores: {
+      selected_season: "flexible",
+      adaptability: 2,
+    },
+  },
+],
   },
 
   {
@@ -317,11 +352,14 @@ function ResultCard({ match, onSeeDetails }) {
 
   return (
     <div className="relative h-[520px] rounded-[32px] overflow-hidden shadow-2xl bg-transparent">
-      <img
-        src={data.image}
-        alt={data.city}
-        className="absolute -inset-[1px] w-[calc(100%+2px)] h-[calc(100%+2px)] object-cover"
-      />
+  <Image
+  src={data.image}
+  alt={data.city}
+  fill
+  priority
+  sizes="(max-width: 768px) 100vw, 33vw"
+  className="object-cover"
+/>
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-black/10" />
 
@@ -650,11 +688,14 @@ if (loading) {
 
 <header className="relative -top-10 z-20 mb-1">
   <a href="/" className="inline-flex items-center">
-  <img
-    src="/zulario.png"
-    alt="Zulario Logo"
-    className="h-20 w-auto"
-  />
+<Image
+  src="/zulario.png"
+  alt="Zulario Logo"
+  width={240}
+  height={80}
+  priority
+  className="h-20 w-auto"
+/>
 
   </a>
 </header>
@@ -719,11 +760,15 @@ if (loading) {
             key={data.id || `${data.city}-${data.country}`}
             className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-3 hover:bg-white/10 transition"
           >
-            <img
-              src={data.image}
-              alt={data.city}
-              className="w-20 h-20 rounded-xl object-cover flex-shrink-0"
-            />
+           <div className="relative w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 bg-white/5">
+  <Image
+    src={data.image}
+    alt={data.city}
+    fill
+    sizes="80px"
+    className="object-cover"
+  />
+</div>
 
             <div className="flex-1 min-w-0">
               <div className="flex items-start justify-between gap-4">

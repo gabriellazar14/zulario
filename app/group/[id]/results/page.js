@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import {
@@ -97,11 +97,14 @@ function ResultCard({ match, labelText = "MATCH", onSeeDetails }) {
 
   return (
     <div className="relative h-[520px] rounded-[32px] overflow-hidden shadow-2xl bg-transparent">
-      <img
-        src={data.image}
-        alt={data.city}
-        className="absolute -inset-[1px] w-[calc(100%+2px)] h-[calc(100%+2px)] object-cover"
-      />
+    <Image
+  src={data.image}
+  alt={data.city}
+  fill
+  priority
+  sizes="(max-width: 768px) 100vw, 33vw"
+  className="object-cover"
+/>
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-black/10" />
 
@@ -279,11 +282,14 @@ ${groupResultsLink}`;
 
       <header className="relative -top-10 z-20 mb-1">
         <a href="/" className="inline-flex items-center">
-        <img
-    src="/zulario.png"
-    alt="Zulario Logo"
-    className="h-20 w-auto"
-  />
+<Image
+  src="/zulario.png"
+  alt="Zulario Logo"
+  width={240}
+  height={80}
+  priority
+  className="h-20 w-auto"
+/>
 
         </a>
       </header>
@@ -458,11 +464,15 @@ ${groupResultsLink}`;
                 </button>
               </div>
 
-              <img
-                src={selectedDestination.image}
-                alt={selectedDestination.city}
-                className="w-full h-72 object-cover rounded-2xl mb-6"
-              />
+             <div className="relative w-full h-72 rounded-2xl overflow-hidden mb-6">
+  <Image
+    src={selectedDestination.image}
+    alt={selectedDestination.city}
+    fill
+    sizes="(max-width: 768px) 100vw, 768px"
+    className="object-cover"
+  />
+</div>
 
               <h2 className="text-4xl font-bold mb-1">
                 {selectedDestination.city}

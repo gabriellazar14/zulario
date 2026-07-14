@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
@@ -31,11 +32,14 @@ function DestinationCard({
       style={{ clipPath: "inset(0 round 32px)" }}
       className={`group relative overflow-hidden rounded-[32px] isolate transform-gpu bg-transparent shadow-[0_25px_70px_rgba(0,0,0,0.55)] transition duration-500 ${className}`}
     >
-      <img
-        src={image}
-        alt={title}
-        className="absolute -inset-[1px] w-[calc(100%+2px)] h-[calc(100%+2px)] object-cover transition-transform duration-700 group-hover:scale-110"
-      />
+      <Image
+  src={image}
+  alt={title}
+  fill
+  priority
+  sizes="(max-width: 768px) 220px, 280px"
+  className="object-cover transition-transform duration-700 group-hover:scale-110"
+/>
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/35 to-transparent" />
 
@@ -243,11 +247,14 @@ const startGroupQuiz = async () => {
       {/* NAV */}
       <header className="absolute top-0 left-0 w-full z-30 px-8 md:px-8 py-0 flex items-center justify-between">
 <div className="mt-4 ml-6 flex flex-col items-start">
-  <img
-    src="/zulario.png"
-    alt="Zulario Logo"
-    className="h-20 w-auto"
-  />
+<Image
+  src="/zulario.png"
+  alt="Zulario Logo"
+  width={240}
+  height={80}
+  priority
+  className="h-20 w-auto"
+/>
 
   <span className="ml-7 -mt-2 text-[9px] uppercase tracking-[0.3em] text-white/45">
     Travel made personal
