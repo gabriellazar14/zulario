@@ -48,7 +48,7 @@ function DestinationCard({
       <div className="absolute top-7 left-7">
 {(() => {
   const percentage = Number(String(match).replace("%", ""));
-  const size = featured ? 80 : 64;
+  const size = featured ? 68 : 56;
   const stroke = 4;
   const radius = (size - stroke) / 2;
   const circumference = 2 * Math.PI * radius;
@@ -108,7 +108,9 @@ function DestinationCard({
         <h3
           style={{ textShadow: "0 3px 12px rgba(0,0,0,0.9)" }}
           className={`font-bold tracking-[-0.04em] ${
-            featured ? "text-3xl" : "text-1xl"
+            featured
+  ? "text-2xl md:text-3xl"
+  : "text-lg md:text-xl"
           }`}
         >
           {title}
@@ -126,7 +128,9 @@ function DestinationCard({
 
           <span
   className={`${
-    featured ? "text-lg" : "text-xs"
+    featured
+  ? "text-base md:text-lg"
+  : "text-[11px] md:text-xs"
   } whitespace-nowrap`}
 >
   {type}
@@ -284,10 +288,10 @@ const startGroupQuiz = async () => {
       </header>
 
       {/* HERO */}
-      <section className="relative z-10 min-h-screen flex flex-col lg:flex-row pt-28 pb-16">
- <div className="flex-1 px-16 md:px-20 flex flex-col justify-center">
+      <section className="relative z-10 min-h-screen flex flex-col lg:flex-row pt-24 pb-8 md:pt-28 md:pb-16">
+ <div className="flex-1 px-6 md:px-20 flex flex-col justify-center mt-8 md:mt-0">
 
-    <h1 className="mt-1 text-5xl md:text-5xl font-bold leading-[1.05] tracking-[-1px] mb-6 max-w-3xl">
+    <h1 className="mt-1 text-4xl md:text-5xl font-bold leading-[1.05] tracking-[-1px] mb-6 max-w-3xl">
       Discover destinations that match who you are
     </h1>
           <p className="text-lg text-white/70 mb-9 max-w-md leading-relaxed">
@@ -295,13 +299,17 @@ const startGroupQuiz = async () => {
             energy, and travel style.
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-10">
+          <div className="flex flex-col md:flex-row gap-4 mb-10">
  <Link href="/quiz">
 
   <button
-    className="px-6 py-4 rounded-xl text-white font-semibold
-    bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc]
-    shadow-lg hover:scale-105 transition"
+  className="
+w-full md:w-auto
+px-6 py-4
+rounded-xl
+text-white font-semibold
+bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc]
+shadow-lg hover:scale-105 transition"
     aria-label="Take the travel quiz"
   >
     Take the Quiz
@@ -310,8 +318,15 @@ const startGroupQuiz = async () => {
 
             <button
               onClick={startGroupQuiz}
-              className="px-6 py-4 rounded-xl border border-white/15 bg-white/5 text-white font-semibold hover:bg-white/10 transition"
-            aria-label="Create a new group travel quiz"
+              className="
+w-full md:w-auto
+px-6 py-4
+rounded-xl
+border border-white/15
+bg-white/5
+text-white font-semibold
+hover:bg-white/10 transition" 
+aria-label="Create a new group travel quiz"
             >
               Create Group Match
             </button>
@@ -325,10 +340,19 @@ const startGroupQuiz = async () => {
           </div>
         </div>
 
-       <div className="relative h-full flex items-center justify-center -translate-y-8">   <div className="relative z-10 w-[760px] h-[560px]">
-       <motion.div
+       <div className="
+relative h-full
+flex items-center justify-center
+mt-8 md:mt-0
+translate-y-0 md:-translate-y-8
+">  
+         <div className="relative z-10 w-[340px] h-[300px] sm:w-[420px] sm:h-[360px] md:w-[760px] md:h-[560px]">
+<motion.div
   layout
-  className="relative h-full flex items-center justify-center -translate-y-8"
+  className="
+    relative h-full
+    flex items-center justify-center
+    translate-y-0 md:-translate-y-8"
 >
 
   {(() => {
@@ -344,13 +368,22 @@ const startGroupQuiz = async () => {
         <motion.div
           layout
           transition={{ type: "spring", stiffness: 120, damping: 18 }}
-          className="z-10 hover:z-50 -mr-16 translate-y-6"
+          className="
+z-10 hover:z-50
+-mr-8 md:-mr-16
+translate-y-4 md:translate-y-6
+"
         >
           <DestinationCard
             {...left}
              priority={false}
             onClick={() => setActiveIndex(leftIndex)}
-            className="w-[220px] h-[340px] rotate-[-6deg] brightness-130 cursor-pointer"
+            className="
+w-[125px] h-[185px]
+sm:w-[155px] sm:h-[235px]
+md:w-[220px] md:h-[340px]
+rotate-[-6deg] brightness-130 cursor-pointer
+"
           />
         </motion.div>
 
@@ -363,20 +396,34 @@ const startGroupQuiz = async () => {
             {...active}
             featured
              priority
-            className="w-[280px] h-[390px] rotate-[2deg] brightness-130"
+            className="
+w-[165px] h-[230px]
+sm:w-[200px] sm:h-[280px]
+md:w-[280px] md:h-[390px]
+rotate-[2deg] brightness-130
+"
           />
         </motion.div>
 
         <motion.div
           layout
           transition={{ type: "spring", stiffness: 120, damping: 18 }}
-          className="z-10 hover:z-50 -ml-16 translate-y-6"
+          className="
+z-10 hover:z-50
+-ml-8 md:-ml-16
+translate-y-4 md:translate-y-6
+"
         >
           <DestinationCard
             {...right}
             priority={false}
             onClick={() => setActiveIndex(rightIndex)}
-            className="w-[220px] h-[340px] rotate-[6deg] brightness-130 cursor-pointer"
+            className="
+w-[125px] h-[185px]
+sm:w-[155px] sm:h-[235px]
+md:w-[220px] md:h-[340px]
+rotate-[-6deg] brightness-130 cursor-pointer
+"
           />
         </motion.div>
       </>
@@ -384,7 +431,7 @@ const startGroupQuiz = async () => {
   })()}
 </motion.div>
 
-   <div className="absolute bottom-20 left-1/2 z-40 flex -translate-x-1/2 gap-2">
+   <div className="absolute bottom-12 md:bottom-20 left-1/2 z-40 flex -translate-x-1/2 gap-2">
               {destinations.map((_, index) => (
          <button
   key={index}
