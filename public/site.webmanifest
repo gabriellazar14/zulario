@@ -1,0 +1,21 @@
+{
+  "name": "Zulario",
+  "short_name": "Zulario",
+  "description": "Discover your perfect travel destination with Zulario's travel personality quiz.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050B1F",
+  "theme_color": "#6d5dfc",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

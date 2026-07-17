@@ -356,12 +356,10 @@ function ResultCard({ match, onSeeDetails }) {
   src={data.image}
   alt={data.city}
   fill
-  priority
-  sizes="(max-width: 768px) 100vw, 33vw"
+   sizes="(max-width: 768px) 100vw, 33vw"
   className="object-cover"
 />
-
-      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-black/10" />
+<div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
 
 {/* Match Circle */}
 <div className="absolute top-6 left-6 z-20">
@@ -692,7 +690,7 @@ if (loading) {
   src="/zulario.png"
   alt="Zulario Logo"
   width={240}
-  height={80}
+  height={115}
   priority
   className="h-20 w-auto"
 />

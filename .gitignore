@@ -45,3 +45,6 @@ dest.txt
 dest_new.txt
 dest_removed.txt
 scripts/missing-images.txt
+# Original local image library (served from Supabase now)
+public/images/
+public/images_webp/

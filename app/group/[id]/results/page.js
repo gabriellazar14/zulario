@@ -286,7 +286,7 @@ ${groupResultsLink}`;
   src="/zulario.png"
   alt="Zulario Logo"
   width={240}
-  height={80}
+  height={115}
   priority
   className="h-20 w-auto"
 />

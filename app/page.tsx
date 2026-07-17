@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
-import { createQuizGroup } from "@/lib/supabase";
+
 import { FaInstagram, FaTiktok, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
@@ -15,6 +15,7 @@ function DestinationCard({
   type,
   match,
   featured = false,
+  priority = false,
   className = "",
   onClick,
 }: {
@@ -24,6 +25,7 @@ function DestinationCard({
   match: string;
   featured?: boolean;
   className?: string;
+  priority?: boolean;
   onClick?: () => void;
 }) {
   return (
@@ -36,7 +38,7 @@ function DestinationCard({
   src={image}
   alt={title}
   fill
-  priority
+    priority={priority}
   sizes="(max-width: 768px) 220px, 280px"
   className="object-cover transition-transform duration-700 group-hover:scale-110"
 />
@@ -214,17 +216,24 @@ const saveCookiePreferences = () => {
 const startGroupQuiz = async () => {
   const newTab = window.open("", "_blank");
 
-  const group = await createQuizGroup();
+  try {
+    const { createQuizGroup } = await import("@/lib/supabase");
 
-  if (!group) {
+    const group = await createQuizGroup();
+
+    if (!group) {
+      newTab?.close();
+      return;
+    }
+
+    if (newTab) {
+      newTab.location.href = `/group/${group.id}`;
+    } else {
+      router.push(`/group/${group.id}`);
+    }
+  } catch (error) {
+    console.error("Unable to create quiz group:", error);
     newTab?.close();
-    return;
-  }
-
-  if (newTab) {
-    newTab.location.href = `/group/${group.id}`;
-  } else {
-    router.push(`/group/${group.id}`);
   }
 };
 
@@ -247,24 +256,25 @@ const startGroupQuiz = async () => {
       {/* NAV */}
       <header className="absolute top-0 left-0 w-full z-30 px-8 md:px-8 py-0 flex items-center justify-between">
 <div className="mt-4 ml-6 flex flex-col items-start">
-<Image
-  src="/zulario.png"
+<Link
+  href="/"
+  aria-label="Go to Zulario homepage"
+>
+  <Image
+    src="/zulario.png"
   alt="Zulario Logo"
   width={240}
-  height={80}
+  height={115}
   priority
   className="h-20 w-auto"
-/>
-
-  <span className="ml-7 -mt-2 text-[9px] uppercase tracking-[0.3em] text-white/45">
+  />
+</Link>
+  <span className="ml-7 -mt-2 text-[9px] uppercase tracking-[0.3em] text-white/60">
     Travel made personal
   </span>
 </div>
         <nav className="hidden md:flex gap-8 text-sm text-white/75 mr-12">
-        {/*  <Link href="/destinations" className="hover:text-white transition">
-            Explore
-          </Link>*/}
-          <Link href="/about" className="hover:text-white transition">
+             <Link href="/about" className="hover:text-white transition">
             About
           </Link>
           <Link href="/faq" className="hover:text-white transition">
@@ -286,16 +296,22 @@ const startGroupQuiz = async () => {
           </p>
 
           <div className="flex flex-wrap gap-4 mb-10">
-            <Link href="/quiz">
-             <button className="px-6 py-4 rounded-xl text-white font-semibold
-bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc]
-shadow-lg hover:scale-105 transition">         Take the Quiz
-              </button>
-            </Link>
+ <Link href="/quiz">
+
+  <button
+    className="px-6 py-4 rounded-xl text-white font-semibold
+    bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc]
+    shadow-lg hover:scale-105 transition"
+    aria-label="Take the travel quiz"
+  >
+    Take the Quiz
+  </button>
+</Link>
 
             <button
               onClick={startGroupQuiz}
               className="px-6 py-4 rounded-xl border border-white/15 bg-white/5 text-white font-semibold hover:bg-white/10 transition"
+            aria-label="Create a new group travel quiz"
             >
               Create Group Match
             </button>
@@ -332,6 +348,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
         >
           <DestinationCard
             {...left}
+             priority={false}
             onClick={() => setActiveIndex(leftIndex)}
             className="w-[220px] h-[340px] rotate-[-6deg] brightness-130 cursor-pointer"
           />
@@ -345,6 +362,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
           <DestinationCard
             {...active}
             featured
+             priority
             className="w-[280px] h-[390px] rotate-[2deg] brightness-130"
           />
         </motion.div>
@@ -356,6 +374,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
         >
           <DestinationCard
             {...right}
+            priority={false}
             onClick={() => setActiveIndex(rightIndex)}
             className="w-[220px] h-[340px] rotate-[6deg] brightness-130 cursor-pointer"
           />
@@ -367,9 +386,11 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
 
    <div className="absolute bottom-20 left-1/2 z-40 flex -translate-x-1/2 gap-2">
               {destinations.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveIndex(index)}
+         <button
+  key={index}
+  onClick={() => setActiveIndex(index)}
+  aria-label={`Go to ${destinations[index].title}`}
+  aria-current={activeIndex === index ? "true" : undefined}
                   className={`w-2.5 h-2.5 rounded-full transition-all ${
                     activeIndex === index
                       ? "bg-[#6d5dfc] scale-125"
@@ -446,7 +467,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
           preferences, and analyze website usage.
         </p>
 
-        <p className="text-white/45 text-xs mb-5">
+        <p className="text-white/60 text-xs mb-5">
           Read our{" "}
           <Link href="/privacy" className="underline hover:text-white">
             Privacy Policy
@@ -457,6 +478,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
         <div className="flex flex-wrap gap-3">
           <button
             onClick={acceptCookies}
+              aria-label="Accept all cookies"
             className="px-5 py-3 rounded-xl bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] font-semibold hover:scale-105 transition"
           >
             Accept All
@@ -464,6 +486,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
 
           <button
             onClick={rejectCookies}
+            aria-label="Reject non-essential cookies"
             className="px-5 py-3 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 transition"
           >
             Reject Non-Essential
@@ -471,6 +494,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
 
           <button
             onClick={() => setShowCookiePreferences(true)}
+            aria-label="Manage cookie preferences"
             className="px-5 py-3 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 transition"
           >
             Manage Preferences
@@ -496,7 +520,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
                   Required for security and basic website functionality.
                 </p>
               </div>
-              <span className="text-sm text-white/45">Always Active</span>
+              <span className="text-sm text-white/60">Always Active</span>
             </div>
           </div>
 
@@ -542,6 +566,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
         <div className="flex flex-wrap gap-3">
           <button
             onClick={saveCookiePreferences}
+             aria-label="Save cookie preferences"
             className="px-5 py-3 rounded-xl bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] font-semibold hover:scale-105 transition"
           >
             Save Preferences
@@ -549,6 +574,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
 
           <button
             onClick={() => setShowCookiePreferences(false)}
+             aria-label="Go back to cookie banner"
             className="px-5 py-3 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 transition"
           >
             Back
@@ -569,7 +595,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
           zulario
         </h3>
 
-        <span className="block text-[9px] uppercase tracking-[0.3em] text-white/45 mb-5">
+        <span className="block text-[9px] uppercase tracking-[0.3em] text-white/60 mb-5">
           Travel made personal
         </span>
 
@@ -614,7 +640,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
 
     {/* Bottom */}
     <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-5">
-      <p className="text-sm text-white/40">
+      <p className="text-sm text-white/60">
         © 2026 Zulario. All rights reserved.
       </p>
 
@@ -633,20 +659,21 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
           Terms
         </Link>
 
-        <a
-          href="https://instagram.com/myzulario/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white/60 hover:text-white transition-colors"
-        >
-          <FaInstagram size={18} />
-        </a>
+ <a
+  href="https://instagram.com/myzulario/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Follow Zulario on Instagram"
+>
+  <FaInstagram size={18} />
+</a>
 
         <a
           href="https://tiktok.com/@myzulario"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white/60 hover:text-white transition-colors"
+          aria-label="Follow Zulario on TikTok"
         >
           <FaTiktok size={18} />
         </a>
@@ -656,6 +683,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
           target="_blank"
           rel="noopener noreferrer"
           className="text-white/60 hover:text-white transition-colors"
+          aria-label="Follow Zulario on X"
         >
           <FaXTwitter size={18} />
         </a>
@@ -665,6 +693,7 @@ shadow-lg hover:scale-105 transition">         Take the Quiz
           target="_blank"
           rel="noopener noreferrer"
           className="text-white/60 hover:text-white transition-colors"
+          aria-label="Follow Zulario on Facebook"
         >
           <FaFacebookF size={18} />
         </a>
