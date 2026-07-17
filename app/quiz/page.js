@@ -352,12 +352,12 @@ function ResultCard({ match, onSeeDetails }) {
 
   return (
     <div className="relative h-[520px] rounded-[32px] overflow-hidden shadow-2xl bg-transparent">
-  <Image
+<Image
   src={data.image}
   alt={data.city}
-  fill
-   sizes="(max-width: 768px) 100vw, 33vw"
-  className="object-cover"
+  width={800}
+  height={520}
+  className="w-full h-full object-cover"
 />
 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
 
@@ -759,13 +759,13 @@ if (loading) {
             className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-3 hover:bg-white/10 transition"
           >
            <div className="relative w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 bg-white/5">
-  <Image
-    src={data.image}
-    alt={data.city}
-    fill
-    sizes="80px"
-    className="object-cover"
-  />
+<Image
+  src={data.image}
+  alt={data.city}
+  width={80}
+  height={80}
+  className="w-full h-full object-cover"
+/>
 </div>
 
             <div className="flex-1 min-w-0">

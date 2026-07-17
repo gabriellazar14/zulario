@@ -192,26 +192,26 @@ const saveCookiePreferences = () => {
   setShowCookies(false);
   setShowCookiePreferences(false);
 };
-  const destinations = [
-    {
-      image: "/images/kilimanjaro.jpg",
-      title: "Kilimanjaro",
-      type: "Mountain Explorer",
-      match: "91%",
-    },
-    {
-      image: "/images/seychelles.jpg",
-      title: "Seychelles",
-      type: "Beach Lover",
-      match: "97%",
-    },
-    {
-      image: "/images/paris.jpg",
-      title: "Paris",
-      type: "Urban Discoverer",
-      match: "94%",
-    },
-  ];
+const destinations = [
+  {
+    image: "https://rtqumvrfhrnzhnommtyb.supabase.co/storage/v1/object/public/zulario_images/kilimanjaro.webp",
+    title: "Kilimanjaro",
+    type: "Mountain Explorer",
+    match: "91%",
+  },
+  {
+    image: "https://rtqumvrfhrnzhnommtyb.supabase.co/storage/v1/object/public/zulario_images/seychelles.webp",
+    title: "Seychelles",
+    type: "Beach Lover",
+    match: "97%",
+  },
+  {
+    image: "https://rtqumvrfhrnzhnommtyb.supabase.co/storage/v1/object/public/zulario_images/paris.webp",
+    title: "Paris",
+    type: "Urban Discoverer",
+    match: "94%",
+  },
+];
 
 const startGroupQuiz = async () => {
   const newTab = window.open("", "_blank");
