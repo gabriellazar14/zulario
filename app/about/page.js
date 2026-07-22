@@ -95,13 +95,14 @@ export default function AboutPage() {
               </p>
 
               <ul className="space-y-2 text-white/80">
-                <li>• Peaceful and calm</li>
-                <li>• Adventurous and free</li>
-                <li>• Romantic and connected</li>
-                <li>• Inspired and culturally stimulated</li>
-                <li>• Close to nature</li>
+                <li>• Peaceful escapes</li>
+                <li>• Romantic moments</li>
+                <li>• Wild adventures</li>
+                <li>• Cultural inspiration</li>
+                <li>• Nature immersion</li>
               </ul>
             </div>
+
 
             {/* BLOCK 3 */}
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:bg-white/[0.07] transition">

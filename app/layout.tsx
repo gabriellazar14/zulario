@@ -1,8 +1,10 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Script from "next/script";
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+
+import AnalyticsScripts from "@/components/AnalyticsScripts";
+import CookieBanner from "@/components/CookieBanner";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -60,9 +62,6 @@ export const metadata: Metadata = {
 
   manifest: "/site.webmanifest",
 
-  alternates: {
-    canonical: "/",
-  },
 
   formatDetection: {
     telephone: false,
@@ -135,37 +134,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {children}
+ <body className={inter.className}>
+  {children}
 
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-7GFNDWQLJS"
-          strategy="lazyOnload"
-        />
-
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments);}
-            window.gtag = gtag;
-            gtag('js', new Date());
-            gtag('config', 'G-7GFNDWQLJS');
-          `}
-        </Script>
-
-        <Script id="microsoft-clarity" strategy="lazyOnload">
-          {`
-            (function(c,l,a,r,i,t,y){
-              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-              t=l.createElement(r);
-              t.async=1;
-              t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];
-              y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "x5avisbaft");
-          `}
-        </Script>
-      </body>
+  <AnalyticsScripts />
+  <CookieBanner />
+</body>
     </html>
   );
 }

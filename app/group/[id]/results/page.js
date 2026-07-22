@@ -285,10 +285,9 @@ ${groupResultsLink}`;
 <Image
   src="/zulario.png"
   alt="Zulario Logo"
-  width={240}
-  height={115}
+  width={167}
+  height={80}
   priority
-  className="h-20 w-auto"
 />
 
         </a>
@@ -322,12 +321,12 @@ ${groupResultsLink}`;
               Share the group link and ask your friends to complete the quiz.
             </p>
 
-            <a
-              href={`/group/${id}`}
-              className="inline-block px-6 py-4 rounded-xl text-white font-semibold bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] shadow-[0_10px_30px_rgba(79,124,255,0.3)] hover:scale-105 transition"
-            >
-              Return to Group Quiz
-            </a>
+ <Link
+  href={`/group/${id}`}
+  className="inline-block px-7 py-4 rounded-xl bg-gradient-to-br from-[#4f7cff] to-[#6d5dfc] text-white font-semibold hover:scale-105 transition-transform"
+>
+  Return to Group Quiz
+</Link>
           </div>
         ) : (
           <>

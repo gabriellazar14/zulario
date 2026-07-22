@@ -7,286 +7,182 @@ import {
 } from "react-icons/fa6";
 
 export default function TermsPage() {
-return ( <main className="min-h-screen bg-[#070b16] text-white px-6 py-12"> <div className="max-w-4xl mx-auto">
+  return (
+    <main className="min-h-screen bg-[#070b16] text-white px-6 py-12">
+      <div className="max-w-4xl mx-auto">
+        {/* MAIN PAGE BUTTON */}
+        <a
+          href="/"
+          className="absolute top-6 right-8 z-20 px-5 py-3 rounded-xl bg-white/10 border border-white/15 backdrop-blur-md text-white font-semibold hover:bg-white/15 transition"
+        >
+          Main Page
+        </a>
 
+        <h1 className="text-4xl font-bold mt-10 mb-4">
+          Terms of Service
+        </h1>
 
-    {/* MAIN PAGE BUTTON */}
-    <a
-      href="/"
-      className="absolute top-6 right-8 z-20 px-5 py-3 rounded-xl bg-white/10 border border-white/15 backdrop-blur-md text-white font-semibold hover:bg-white/15 transition"
-    >
-      Main Page
-    </a>
-
-    <h1 className="text-4xl font-bold mt-10 mb-4">
-      Terms of Service
-    </h1>
-
-    <p className="text-white/50 mb-10">
-      Last updated: 2026
-    </p>
-
-    <div className="space-y-8 text-white/70 leading-relaxed">
-
-      <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">
-          1. Acceptance
-        </h2>
-
-        <p>
-          By accessing or using Zulario, you agree to be bound by these
-          Terms of Service and all applicable laws.
+        <p className="text-white/50 mb-10">
+          Last updated: July 22, 2026
         </p>
-      </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">
-          2. Eligibility
-        </h2>
+        <div className="space-y-8 text-white/70 leading-relaxed">
 
-        <p>
-          You must be at least 16 years old, or the minimum age required
-          by applicable law in your country, to use Zulario.
-        </p>
-      </section>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">1. Acceptance</h2>
+            <p>
+              By accessing or using Zulario, you agree to be bound by these Terms of
+              Service and all applicable laws. If you do not agree with these Terms,
+              please do not use Zulario.
+            </p>
+          </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">
-          3. What Zulario Does
-        </h2>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">2. Eligibility</h2>
+            <p>
+              You must be at least 16 years old, or the minimum age required by
+              applicable law in your country, to use Zulario.
+            </p>
+          </section>
 
-        <p>
-          Zulario provides AI-assisted personality-based destination
-          matching, travel recommendations, destination discovery, and
-          group travel matching tools.
-        </p>
-      </section>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">3. What Zulario Does</h2>
+            <p>
+              Zulario provides AI-assisted personality-based destination matching,
+              travel recommendations, destination discovery, and group travel matching
+              tools. The platform is designed to help users discover destinations that
+              may suit their travel preferences and interests.
+            </p>
+          </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">
-          4. AI Recommendations
-        </h2>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">4. AI Recommendations</h2>
+            <p>
+              Zulario generates recommendations algorithmically based on user input
+              and destination data. Results are provided for informational purposes
+              only and should not be considered professional travel, legal,
+              financial, medical, or safety advice.
+            </p>
+          </section>
 
-        <p>
-          Zulario generates recommendations algorithmically based on user
-          input and destination data. Results are provided for
-          informational purposes only and should not be considered
-          professional travel advice.
-        </p>
-      </section>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">5. User Responsibility</h2>
+            <p>
+              Users remain responsible for verifying visas, entry requirements,
+              safety information, local regulations, weather, prices,
+              transportation, accommodation, bookings, availability,
+              travel insurance, and destination suitability before making
+              travel decisions.
+            </p>
+          </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">
-          5. User Responsibility
-        </h2>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">6. Group Quizzes</h2>
+            <p>
+              Users are responsible for sharing group quiz links appropriately and
+              ensuring participants understand that shared results may be visible
+              to members of the same group.
+            </p>
+          </section>
 
-        <p>
-          Users remain responsible for verifying visas, safety
-          information, prices, weather, transportation, bookings,
-          availability, insurance requirements, and destination suitability
-          before making travel decisions.
-        </p>
-      </section>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">7. Acceptable Use</h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Use Zulario only for lawful purposes.</li>
+              <li>Do not interfere with or disrupt the platform.</li>
+              <li>Do not attempt to gain unauthorized access to systems or data.</li>
+              <li>
+                Do not copy, reverse engineer, or misuse Zulario&apos;s software
+                or matching algorithms except where permitted by applicable law.
+              </li>
+            </ul>
+          </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">
-          6. Group Quizzes
-        </h2>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">8. Intellectual Property</h2>
+            <p>
+              The Zulario name, branding, logos, design, destination modeling,
+              matching logic, algorithms, and original content are owned by
+              Zulario unless otherwise stated and are protected by applicable
+              intellectual property laws.
+            </p>
+          </section>
 
-        <p>
-          Users are responsible for sharing group quiz links appropriately
-          and ensuring participants understand that shared results may be
-          visible to members of the same group.
-        </p>
-      </section>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">9. Limitation of Liability</h2>
+            <p>
+              To the maximum extent permitted by applicable law, Zulario shall not
+              be liable for any direct, indirect, incidental, consequential, or
+              special damages arising from the use of, or inability to use, the
+              platform or its recommendations, including travel decisions,
+              bookings, cancellations, delays, losses, or other travel-related
+              issues.
+            </p>
+          </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">
-          7. Intellectual Property
-        </h2>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">10. Availability</h2>
+            <p>
+              We strive to keep Zulario available at all times but do not
+              guarantee uninterrupted or error-free access. The service may be
+              modified, suspended, or discontinued at any time without prior notice.
+            </p>
+          </section>
 
-        <p>
-          The Zulario name, branding, design, destination modeling,
-          algorithms, matching logic, and original content are owned by
-          Zulario unless otherwise stated.
-        </p>
-      </section>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">11. Third-Party Services</h2>
+            <p>
+              Zulario may contain links to third-party websites or services.
+              We are not responsible for the availability, content, accuracy,
+              or privacy practices of those external services.
+            </p>
+          </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">
-          8. Limitation of Liability
-        </h2>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">12. Privacy</h2>
+            <p>
+              Your use of Zulario is also governed by our{" "}
+              <Link href="/privacy" className="text-blue-400 hover:text-blue-300 underline">
+                Privacy Policy, 
+              </Link> which explains how personal information is collected, used, and protected.
+              
+            </p>
+          </section>
 
-        <p>
-          Zulario shall not be responsible for travel decisions, bookings,
-          cancellations, losses, damages, delays, or other issues arising
-          from use of the platform or its recommendations.
-        </p>
-      </section>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">13. Governing Law</h2>
+            <p>
+           These Terms shall be governed by the laws of the jurisdiction in which Zulario operates, 
+           without regard to conflict of law principles.
+            </p>
+          </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">
-          9. Availability
-        </h2>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">14. Contact</h2>
+            <p>
+              If you have questions regarding these Terms of Service, please
+              contact us at{" "}
+              <a
+                href="mailto:contact@zulario.com"
+                className="text-blue-400 hover:text-blue-300 underline"
+              >
+                contact@zulario.com
+              </a>.
+            </p>
+          </section>
 
-        <p>
-          We strive to keep Zulario available at all times but do not
-          guarantee uninterrupted access. The service may be modified,
-          suspended, or discontinued without prior notice.
-        </p>
-      </section>
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">15. Changes</h2>
+            <p>
+              We may update these Terms of Service from time to time to reflect
+              changes to Zulario or applicable laws. The latest version will
+              always be available on this page together with the date of the
+              most recent update.
+            </p>
+          </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">
-          10. Third-Party Services
-        </h2>
-
-        <p>
-          Zulario may contain links to third-party websites or services.
-          We are not responsible for the content, availability, or privacy
-          practices of those external services.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">
-          11. Governing Law
-        </h2>
-
-        <p>
-          These Terms shall be governed by the laws applicable in the
-          jurisdiction where Zulario operates, without regard to conflict
-          of law principles.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">
-          12. Changes
-        </h2>
-
-        <p>
-          We may update these Terms of Service from time to time. The
-          latest version will always be available on this page together
-          with the date of the most recent update.
-        </p>
-      </section>
-
-    </div>
-  </div>
- {/* FOOTER */}
- <footer className="relative mt-10 z-10 border-t border-white/10">
-   <div className="max-w-6xl mx-auto px-6 py-12">
-     <div className="grid md:grid-cols-[2fr_1fr_1.25fr] gap-10 items-start">
-       {/* Brand */}
-       <div>
-         <h3 className="text-2xl font-light tracking-wider text-white mb-1">
-           zulario
-         </h3>
- 
-         <span className="block text-[9px] uppercase tracking-[0.3em] text-white/45 mb-5">
-           Travel made personal
-         </span>
- 
-         <p className="text-white/55 leading-relaxed max-w-sm">
-           Discover destinations that match who you are
-         </p>
-       </div>
- 
-       {/* Explore */}
-       <div>
-         <h4 className="font-semibold mb-3 text-white/90">Explore</h4>
- 
-         <div className="flex flex-col gap-2 text-white/60">
-           <Link href="/quiz" className="hover:text-white transition-colors">
-             Take the Quiz
-           </Link>
- 
-           <Link href="/about" className="hover:text-white transition-colors">
-             About
-           </Link>
- 
-           <Link href="/faq" className="hover:text-white transition-colors">
-             FAQ
-           </Link>
-         </div>
-       </div>
- 
-       {/* Travel Matching */}
-       <div>
-         <h4 className="font-semibold mb-3 text-white/90">
-           Travel Matching
-         </h4>
- 
-         <ul className="space-y-2 text-white/60">
-           <li>✓ Personality-based recommendations</li>
-           <li>✓ Emotional destination matching</li>
-           <li>✓ Solo & group travel compatibility</li>
-           <li>✓ Beyond popularity rankings</li>
-         </ul>
-       </div>
-     </div>
- 
-     {/* Bottom */}
-     <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-5">
-       <p className="text-sm text-white/40">
-         © 2026 Zulario. All rights reserved.
-       </p>
- 
-       <div className="flex items-center gap-6">
-         <Link
-           href="/privacy"
-           className="text-sm text-white/50 hover:text-white transition-colors"
-         >
-           Privacy
-         </Link>
- 
-         <Link
-           href="/terms"
-           className="text-sm text-white/50 hover:text-white transition-colors"
-         >
-           Terms
-         </Link>
- 
-         <a
-           href="https://instagram.com/myzulario/"
-           target="_blank"
-           rel="noopener noreferrer"
-           className="text-white/60 hover:text-white transition-colors"
-         >
-           <FaInstagram size={18} />
-         </a>
- 
-         <a
-           href="https://tiktok.com/@myzulario"
-           target="_blank"
-           rel="noopener noreferrer"
-           className="text-white/60 hover:text-white transition-colors"
-         >
-           <FaTiktok size={18} />
-         </a>
- 
-         <a
-           href="https://x.com/myzulario"
-           target="_blank"
-           rel="noopener noreferrer"
-           className="text-white/60 hover:text-white transition-colors"
-         >
-           <FaXTwitter size={18} />
-         </a>
- 
-         <a
-           href="https://facebook.com/myzulario/"
-           target="_blank"
-           rel="noopener noreferrer"
-           className="text-white/60 hover:text-white transition-colors"
-         >
-           <FaFacebookF size={18} />
-         </a>
-       </div>
-     </div>
-   </div>
- </footer>
+        </div>
+      </div>
     </main>
   );
 }

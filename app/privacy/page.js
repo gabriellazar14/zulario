@@ -20,29 +20,34 @@ export default function PrivacyPage() {
       </a>
 
         <h1 className="text-4xl font-bold mt-10 mb-4">Privacy Policy</h1>
-        <p className="text-white/50 mb-10">Last updated: 2026</p>
+        <p className="text-white/50 mb-10">Last updated: July 2026</p>
 
         <div className="space-y-8 text-white/70 leading-relaxed">
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">
               1. Information We Collect
             </h2>
-            <p>
-             Zulario may collect quiz answers, travel preferences, group quiz 
-             participation data, feedback submitted by users, email addresses 
-             voluntarily provided to save results, and basic technical or analytics 
-             information.
-            </p>
+   <p>
+  Zulario may collect quiz answers, travel preferences, group quiz
+  participation data, optional feedback and ratings submitted by users,
+  email addresses voluntarily provided to save results, and basic
+  technical information such as browser, device, IP address, cookies,
+  and analytics data collected through our website and trusted service
+  providers.
+</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">
               2. How We Use Information
             </h2>
-            <p>
-              We use information to generate destination matches, improve the
-              matching experience, maintain security, and improve Zulario.
-            </p>
+           <p>
+  We use information to generate destination matches, improve the
+  matching experience, maintain website security, respond to support
+  requests, and continuously improve Zulario. Feedback and ratings
+  submitted through Zulario may also be used to improve destination
+  matching and recommendation quality.
+</p>
           </section>
 
           <section>
@@ -61,7 +66,7 @@ export default function PrivacyPage() {
             </h2>
             <p>
               Zulario may use cookies and analytics services, such as Google Analytics 
-              or Microsoft Clarity, to understand how the website is used and improve 
+              and Microsoft Clarity, to understand how the website is used and improve 
               the user experience. These services may collect usage information, device 
               information, and interaction data to help us understand how visitors use 
               Zulario and improve the product.            </p>
@@ -71,16 +76,39 @@ export default function PrivacyPage() {
             <h2 className="text-2xl font-semibold text-white mb-3">
               5. Data Sharing
             </h2>
-            <p>
-              Zulario does not sell personal information. Some data may be processed 
-              by trusted third-party service providers that help operate Zulario, 
-              including hosting, database, analytics, and email delivery services. 
-              These providers process information only as necessary to provide their services.
-            </p>
+    Zulario may share personal information with trusted third-party service providers 
+    that help operate the platform, including hosting, database, analytics, and email 
+    delivery services. These providers process information only as necessary to provide 
+    their services. Personal information may be securely stored and processed using trusted 
+    cloud service providers located within the European Union or in countries that provide 
+    appropriate safeguards for personal data in accordance with applicable privacy laws.
           </section>
+
 <section>
   <h2 className="text-2xl font-semibold text-white mb-3">
-    6. Email Addresses
+    6. Data Controller
+  </h2>
+
+  <p>
+    The data controller responsible for processing personal information through Zulario is Zulario, 
+    operated from Romania. If you have questions about how your personal information is processed, 
+    please contact us using the details below. </p>
+
+  <p className="mt-3">
+    Contact:
+    {" "}
+    <a
+      href="mailto:contact@zulario.com"
+      className="text-blue-400 hover:text-blue-300 underline"
+    >
+      contact@zulario.com
+    </a>
+  </p>
+</section>
+
+<section>
+  <h2 className="text-2xl font-semibold text-white mb-3">
+    7. Email Addresses
   </h2>
 
   <p>
@@ -94,23 +122,32 @@ export default function PrivacyPage() {
     We do not sell your email address or share it with third parties for
     marketing purposes.
   </p>
-</section>
-
-<section>
-  <h2 className="text-2xl font-semibold text-white mb-3">
-    7. Your Rights
-  </h2>
-
-  <p>
-    You may request access to, correction of, or deletion of your personal
-information, including saved travel results and associated email addresses,
-by contacting us at contact@zulario.com.
+  <p className="mt-3">
+   You may request deletion of your saved travel results and associated email address at any time by contacting us.
   </p>
 </section>
 
 <section>
+  <h2 className="text-2xl font-semibold text-white mb-3">
+    8. Your Rights
+  </h2>
+
+<p>
+  You may request access to, correction of, or deletion of your personal
+  information, including saved travel results and associated email addresses,
+  by contacting us at{" "}
+  <a
+    href="mailto:contact@zulario.com"
+    className="text-blue-400 hover:text-blue-300 underline"
+  >
+    contact@zulario.com
+  </a>.
+</p>
+</section>
+
+<section>
             <h2 className="text-2xl font-semibold text-white mb-3">
-              8. Legal Basis for Processing
+              9. Legal Basis for Processing
             </h2>
             <p>We process personal information only where we have a valid legal basis to do so, 
               including your consent, our legitimate interests in improving Zulario, or where 
@@ -119,7 +156,7 @@ by contacting us at contact@zulario.com.
 
 <section>
             <h2 className="text-2xl font-semibold text-white mb-3">
-              9. Data Retention
+              10. Data Retention
             </h2>
             <p>We retain personal information only for as long as necessary to provide 
               our services, improve Zulario, comply with legal obligations, or until you 
@@ -127,25 +164,59 @@ by contacting us at contact@zulario.com.
           </section>
 
 <section>
+  <h2 className="text-2xl font-semibold text-white mb-3">
+    11. Security
+  </h2>
+
+  <p>
+    We use reasonable technical and organizational measures to protect
+    personal information from unauthorized access, disclosure,
+    alteration, or loss. While no online service can guarantee absolute
+    security, we continuously work to safeguard your information.
+  </p>
+</section>
+
+<section>
             <h2 className="text-2xl font-semibold text-white mb-3">
-             10. International Data Transfers
+             12. International Data Transfers
             </h2>
             <p>Some service providers used by Zulario may process information outside 
               your country of residence. Where applicable, appropriate safeguards are 
               used to protect personal information in accordance with applicable privacy laws.</p>
           </section>
 
+<section>
+  <h2 className="text-2xl font-semibold text-white mb-3">
+    13. Children's Privacy
+  </h2>
+
+  <p>
+    Zulario is not intended for children under the age of 16. We do not
+    knowingly collect personal information from children. If we become
+    aware that such information has been collected, we will delete it as
+    soon as reasonably possible.
+  </p>
+</section>
+
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">
-              11. Contact
+              14. Contact
             </h2>
-            <p>If you have questions about this Privacy Policy or wish to exercise your 
-              privacy rights, please contact us at contact@zulario.com.</p>
+         <p>
+  If you have questions about this Privacy Policy or wish to exercise
+  your privacy rights, please contact us at{" "}
+  <a
+    href="mailto:contact@zulario.com"
+    className="text-blue-400 hover:text-blue-300 underline"
+  >
+    contact@zulario.com
+  </a>.
+</p>
           </section>
 
                 <section>
             <h2 className="text-2xl font-semibold text-white mb-3">
-              12. Changes to This Privacy Policy
+              15. Changes to This Privacy Policy
             </h2>
             <p>We may update this Privacy Policy from time to time to reflect changes 
               to Zulario or applicable laws. The latest version will always be available 

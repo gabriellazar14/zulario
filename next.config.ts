@@ -1,11 +1,9 @@
 import type { NextConfig } from "next";
-
 import createBundleAnalyzer from "@next/bundle-analyzer";
 
 const withBundleAnalyzer = createBundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
-
 
 const securityHeaders = [
   {
@@ -31,6 +29,8 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: ["192.168.100.18"],
+
   images: {
     remotePatterns: [
       {
